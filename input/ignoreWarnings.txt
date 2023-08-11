@@ -1,5 +1,41 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# Confirmed profile validation messages
+INFORMATION: ActivityDefinition/cc-cpg-activity-edu-hypertension: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-edu-hypertension: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/cc-cpg-activity-edu-renal-diet: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-edu-renal-diet: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/cc-cpg-activity-lab-creatinine: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-lab-creatinine: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/cc-cpg-activity-referral-dietition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-referral-dietition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/cc-cpg-activity-referral-nephrology: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-referral-nephrology: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/cc-cpg-activity-ultrasound-renal: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cc-cpg-activity-ultrasound-renal: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: PlanDefinition/cc-cpg-plan-ckd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/cc-cpg-plan-ckd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: ActivityDefinition/ckd-risk-referral-nephrology: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/ckd-risk-referral-nephrology: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/ckd-risk-renal-lab-order: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/ckd-risk-renal-lab-order: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: Library/CKDRiskLogic: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+INFORMATION: Library/CKDRiskLogic: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
+INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: ValueSet/ckd-valueset-ckd: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/ckd-valueset-ckd: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset - listed in meta
+INFORMATION: ValueSet/ckd-valueset-creatinine: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/ckd-valueset-creatinine: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset - listed in meta
+INFORMATION: ValueSet/ckd-valueset-diabetes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/ckd-valueset-diabetes: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset - listed in meta
+INFORMATION: ValueSet/ckd-valueset-egfr: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/ckd-valueset-egfr: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset - listed in meta
+INFORMATION: ValueSet/ckd-valueset-uacr: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/ckd-valueset-uacr: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset - listed in meta
+INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition - listed in meta
+INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition: Validate resource against
