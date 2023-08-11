@@ -1,43 +1,19 @@
 Instance: va-ckd-protocol
 InstanceOf: CPGPathwayDefinition
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition"
-* extension[0]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #shareable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #computable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #publishable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
-  * valueCode = #structured
-* url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/va-ckd-protocol"
+Title: "VA CKD Protocol Pathway"
+* insert PlanDefinitionMetadata(cc-cpg-plan-ckd)
 * identifier
   * use = #official
   * value = "VA_CKD_Protocol"
-* version = "0.1.0"
-* name = "VA_CKD_Protocol"
-* title = "VA CKD Protocol"
+* name = "VACKDProtocol"
 * description = "VA CKD Protocol"
 * type = $plan-definition-type#clinical-protocol "Clinical Protocol"
 * useContext
   * code = $usage-context-type#focus "Clinical Focus"
   * valueCodeableConcept = $sct#709044004 "Chronic kidney disease (disorder)"
 * topic = $definition-topic#treatment "Treatment"
-* status = #draft
-* experimental = true
-* date = "2019-07-28T00:00:00+00:00"
-* approvalDate = "2019-07-28"
-* lastReviewDate = "2019-07-28"
-* effectivePeriod.start = "2019-07-28"
-* publisher = "HL7 FHIR Clinical Guidelines Example Artifact"
-* copyright = "Copyright © Example.org 2019."
-* author.name = "Dave Carlson"
-* jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* action[0]
+* action[+]
   * id = "001"
   * title = "History and Phyiscal"
   * description = "Obtain initial clinical information: medical history (including risk factors for kidney disease), physical examination and review existing laboratory results."
@@ -67,7 +43,7 @@ Usage: #example
     * expression
       * language = #text/cql
       * expression = "Has evidence of CKD?"
-  * action[0]
+  * action[+]
     * id = "004.1"
     * title = "Stages of CKD."
     * description = "Complete clinical assessment. Determine stage of CKD."

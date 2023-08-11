@@ -1,5 +1,8 @@
 == Suppressed Messages ==
 
+# Example code hasn't been determined yet
+INFORMATION: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition.code.coding[+]: Code System URI 'http://www.nlm.nih.gov/research/umls/xxxx' is unknown so the code cannot be validated
+
 # Confirmed profile validation messages
 INFORMATION: ActivityDefinition/cc-cpg-activity-edu-hypertension: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/cc-cpg-activity-edu-hypertension: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta

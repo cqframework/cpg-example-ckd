@@ -1,40 +1,16 @@
 Instance: ckd-risk-screening
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
-* extension[0]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #shareable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #computable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #publishable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
-  * valueCode = #structured
-* url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/ckd-risk-screening"
-* name = "CKD_Risk_Screening"
-* title = "Chronic Kidney Disease (CKD) risk screening"
+Title: "Chronic Kidney Disease (CKD) risk screening Plan Definition"
+* insert PlanDefinitionMetadata(ckd-risk-screening)
+* name = "CKDRiskScreening"
 * description = "Chronic Kidney Disease (CKD) risk screening"
-* version = "0.1.0"
 * type = $plan-definition-type#eca-rule "ECA Rule"
 * useContext
   * code = $usage-context-type#focus "Clinical Focus"
   * valueCodeableConcept = $sct#709044004 "Chronic kidney disease (disorder)"
 * topic = $definition-topic#treatment "Treatment"
-* status = #draft
-* experimental = true
-* date = "2019-07-28T00:00:00+00:00"
-* approvalDate = "2019-07-28"
-* lastReviewDate = "2019-07-28"
-* effectivePeriod.start = "2019-07-28"
-* publisher = "HL7 FHIR Clinical Guidelines Example Artifact"
-* copyright = "Copyright © Example.org 2019."
-* author.name = "Dave Carlson"
-* jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* library = "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"
+* library = Canonical(CKDRiskLogic)
 * action
   * trigger
     * type = #named-event
@@ -44,21 +20,21 @@ Usage: #example
     * expression
       * language = #text/cql
       * expression = "Has CKD or Diabetes"
-  * action[0]
+  * action[+]
     * title = "Order Renal Lab Panel"
     * description = "Order full renal lab panel, eGFR or UCAR indicates risk."
     * documentation
       * type = #documentation
       * display = "NIDDK Quick Reference on UACR & GFR"
-      * url = "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr"
+      * url = $quick-reference-uacr-gfr
     * condition
       * kind = #applicability
       * expression
         * language = #text/cql
         * expression = "Needs eGFR Lab"
     * type = $action-type#create
-    * definitionCanonical = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-renal-lab-order"
-    * dynamicValue[0]
+    * definitionCanonical = Canonical(ckd-risk-renal-lab-order)
+    * dynamicValue[+]
       * path = "action.description"
       * expression
         * language = #text/cql
@@ -73,13 +49,13 @@ Usage: #example
     * documentation
       * type = #documentation
       * display = "Kidney Failure Risk Equation"
-      * url = "http://kidneyfailurerisk.com/#about-the-equation"
+      * url = $kidney-failure-risk
     * condition
       * kind = #applicability
       * expression
         * language = #text/cql
         * expression = "Has Abnormal eGFR"
-    * dynamicValue[0]
+    * dynamicValue[+]
       * path = "action.description"
       * expression
         * language = #text/cql
@@ -94,13 +70,13 @@ Usage: #example
     * documentation
       * type = #documentation
       * display = "Kidney Failure Risk Equation"
-      * url = "http://kidneyfailurerisk.com/#about-the-equation"
+      * url = $kidney-failure-risk
     * condition
       * kind = #applicability
       * expression
         * language = #text/cql
         * expression = "Has Abnormal eGFR"
-    * dynamicValue[0]
+    * dynamicValue[+]
       * path = "action.description"
       * expression
         * language = #text/cql
@@ -115,15 +91,15 @@ Usage: #example
     * documentation
       * type = #documentation
       * display = "National Kidney Disease Education Program"
-      * url = "https://www.niddk.nih.gov/health-information/communication-programs/nkdep"
+      * url = $nih-ckd-program
     * condition
       * kind = #applicability
       * expression
         * language = #text/cql
         * expression = "Recommend Nephrology Referral"
     * type = $action-type#create
-    * definitionCanonical = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-referral-nephrology"
-    * dynamicValue[0]
+    * definitionCanonical = Canonical(ckd-risk-referral-nephrology)
+    * dynamicValue[+]
       * path = "action.description"
       * expression
         * language = #text/cql

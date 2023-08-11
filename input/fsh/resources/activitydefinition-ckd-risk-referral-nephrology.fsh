@@ -1,28 +1,11 @@
 Instance: ckd-risk-referral-nephrology
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
-* extension[0]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #shareable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #computable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
-  * valueCode = #publishable
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
-  * valueCode = #structured
-* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-referral-nephrology"
-* status = #draft
-* version = "1.0.0"
+Title: "Referral to Nephrologist Activity Definition"
+* insert ActivityDefinitionMetadata(ckd-risk-referral-nephrology)
 * name = "ReferralToNephrologist"
-* title = "Referral to Nephrologist"
 * description = "Create ServiceRequest to order Referral for nephrology."
-* experimental = true
-* publisher = "HL7 FHIR Clinical Guidelines Example Artifact"
-* library = "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"
+* library = Canonical(CKDRiskLogic)
 * kind = #ServiceRequest
 * code = $sct#306125004 "Referral to nephrology service"
 * participant.type = #practitioner
