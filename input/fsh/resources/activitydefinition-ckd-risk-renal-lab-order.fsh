@@ -1,5 +1,5 @@
 Instance: ckd-risk-renal-lab-order
-InstanceOf: ActivityDefinition
+InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
 * extension[0]
@@ -16,6 +16,7 @@ Usage: #example
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-renal-lab-order"
 * status = #draft
+* version = "1.0.0"
 * name = "OrderRenalLabPanel"
 * title = "Order Renal Lab Panel"
 * description = "Create ServiceRequest to order Renal lab panel."

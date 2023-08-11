@@ -1,5 +1,5 @@
 Instance: cc-cpg-activity-referral-dietition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
 * extension[0]

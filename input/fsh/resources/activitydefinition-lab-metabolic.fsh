@@ -1,5 +1,5 @@
 Instance: cc-cpg-activity-lab-metabolic
-InstanceOf: ActivityDefinition
+InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
 * extension[0]

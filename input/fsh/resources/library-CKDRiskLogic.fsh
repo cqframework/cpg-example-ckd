@@ -1,5 +1,5 @@
 Instance: CKDRiskLogic
-InstanceOf: Library
+InstanceOf: Library //Library.content:cqlContent.data has minimum cardinality 1 for CPGComputableLibrary
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary"
 * extension[0]

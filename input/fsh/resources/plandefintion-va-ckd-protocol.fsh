@@ -1,5 +1,5 @@
 Instance: va-ckd-protocol
-InstanceOf: PlanDefinition
+InstanceOf: CPGPathwayDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition"
 * extension[0]

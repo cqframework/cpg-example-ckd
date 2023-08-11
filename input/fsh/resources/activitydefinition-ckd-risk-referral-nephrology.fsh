@@ -1,5 +1,5 @@
 Instance: ckd-risk-referral-nephrology
-InstanceOf: ActivityDefinition
+InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
 * extension[0]
@@ -16,6 +16,7 @@ Usage: #example
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-referral-nephrology"
 * status = #draft
+* version = "1.0.0"
 * name = "ReferralToNephrologist"
 * title = "Referral to Nephrologist"
 * description = "Create ServiceRequest to order Referral for nephrology."
