@@ -6,7 +6,7 @@
 id: hl7.fhir.uv.cpg.ckd
 canonical: http://fhir.org/fhir/uv/cpg/ckd
 name: CPGChronicKidneyDiseaseExamples
-title: CPG Chronic Kidney Disease Examples
+title: Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease
 description: Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project
 status: active # draft | active | retired | unknown
 version: 1.0.0
