@@ -1,7 +1,7 @@
 Instance: CKDRiskLogic
 InstanceOf: Library //Library.content:cqlContent.data has minimum cardinality 1 for CPGComputableLibrary
 Title: "Chronic Kidney Disease (CKD) risk screening logic"
-Usage: #example
+Usage: #definition
 * insert LibraryMetadata(CKDRiskLogic)
 * meta.profile = Canonical(cpg-computablelibrary)
 * name = "CKDRiskLogic"

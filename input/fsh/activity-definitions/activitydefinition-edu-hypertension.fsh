@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-edu-hypertension
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Patient education: Managing Your High Blood Pressure (Hypertension)"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-edu-hypertension)
 * name = "EducationHighBloodPressure"

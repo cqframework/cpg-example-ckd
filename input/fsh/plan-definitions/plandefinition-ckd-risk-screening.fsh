@@ -1,6 +1,6 @@
 Instance: ckd-risk-screening
 InstanceOf: CPGRecommendationDefinition
-Usage: #example
+Usage: #definition
 Title: "Chronic Kidney Disease (CKD) risk screening Plan Definition"
 * insert PlanDefinitionMetadata(ckd-risk-screening)
 * name = "CKDRiskScreening"

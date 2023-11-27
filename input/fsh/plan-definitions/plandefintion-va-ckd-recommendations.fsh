@@ -1,6 +1,6 @@
 Instance: va-ckd-recommendations
 InstanceOf: CPGRecommendationDefinition
-Usage: #example
+Usage: #definition
 Title: "VA CKD Recommendations Plan Definition"
 * insert PlanDefinitionMetadata(va-ckd-recommendations)
 * identifier

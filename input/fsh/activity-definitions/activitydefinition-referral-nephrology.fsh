@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-referral-nephrology
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-referral-nephrology)
 * name = "ReferralNephrology"

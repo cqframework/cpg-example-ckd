@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-edu-renal-diet
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Patient education: Renal diet"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-edu-renal-diet)
 * name = "EducationRenalDiet"

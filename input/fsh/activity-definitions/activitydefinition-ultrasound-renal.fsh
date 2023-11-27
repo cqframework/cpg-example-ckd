@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-ultrasound-renal
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-ultrasound-renal)
 * name = "UltrasoundRenalHistory"

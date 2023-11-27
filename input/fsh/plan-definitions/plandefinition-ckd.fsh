@@ -1,6 +1,6 @@
 Instance: cc-cpg-plan-ckd
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "Chronic Kidney Disease - Ambulatory Plan Definition"
 * insert PlanDefinitionMetadata(cc-cpg-plan-ckd)
 * name = "ChronicKidneyDiseaseAmbulatory"

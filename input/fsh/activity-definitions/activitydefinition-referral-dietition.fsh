@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-referral-dietition
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-referral-dietition)
 * name = "ReferralDietitian"

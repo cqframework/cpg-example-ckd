@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-lab-creatinine
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Lab: Creatinine, Urine Random, Once"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-lab-creatinine)
 * name = "LabCreatinineUrineRandom"

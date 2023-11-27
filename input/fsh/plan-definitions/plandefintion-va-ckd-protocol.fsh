@@ -1,6 +1,6 @@
 Instance: va-ckd-protocol
 InstanceOf: CPGPathwayDefinition
-Usage: #example
+Usage: #definition
 Title: "VA CKD Protocol Pathway"
 * insert PlanDefinitionMetadata(va-ckd-protocol)
 * identifier

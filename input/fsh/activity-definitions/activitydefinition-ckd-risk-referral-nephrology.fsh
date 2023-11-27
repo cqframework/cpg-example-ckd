@@ -1,6 +1,6 @@
 Instance: ckd-risk-referral-nephrology
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Referral to Nephrologist Activity Definition"
 * insert ActivityDefinitionMetadata(ckd-risk-referral-nephrology)
 * name = "ReferralToNephrologist"

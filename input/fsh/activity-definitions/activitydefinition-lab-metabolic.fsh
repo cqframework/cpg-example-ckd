@@ -1,6 +1,6 @@
 Instance: cc-cpg-activity-lab-metabolic
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Lab: Comprehensive Metabolic Panel, Once"
 * insert ActivityDefinitionMetadata(cc-cpg-activity-lab-metabolic)
 * name = "LabComprehensiveMetabolicPanel"

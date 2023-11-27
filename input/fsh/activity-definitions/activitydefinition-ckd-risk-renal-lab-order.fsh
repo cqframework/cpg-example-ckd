@@ -1,6 +1,6 @@
 Instance: ckd-risk-renal-lab-order
 InstanceOf: CPGComputableActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Order Renal Lab Panel Activity Definition"
 * insert ActivityDefinitionMetadata(ckd-risk-renal-lab-order)
 * name = "OrderRenalLabPanel"
