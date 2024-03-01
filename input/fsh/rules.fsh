@@ -1,15 +1,15 @@
 RuleSet: ActivityDefinitionMetadata(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-nowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/{id}"
 * experimental = true
@@ -19,16 +19,16 @@ RuleSet: ActivityDefinitionMetadata(id)
 
 RuleSet: PlanDefinitionMetadata(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-nowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/{id}"
 * experimental = true
@@ -38,30 +38,29 @@ RuleSet: PlanDefinitionMetadata(id)
 
 RuleSet: LibraryMetadata(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-nowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-nowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ckd/Library/{id}"
 * experimental = true
 * status = #active
 
 RuleSet: ValueSetMetadata(id)
-* ^meta.profile = Canonical(cpg-computablevalueset)
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-nowledgeCapability)
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-nowledgeCapability)
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-nowledgeCapability)
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = Canonical(cpg-knowledgeRepresentationLevel)
+* ^extension[+].url = Canonical(cqf-nowledgeRepresentationLevel)
 * ^extension[=].valueCode = #structured
 * ^status = #active
 * ^experimental = true
