@@ -2,7 +2,7 @@ ValueSet: UacrLabResults
 Id: ckd-valueset-uacr
 Title: "UACR Lab Results ValueSet"
 Description: "UACR Lab Results"
-* insert ValueSetMetadata(ckd-valueset-uacr)
+* insert ValueSetMetadata
 * insert LoincCopyright
 * $loinc#44292-1
 * $loinc#13705-9

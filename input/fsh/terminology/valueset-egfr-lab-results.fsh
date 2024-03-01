@@ -2,7 +2,7 @@ ValueSet: EGFRLabResults
 Id: ckd-valueset-egfr
 Title: "eGFR Lab Results ValueSet"
 Description: "eGFR Lab Results"
-* insert ValueSetMetadata(ckd-valueset-egfr)
+* insert ValueSetMetadata
 * insert LoincCopyright
 * $loinc#76633-7
 * $loinc#33914-3
