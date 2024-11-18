@@ -1,0 +1,249 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ckd-risk-screening"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition ckd-risk-screening</b></p><a name=\"ckd-risk-screening\"> </a><a name=\"hcckd-risk-screening\"> </a><a name=\"ckd-risk-screening-en-US\"> </a><p><b>CQF Knowledge capability</b>: shareable</p><p><b>CQF Knowledge capability</b>: computable</p><p><b>CQF Knowledge capability</b>: publishable</p><p><b>CQF knowledge representation level</b>: structured</p><p><b>url</b>: <a href=\"PlanDefinition-ckd-risk-screening.html\">PlanDefinition Chronic Kidney Disease (CKD) risk screening Plan Definition</a></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: CKDRiskScreening</p><p><b>title</b>: Chronic Kidney Disease (CKD) risk screening Plan Definition</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-11-18 18:15:24+0000</p><p><b>publisher</b>: HL7 International - Clinical Decision Support WG</p><p><b>contact</b>: HL7 International - Clinical Decision Support WG: <a href=\"http://www.hl7.org/Special/committees/dss/index.cfm\">http://www.hl7.org/Special/committees/dss/index.cfm</a></p><p><b>description</b>: </p><div><p>Chronic Kidney Disease (CKD) risk screening</p>\n</div><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-usage-context-type.html#usage-context-type-focus\">UsageContextType focus</a>: Clinical Focus</td><td><span title=\"Codes:{http://snomed.info/sct 709044004}\">Chronic kidney disease (disorder)</span></td></tr></table><p><b>jurisdiction</b>: <span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>topic</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/definition-topic treatment}\">Treatment</span></p><p><b>library</b>: <a href=\"Library-CKDRiskLogic.html\">Chronic Kidney Disease (CKD) risk screening logic</a></p><blockquote><p><b>action</b></p><h3>Triggers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>Named Event</td><td>patient-view</td></tr></table><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>Has CKD or Diabetes</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Order Renal Lab Panel</p><p><b>description</b>: Order full renal lab panel, eGFR or UCAR indicates risk.</p><blockquote><p><b>documentation</b></p><p><b>type</b>: Documentation</p><p><b>display</b>: NIDDK Quick Reference on UACR &amp; GFR</p><p><b>url</b>: <a href=\"https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr\">https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr</a></p><h3>Documents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr\">https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr</a></td></tr></table></blockquote><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>Needs eGFR Lab</td></tr></table></blockquote><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/action-type create}\">Create</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ckd-risk-renal-lab-order.html\">Order Renal Lab Panel Activity Definition</a></p><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: action.description</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>NeedsGFRDetail</td></tr></table></blockquote><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: activity.extension</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>NeedsGFRSeverity</td></tr></table></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: 2-year Kidney Failure Risk</p><blockquote><p><b>documentation</b></p><p><b>type</b>: Documentation</p><p><b>display</b>: Kidney Failure Risk Equation</p><p><b>url</b>: <a href=\"http://kidneyfailurerisk.com/#about-the-equation\">http://kidneyfailurerisk.com/#about-the-equation</a></p><h3>Documents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://kidneyfailurerisk.com/#about-the-equation\">http://kidneyfailurerisk.com/#about-the-equation</a></td></tr></table></blockquote><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>Has Abnormal eGFR</td></tr></table></blockquote><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: action.description</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>2-YearRiskDetail</td></tr></table></blockquote><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: activity.extension</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>2-YearRiskSeverity</td></tr></table></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: 5-year Kidney Failure Risk</p><blockquote><p><b>documentation</b></p><p><b>type</b>: Documentation</p><p><b>display</b>: Kidney Failure Risk Equation</p><p><b>url</b>: <a href=\"http://kidneyfailurerisk.com/#about-the-equation\">http://kidneyfailurerisk.com/#about-the-equation</a></p><h3>Documents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://kidneyfailurerisk.com/#about-the-equation\">http://kidneyfailurerisk.com/#about-the-equation</a></td></tr></table></blockquote><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>Has Abnormal eGFR</td></tr></table></blockquote><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: action.description</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>5-YearRiskDetail</td></tr></table></blockquote><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: activity.extension</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>5-YearRiskSeverity</td></tr></table></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Recommend Nephrology Referral</p><blockquote><p><b>documentation</b></p><p><b>type</b>: Documentation</p><p><b>display</b>: National Kidney Disease Education Program</p><p><b>url</b>: <a href=\"https://www.niddk.nih.gov/health-information/communication-programs/nkdep\">https://www.niddk.nih.gov/health-information/communication-programs/nkdep</a></p><h3>Documents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.niddk.nih.gov/health-information/communication-programs/nkdep\">https://www.niddk.nih.gov/health-information/communication-programs/nkdep</a></td></tr></table></blockquote><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>Recommend Nephrology Referral</td></tr></table></blockquote><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/action-type create}\">Create</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ckd-risk-referral-nephrology.html\">Referral to Nephrologist Activity Definition</a></p><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: action.description</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>NephrologyReferralDetail</td></tr></table></blockquote><blockquote><p><b>dynamicValue</b></p><p><b>path</b>: activity.extension</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>NephrologyReferralSeverity</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CKDRiskScreening"] ; # 
+  fhir:title [ fhir:v "Chronic Kidney Disease (CKD) risk screening Plan Definition"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ] ;
+       fhir:display [ fhir:v "ECA Rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-18T18:15:24+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/dss/index.cfm" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Chronic Kidney Disease (CKD) risk screening"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "focus" ] ;
+       fhir:display [ fhir:v "Clinical Focus" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:709044004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "709044004" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease (disorder)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:topic ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/definition-topic"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "treatment" ] ;
+       fhir:display [ fhir:v "Treatment" ]
+     ] )
+  ] ) ; # 
+  fhir:library ( [
+     fhir:v "http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic>
+  ] ) ; # 
+  fhir:action ( [
+     fhir:trigger ( [
+       fhir:type [ fhir:v "named-event" ] ;
+       fhir:name [ fhir:v "patient-view" ]
+     ] ) ;
+     fhir:condition ( [
+       fhir:kind [ fhir:v "applicability" ] ;
+       fhir:expression [
+         fhir:language [ fhir:v "text/cql" ] ;
+         fhir:expression [ fhir:v "Has CKD or Diabetes" ]
+       ]
+     ] ) ;
+     fhir:action ( [
+       fhir:title [ fhir:v "Order Renal Lab Panel" ] ;
+       fhir:description [ fhir:v "Order full renal lab panel, eGFR or UCAR indicates risk." ] ;
+       fhir:documentation ( [
+         fhir:type [ fhir:v "documentation" ] ;
+         fhir:display [ fhir:v "NIDDK Quick Reference on UACR & GFR" ] ;
+         fhir:url [ fhir:v "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr"^^xsd:anyURI ] ;
+         fhir:document [
+           fhir:url [ fhir:v "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "Needs eGFR Lab" ]
+         ]
+       ] ) ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/action-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "create" ]
+         ] )
+       ] ;
+       fhir:definition [
+         fhir:v "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order>
+       ] ;
+       fhir:dynamicValue ( [
+         fhir:path [ fhir:v "action.description" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "NeedsGFRDetail" ]
+         ]
+       ] [
+         fhir:path [ fhir:v "activity.extension" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "NeedsGFRSeverity" ]
+         ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "2-year Kidney Failure Risk" ] ;
+       fhir:documentation ( [
+         fhir:type [ fhir:v "documentation" ] ;
+         fhir:display [ fhir:v "Kidney Failure Risk Equation" ] ;
+         fhir:url [ fhir:v "http://kidneyfailurerisk.com/#about-the-equation"^^xsd:anyURI ] ;
+         fhir:document [
+           fhir:url [ fhir:v "http://kidneyfailurerisk.com/#about-the-equation"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "Has Abnormal eGFR" ]
+         ]
+       ] ) ;
+       fhir:dynamicValue ( [
+         fhir:path [ fhir:v "action.description" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "2-YearRiskDetail" ]
+         ]
+       ] [
+         fhir:path [ fhir:v "activity.extension" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "2-YearRiskSeverity" ]
+         ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "5-year Kidney Failure Risk" ] ;
+       fhir:documentation ( [
+         fhir:type [ fhir:v "documentation" ] ;
+         fhir:display [ fhir:v "Kidney Failure Risk Equation" ] ;
+         fhir:url [ fhir:v "http://kidneyfailurerisk.com/#about-the-equation"^^xsd:anyURI ] ;
+         fhir:document [
+           fhir:url [ fhir:v "http://kidneyfailurerisk.com/#about-the-equation"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "Has Abnormal eGFR" ]
+         ]
+       ] ) ;
+       fhir:dynamicValue ( [
+         fhir:path [ fhir:v "action.description" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "5-YearRiskDetail" ]
+         ]
+       ] [
+         fhir:path [ fhir:v "activity.extension" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "5-YearRiskSeverity" ]
+         ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "Recommend Nephrology Referral" ] ;
+       fhir:documentation ( [
+         fhir:type [ fhir:v "documentation" ] ;
+         fhir:display [ fhir:v "National Kidney Disease Education Program" ] ;
+         fhir:url [ fhir:v "https://www.niddk.nih.gov/health-information/communication-programs/nkdep"^^xsd:anyURI ] ;
+         fhir:document [
+           fhir:url [ fhir:v "https://www.niddk.nih.gov/health-information/communication-programs/nkdep"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "Recommend Nephrology Referral" ]
+         ]
+       ] ) ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/action-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "create" ]
+         ] )
+       ] ;
+       fhir:definition [
+         fhir:v "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology>
+       ] ;
+       fhir:dynamicValue ( [
+         fhir:path [ fhir:v "action.description" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "NephrologyReferralDetail" ]
+         ]
+       ] [
+         fhir:path [ fhir:v "activity.extension" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "NephrologyReferralSeverity" ]
+         ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ckd-valueset-ckd",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ckd-valueset-ckd</b></p><a name=\"ckd-valueset-ckd\"> </a><a name=\"hcckd-valueset-ckd\"> </a><a name=\"ckd-valueset-ckd-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/709044004\">709044004</a></td><td style=\"color: #cccccc\">Chronic kidney disease</td></tr></table></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 709044004 (Chronic kidney disease)</li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd",
+  "version" : "1.0.0",
+  "name" : "ChronicRenalDiseaseFinding",
+  "title" : "Chronic Renal Disease Finding ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-11-18T18:15:24+00:00",
+  "publisher" : "HL7 International - Clinical Decision Support WG",
+  "contact" : [{
+    "name" : "HL7 International - Clinical Decision Support WG",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss/index.cfm"
+    }]
+  }],
+  "description" : "Chronic renal disease finding",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "709044004"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "709044004"
+      }]
+    }]
+  }
+}

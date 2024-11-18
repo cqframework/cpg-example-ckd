@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ckd-valueset-uacr"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ckd-valueset-uacr</b></p><a name=\"ckd-valueset-uacr\"> </a><a name=\"hcckd-valueset-uacr\"> </a><a name=\"ckd-valueset-uacr-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/44292-1/\">44292-1</a></td><td style=\"color: #cccccc\">Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/13705-9/\">13705-9</a></td><td style=\"color: #cccccc\">Albumin/Creatinine [Mass Ratio] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/14958-3/\">14958-3</a></td><td style=\"color: #cccccc\">Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/9318-7/\">9318-7</a></td><td style=\"color: #cccccc\">Albumin/Creatinine [Mass Ratio] in Urine</td></tr><tr><td><a href=\"https://loinc.org/30001-2/\">30001-2</a></td><td style=\"color: #cccccc\">Microalbumin/Creatinine [Ratio] in Urine by Test strip</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "UacrLabResults"] ; # 
+  fhir:title [ fhir:v "UACR Lab Results ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-18T18:15:24+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/dss/index.cfm" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "UACR Lab Results"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "44292-1" ]
+       ] [
+         fhir:code [ fhir:v "13705-9" ]
+       ] [
+         fhir:code [ fhir:v "14958-3" ]
+       ] [
+         fhir:code [ fhir:v "9318-7" ]
+       ] [
+         fhir:code [ fhir:v "30001-2" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

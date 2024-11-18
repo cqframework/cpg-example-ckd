@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="CKDRiskLogic"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Library CKDRiskLogic</b></p><a name="CKDRiskLogic"> </a><a name="hcCKDRiskLogic"> </a><a name="CKDRiskLogic-en-US"> </a><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library CKDRiskLogic version '1.0'
+
+using FHIR version '4.0.0'
+
+include FHIRHelpers version '4.0.0' called FHIRHelpers
+
+codesystem &quot;SNOMEDCT&quot;: 'http://snomed.info/sct'
+codesystem &quot;LOINC&quot;: 'http://loinc.org'
+codesystem &quot;RxNorm&quot;: 'http://www.nlm.nih.gov/research/umls/rxnorm'
+
+valueset &quot;Chronic Kidney Disease&quot;: 'ckd-valueset-ckd'
+valueset &quot;Diabetes mellitus&quot;: 'ckd-valueset-diabetes'
+
+valueset &quot;eGFR Labs&quot;: 'ckd-valueset-egfr'
+valueset &quot;UACR Labs&quot;: 'ckd-valueset-uacr'
+valueset &quot;Creatinine Labs&quot;: 'ckd-valueset-creatinine'
+
+code &quot;Blood pressure systolic and diastolic&quot;: '55284-4' from &quot;LOINC&quot;
+
+context Patient
+
+// Conditions
+//
+define &quot;Has CKD or Diabetes&quot;:
+  &quot;Has CKD&quot; or &quot;Has Diabetes&quot;
+
+define &quot;Has CKD&quot;:
+  exists( &quot;Chronic Kidney Disease Dx&quot; )
+
+define &quot;No CKD Dx&quot;:
+  not exists( &quot;Chronic Kidney Disease Dx&quot; )
+
+define &quot;Has Diabetes&quot;:
+  exists( &quot;Diabetes Dx&quot; )
+
+define &quot;CKD or Diabetes Dx&quot;:
+  &quot;Chronic Kidney Disease Dx&quot; union &quot;Diabetes Dx&quot;
+
+define &quot;Chronic Kidney Disease Dx&quot;:
+  [Condition: code in &quot;Chronic Kidney Disease&quot;] condition
+    where condition.clinicalStatus.value in { 'active', 'recurrence' }
+
+define &quot;Diabetes Dx&quot;:
+  [Condition: code in &quot;Diabetes mellitus&quot;] condition
+    where condition.clinicalStatus.value in { 'active', 'recurrence' }
+
+// Laboratory observations
+//
+define &quot;Has eGFR or UACR Lab&quot;:
+  &quot;Last eGFR Lab Result&quot; is not null
+	or &quot;Last UACR Lab Result&quot; is not null
+
+define &quot;Last eGFR Lab Result&quot;:
+  Last( [Observation: code in &quot;eGFR Labs&quot;] )
+
+define &quot;Last eGFR Quantity&quot;:
+  &quot;Last eGFR Lab Result&quot; Result
+    return ToQuantity(Result.value as Quantity)
+
+define &quot;Has Abnormal eGFR&quot;:
+  &quot;Last eGFR Quantity&quot;.value &lt; 60
+
+define &quot;Last UACR Lab Result&quot;:
+  Last( [Observation: code in &quot;UACR Labs&quot;] )
+
+define &quot;Last UACR Quantity&quot;:
+  &quot;Last UACR Lab Result&quot; Result
+    return ToQuantity(Result.value as Quantity)
+
+define &quot;Has Abnormal UACR&quot;:
+  &quot;Last UACR Quantity&quot; uacr
+    return UACRtoMetric(uacr).value &gt; 30
+
+define &quot;Last Creatinine Lab Result&quot;:
+  Last( [Observation: code in &quot;Creatinine Labs&quot;] )
+
+define &quot;Last Creatinine Quantity&quot;:
+  &quot;Last Creatinine Lab Result&quot; Result
+    return ToQuantity(Result.value as Quantity)
+
+define &quot;Needs eGFR Lab&quot;:
+	&quot;eGFR Lab is Overdue&quot;
+		or (&quot;eGFR Lab Frequency&quot; is not null and &quot;Last eGFR Lab Result&quot; is null)
+
+define &quot;eGFR Lab Frequency&quot;:
+	case
+		when &quot;CKD Stage&quot; &gt;= 4
+			then 3 months
+		when &quot;CKD Stage&quot; &gt;= 3
+			then 6 months
+		when &quot;Has CKD or Diabetes&quot;
+			then 12 months
+		else null
+	end
+
+define &quot;eGFR Lab is Overdue&quot;:
+  &quot;Last eGFR Lab Result&quot; Result
+    return
+      case
+        when Result.effective is null
+          then true
+        when Result.effective is dateTime
+          then (Result.effective.value + &quot;eGFR Lab Frequency&quot;) &lt; Today()
+        when Result.effective is Period
+          then (end of PeriodToInterval(Result.effective) + &quot;eGFR Lab Frequency&quot;) &lt; Today()
+        else false
+      end
+
+define NeedsGFRSummary: 'Order Renal Lab Panel'
+
+define NeedsGFRDetail:
+	case
+		when &quot;CKD Stage&quot; &gt;= 1
+			then 'eGFR lab recommended every ' + ToString(&quot;eGFR Lab Frequency&quot;) + ' for Stage ' + ToString(&quot;CKD Stage&quot;) + ' CKD.'
+		when &quot;Has CKD or Diabetes&quot;
+			then 'eGFR lab recommended every ' + ToString(&quot;eGFR Lab Frequency&quot;) + ' for CKD or Diabetes.'
+		else null
+	end
+
+define NeedsGFRSeverity: 'info'
+
+define &quot;CKD Stage&quot;:
+  &quot;Last eGFR Quantity&quot; egfr
+  	return case
+      when egfr.value &lt; 15
+    		then 5
+    	when egfr.value &lt; 30
+    		then 4
+    	when egfr.value &lt; 60
+    		then 3
+    	when egfr.value &lt; 90
+    		then 2
+    	when egfr.value &gt;= 90
+        // TODO this does not parse
+        //case  when UACRtoMetric(&quot;Get UACR Quantity&quot;).value &gt; 20
+  		  //  then 1
+        //else 0
+        //end
+        then 0
+      else 0
+  	end
+
+// Referrals
+//
+define &quot;Recommend Nephrology Referral&quot;:
+	&quot;5-Year Risk Level&quot; = 'High'
+
+define NephrologyReferralDetail: 'Referral to a nephrologist is recommended when 5-year risk is High'
+
+define NephrologyReferralSeverity: 'info'
+
+//
+// Tangri CKD risk model
+//
+// 4 variable
+// 1 – 0.9750 ^ exp (-0.2201 × (age/10 – 7.036) + 0.2467 × (male – 0.5642) – 0.5567 × (eGFR/5 – 7.222) + 0.4510 × (logACR – 5.137))
+// 5 year factor =  0.9240
+//
+// 8 variable
+// 1 – 0.9780 ^ exp (-0.1992 × (age/10 – 7.036) + 0.1602 × (male – 0.5642) – 0.4919 × (eGFR/5 – 7.222) + 0.3364 × (logACR – 5.137)
+//		– 0.3441 × (albumin – 3.997) + 0.2604 × (phosphorous – 3.916) – 0.07354 × (bicarbonate – 25.57) – 0.2228 × (calcium – 9.355))
+// 5 year factor = 0.9301
+
+define &quot;2-YearRiskDetail&quot;:
+	'2-year kidney failure risk of ' + ToString(&quot;2-Year CKD Risk Percent&quot;) + '% is considered to be ' + &quot;2-Year Risk Level&quot; + ' risk.'
+
+define &quot;5-YearRiskDetail&quot;:
+	'5-year kidney failure risk of ' + ToString(&quot;5-Year CKD Risk Percent&quot;) + '% is considered to be ' + &quot;5-Year Risk Level&quot; + ' risk.'
+
+define &quot;2-YearRiskSeverity&quot;: if &quot;2-Year Risk Level&quot; = 'High' then 'warning' else 'info'
+
+define &quot;5-YearRiskSeverity&quot;: if &quot;5-Year Risk Level&quot; = 'High' then 'warning' else 'info'
+
+define &quot;2-Year CKD Risk Percent&quot;:
+  &quot;2-Year CKD Risk&quot; risk
+    return Round(risk * 100, 2)
+
+define &quot;5-Year CKD Risk Percent&quot;:
+  &quot;5-Year CKD Risk&quot; risk
+    return Round(risk * 100, 2)
+
+define &quot;2-Year CKD Risk&quot;:
+  &quot;Last eGFR Quantity&quot; egfr
+    return calculateCkdRisk(0.9750, 0, AgeInYears(), egfr, UACRtoMetric(&quot;Last UACR Quantity&quot;))
+
+define &quot;5-Year CKD Risk&quot;:
+  &quot;Last eGFR Quantity&quot; egfr
+    return calculateCkdRisk(0.9240, 0, AgeInYears(), egfr, UACRtoMetric(&quot;Last UACR Quantity&quot;))
+
+// The ckdFactor is a variable determined by (Non-) North American location and whether calculation is 2 or 5 year prediction
+define function calculateCkdRisk(ckdFactor Decimal, sex Integer, age Integer, egfr System.Quantity, acr System.Quantity):
+  1.0 - Power(ckdFactor, Exp(-0.2201 * (age / 10 - 7.036) + 0.2467 * (sex - 0.5642) - 0.5567 * (egfr.value / 5 - 7.222) + 0.4510 * (Ln(acr.value) - 5.137)))
+
+define &quot;2-Year Risk Level&quot;:
+  &quot;2-Year CKD Risk Percent&quot; riskPercent
+  	return case
+      when riskPercent &lt; 5
+    		then 'Low'
+    	when riskPercent &lt; 15
+    		then 'Intermediate'
+    	when riskPercent &gt; 15
+    		then 'High'
+      else null
+  	end
+
+define &quot;5-Year Risk Level&quot;:
+  &quot;5-Year CKD Risk Percent&quot; riskPercent
+  	return case
+      when riskPercent &lt; 5
+    		then 'Low'
+    	when riskPercent &lt; 15
+    		then 'Intermediate'
+    	when riskPercent &gt; 15
+    		then 'High'
+      else null
+  	end
+
+// Conversion functions
+
+define function PeriodToInterval(value FHIR.Period):
+	Interval[value.&quot;start&quot;.value, value.&quot;end&quot;.value]
+
+define function CodingToCode(coding FHIR.Coding):
+	System.Code {
+		code: coding.code.value,
+		system: coding.system.value,
+		version: coding.version.value,
+		display: coding.display.value
+	}
+
+define function ToConcept(concept FHIR.CodeableConcept):
+    System.Concept {
+        codes: concept.coding C return CodingToCode(C),
+        display: concept.text.value
+    }
+
+define function ToQuantity(quantity FHIR.Quantity):
+    System.Quantity {
+        value: quantity.value.value,
+        unit: quantity.unit.value
+    }
+
+define function UACRtoMetric(qty System.Quantity):
+	case when qty.unit = 'mg/mmol creatinine' then
+		System.Quantity { value: qty.value * 8.84, unit: 'mg/g' }
+	when qty.unit = 'mg/g' then
+    qty
+	else
+    // unknown units, ignore this quantity in calculation
+		null
+	end
+
+define function ToMetric(qty System.Quantity):
+	case when qty.unit = 'lb' then
+		System.Quantity { value: qty.value * 0.454, unit: 'kg' }
+	when qty.unit = 'in' then
+		System.Quantity { value: qty.value * 0.0254, unit: 'm' }
+	else
+		qty
+	end
+</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic"/>
+  <version value="1.0.0"/>
+  <name value="CKDRiskLogic"/>
+  <title value="Chronic Kidney Disease (CKD) risk screening logic"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <date value="2024-11-18T18:15:24+00:00"/>
+  <publisher value="HL7 International - Clinical Decision Support WG"/>
+  <contact>
+    <name value="HL7 International - Clinical Decision Support WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Chronic Kidney Disease (CKD) risk screening logic"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content>
+    <contentType value="text/cql"/>
+    <data value="bGlicmFyeSBDS0RSaXNrTG9naWMgdmVyc2lvbiAnMS4wJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMCcKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjAnIGNhbGxlZCBGSElSSGVscGVycwoKY29kZXN5c3RlbSAiU05PTUVEQ1QiOiAnaHR0cDovL3Nub21lZC5pbmZvL3NjdCcKY29kZXN5c3RlbSAiTE9JTkMiOiAnaHR0cDovL2xvaW5jLm9yZycKY29kZXN5c3RlbSAiUnhOb3JtIjogJ2h0dHA6Ly93d3cubmxtLm5paC5nb3YvcmVzZWFyY2gvdW1scy9yeG5vcm0nCgp2YWx1ZXNldCAiQ2hyb25pYyBLaWRuZXkgRGlzZWFzZSI6ICdja2QtdmFsdWVzZXQtY2tkJwp2YWx1ZXNldCAiRGlhYmV0ZXMgbWVsbGl0dXMiOiAnY2tkLXZhbHVlc2V0LWRpYWJldGVzJwoKdmFsdWVzZXQgImVHRlIgTGFicyI6ICdja2QtdmFsdWVzZXQtZWdmcicKdmFsdWVzZXQgIlVBQ1IgTGFicyI6ICdja2QtdmFsdWVzZXQtdWFjcicKdmFsdWVzZXQgIkNyZWF0aW5pbmUgTGFicyI6ICdja2QtdmFsdWVzZXQtY3JlYXRpbmluZScKCmNvZGUgIkJsb29kIHByZXNzdXJlIHN5c3RvbGljIGFuZCBkaWFzdG9saWMiOiAnNTUyODQtNCcgZnJvbSAiTE9JTkMiCgpjb250ZXh0IFBhdGllbnQKCi8vIENvbmRpdGlvbnMKLy8KZGVmaW5lICJIYXMgQ0tEIG9yIERpYWJldGVzIjoKICAiSGFzIENLRCIgb3IgIkhhcyBEaWFiZXRlcyIKCmRlZmluZSAiSGFzIENLRCI6CiAgZXhpc3RzKCAiQ2hyb25pYyBLaWRuZXkgRGlzZWFzZSBEeCIgKQoKZGVmaW5lICJObyBDS0QgRHgiOgogIG5vdCBleGlzdHMoICJDaHJvbmljIEtpZG5leSBEaXNlYXNlIER4IiApCgpkZWZpbmUgIkhhcyBEaWFiZXRlcyI6CiAgZXhpc3RzKCAiRGlhYmV0ZXMgRHgiICkKCmRlZmluZSAiQ0tEIG9yIERpYWJldGVzIER4IjoKICAiQ2hyb25pYyBLaWRuZXkgRGlzZWFzZSBEeCIgdW5pb24gIkRpYWJldGVzIER4IgoKZGVmaW5lICJDaHJvbmljIEtpZG5leSBEaXNlYXNlIER4IjoKICBbQ29uZGl0aW9uOiBjb2RlIGluICJDaHJvbmljIEtpZG5leSBEaXNlYXNlIl0gY29uZGl0aW9uCiAgICB3aGVyZSBjb25kaXRpb24uY2xpbmljYWxTdGF0dXMudmFsdWUgaW4geyAnYWN0aXZlJywgJ3JlY3VycmVuY2UnIH0KCmRlZmluZSAiRGlhYmV0ZXMgRHgiOgogIFtDb25kaXRpb246IGNvZGUgaW4gIkRpYWJldGVzIG1lbGxpdHVzIl0gY29uZGl0aW9uCiAgICB3aGVyZSBjb25kaXRpb24uY2xpbmljYWxTdGF0dXMudmFsdWUgaW4geyAnYWN0aXZlJywgJ3JlY3VycmVuY2UnIH0KCi8vIExhYm9yYXRvcnkgb2JzZXJ2YXRpb25zCi8vCmRlZmluZSAiSGFzIGVHRlIgb3IgVUFDUiBMYWIiOgogICJMYXN0IGVHRlIgTGFiIFJlc3VsdCIgaXMgbm90IG51bGwKCW9yICJMYXN0IFVBQ1IgTGFiIFJlc3VsdCIgaXMgbm90IG51bGwKCmRlZmluZSAiTGFzdCBlR0ZSIExhYiBSZXN1bHQiOgogIExhc3QoIFtPYnNlcnZhdGlvbjogY29kZSBpbiAiZUdGUiBMYWJzIl0gKQoKZGVmaW5lICJMYXN0IGVHRlIgUXVhbnRpdHkiOgogICJMYXN0IGVHRlIgTGFiIFJlc3VsdCIgUmVzdWx0CiAgICByZXR1cm4gVG9RdWFudGl0eShSZXN1bHQudmFsdWUgYXMgUXVhbnRpdHkpCgpkZWZpbmUgIkhhcyBBYm5vcm1hbCBlR0ZSIjoKICAiTGFzdCBlR0ZSIFF1YW50aXR5Ii52YWx1ZSA8IDYwCgpkZWZpbmUgIkxhc3QgVUFDUiBMYWIgUmVzdWx0IjoKICBMYXN0KCBbT2JzZXJ2YXRpb246IGNvZGUgaW4gIlVBQ1IgTGFicyJdICkKCmRlZmluZSAiTGFzdCBVQUNSIFF1YW50aXR5IjoKICAiTGFzdCBVQUNSIExhYiBSZXN1bHQiIFJlc3VsdAogICAgcmV0dXJuIFRvUXVhbnRpdHkoUmVzdWx0LnZhbHVlIGFzIFF1YW50aXR5KQoKZGVmaW5lICJIYXMgQWJub3JtYWwgVUFDUiI6CiAgIkxhc3QgVUFDUiBRdWFudGl0eSIgdWFjcgogICAgcmV0dXJuIFVBQ1J0b01ldHJpYyh1YWNyKS52YWx1ZSA+IDMwCgpkZWZpbmUgIkxhc3QgQ3JlYXRpbmluZSBMYWIgUmVzdWx0IjoKICBMYXN0KCBbT2JzZXJ2YXRpb246IGNvZGUgaW4gIkNyZWF0aW5pbmUgTGFicyJdICkKCmRlZmluZSAiTGFzdCBDcmVhdGluaW5lIFF1YW50aXR5IjoKICAiTGFzdCBDcmVhdGluaW5lIExhYiBSZXN1bHQiIFJlc3VsdAogICAgcmV0dXJuIFRvUXVhbnRpdHkoUmVzdWx0LnZhbHVlIGFzIFF1YW50aXR5KQoKZGVmaW5lICJOZWVkcyBlR0ZSIExhYiI6CgkiZUdGUiBMYWIgaXMgT3ZlcmR1ZSIKCQlvciAoImVHRlIgTGFiIEZyZXF1ZW5jeSIgaXMgbm90IG51bGwgYW5kICJMYXN0IGVHRlIgTGFiIFJlc3VsdCIgaXMgbnVsbCkKCmRlZmluZSAiZUdGUiBMYWIgRnJlcXVlbmN5IjoKCWNhc2UKCQl3aGVuICJDS0QgU3RhZ2UiID49IDQKCQkJdGhlbiAzIG1vbnRocwoJCXdoZW4gIkNLRCBTdGFnZSIgPj0gMwoJCQl0aGVuIDYgbW9udGhzCgkJd2hlbiAiSGFzIENLRCBvciBEaWFiZXRlcyIKCQkJdGhlbiAxMiBtb250aHMKCQllbHNlIG51bGwKCWVuZAoKZGVmaW5lICJlR0ZSIExhYiBpcyBPdmVyZHVlIjoKICAiTGFzdCBlR0ZSIExhYiBSZXN1bHQiIFJlc3VsdAogICAgcmV0dXJuCiAgICAgIGNhc2UKICAgICAgICB3aGVuIFJlc3VsdC5lZmZlY3RpdmUgaXMgbnVsbAogICAgICAgICAgdGhlbiB0cnVlCiAgICAgICAgd2hlbiBSZXN1bHQuZWZmZWN0aXZlIGlzIGRhdGVUaW1lCiAgICAgICAgICB0aGVuIChSZXN1bHQuZWZmZWN0aXZlLnZhbHVlICsgImVHRlIgTGFiIEZyZXF1ZW5jeSIpIDwgVG9kYXkoKQogICAgICAgIHdoZW4gUmVzdWx0LmVmZmVjdGl2ZSBpcyBQZXJpb2QKICAgICAgICAgIHRoZW4gKGVuZCBvZiBQZXJpb2RUb0ludGVydmFsKFJlc3VsdC5lZmZlY3RpdmUpICsgImVHRlIgTGFiIEZyZXF1ZW5jeSIpIDwgVG9kYXkoKQogICAgICAgIGVsc2UgZmFsc2UKICAgICAgZW5kCgpkZWZpbmUgTmVlZHNHRlJTdW1tYXJ5OiAnT3JkZXIgUmVuYWwgTGFiIFBhbmVsJwoKZGVmaW5lIE5lZWRzR0ZSRGV0YWlsOgoJY2FzZQoJCXdoZW4gIkNLRCBTdGFnZSIgPj0gMQoJCQl0aGVuICdlR0ZSIGxhYiByZWNvbW1lbmRlZCBldmVyeSAnICsgVG9TdHJpbmcoImVHRlIgTGFiIEZyZXF1ZW5jeSIpICsgJyBmb3IgU3RhZ2UgJyArIFRvU3RyaW5nKCJDS0QgU3RhZ2UiKSArICcgQ0tELicKCQl3aGVuICJIYXMgQ0tEIG9yIERpYWJldGVzIgoJCQl0aGVuICdlR0ZSIGxhYiByZWNvbW1lbmRlZCBldmVyeSAnICsgVG9TdHJpbmcoImVHRlIgTGFiIEZyZXF1ZW5jeSIpICsgJyBmb3IgQ0tEIG9yIERpYWJldGVzLicKCQllbHNlIG51bGwKCWVuZAoKZGVmaW5lIE5lZWRzR0ZSU2V2ZXJpdHk6ICdpbmZvJwoKZGVmaW5lICJDS0QgU3RhZ2UiOgogICJMYXN0IGVHRlIgUXVhbnRpdHkiIGVnZnIKICAJcmV0dXJuIGNhc2UKICAgICAgd2hlbiBlZ2ZyLnZhbHVlIDwgMTUKICAgIAkJdGhlbiA1CiAgICAJd2hlbiBlZ2ZyLnZhbHVlIDwgMzAKICAgIAkJdGhlbiA0CiAgICAJd2hlbiBlZ2ZyLnZhbHVlIDwgNjAKICAgIAkJdGhlbiAzCiAgICAJd2hlbiBlZ2ZyLnZhbHVlIDwgOTAKICAgIAkJdGhlbiAyCiAgICAJd2hlbiBlZ2ZyLnZhbHVlID49IDkwCiAgICAgICAgLy8gVE9ETyB0aGlzIGRvZXMgbm90IHBhcnNlCiAgICAgICAgLy9jYXNlICB3aGVuIFVBQ1J0b01ldHJpYygiR2V0IFVBQ1IgUXVhbnRpdHkiKS52YWx1ZSA+IDIwCiAgCQkgIC8vICB0aGVuIDEKICAgICAgICAvL2Vsc2UgMAogICAgICAgIC8vZW5kCiAgICAgICAgdGhlbiAwCiAgICAgIGVsc2UgMAogIAllbmQKCi8vIFJlZmVycmFscwovLwpkZWZpbmUgIlJlY29tbWVuZCBOZXBocm9sb2d5IFJlZmVycmFsIjoKCSI1LVllYXIgUmlzayBMZXZlbCIgPSAnSGlnaCcKCmRlZmluZSBOZXBocm9sb2d5UmVmZXJyYWxEZXRhaWw6ICdSZWZlcnJhbCB0byBhIG5lcGhyb2xvZ2lzdCBpcyByZWNvbW1lbmRlZCB3aGVuIDUteWVhciByaXNrIGlzIEhpZ2gnCgpkZWZpbmUgTmVwaHJvbG9neVJlZmVycmFsU2V2ZXJpdHk6ICdpbmZvJwoKLy8KLy8gVGFuZ3JpIENLRCByaXNrIG1vZGVsCi8vCi8vIDQgdmFyaWFibGUKLy8gMSDigJMgMC45NzUwIF4gZXhwICgtMC4yMjAxIMOXIChhZ2UvMTAg4oCTIDcuMDM2KSArIDAuMjQ2NyDDlyAobWFsZSDigJMgMC41NjQyKSDigJMgMC41NTY3IMOXIChlR0ZSLzUg4oCTIDcuMjIyKSArIDAuNDUxMCDDlyAobG9nQUNSIOKAkyA1LjEzNykpCi8vIDUgeWVhciBmYWN0b3IgPSAgMC45MjQwCi8vCi8vIDggdmFyaWFibGUKLy8gMSDigJMgMC45NzgwIF4gZXhwICgtMC4xOTkyIMOXIChhZ2UvMTAg4oCTIDcuMDM2KSArIDAuMTYwMiDDlyAobWFsZSDigJMgMC41NjQyKSDigJMgMC40OTE5IMOXIChlR0ZSLzUg4oCTIDcuMjIyKSArIDAuMzM2NCDDlyAobG9nQUNSIOKAkyA1LjEzNykKLy8JCeKAkyAwLjM0NDEgw5cgKGFsYnVtaW4g4oCTIDMuOTk3KSArIDAuMjYwNCDDlyAocGhvc3Bob3JvdXMg4oCTIDMuOTE2KSDigJMgMC4wNzM1NCDDlyAoYmljYXJib25hdGUg4oCTIDI1LjU3KSDigJMgMC4yMjI4IMOXIChjYWxjaXVtIOKAkyA5LjM1NSkpCi8vIDUgeWVhciBmYWN0b3IgPSAwLjkzMDEKCmRlZmluZSAiMi1ZZWFyUmlza0RldGFpbCI6CgknMi15ZWFyIGtpZG5leSBmYWlsdXJlIHJpc2sgb2YgJyArIFRvU3RyaW5nKCIyLVllYXIgQ0tEIFJpc2sgUGVyY2VudCIpICsgJyUgaXMgY29uc2lkZXJlZCB0byBiZSAnICsgIjItWWVhciBSaXNrIExldmVsIiArICcgcmlzay4nCgpkZWZpbmUgIjUtWWVhclJpc2tEZXRhaWwiOgoJJzUteWVhciBraWRuZXkgZmFpbHVyZSByaXNrIG9mICcgKyBUb1N0cmluZygiNS1ZZWFyIENLRCBSaXNrIFBlcmNlbnQiKSArICclIGlzIGNvbnNpZGVyZWQgdG8gYmUgJyArICI1LVllYXIgUmlzayBMZXZlbCIgKyAnIHJpc2suJwoKZGVmaW5lICIyLVllYXJSaXNrU2V2ZXJpdHkiOiBpZiAiMi1ZZWFyIFJpc2sgTGV2ZWwiID0gJ0hpZ2gnIHRoZW4gJ3dhcm5pbmcnIGVsc2UgJ2luZm8nCgpkZWZpbmUgIjUtWWVhclJpc2tTZXZlcml0eSI6IGlmICI1LVllYXIgUmlzayBMZXZlbCIgPSAnSGlnaCcgdGhlbiAnd2FybmluZycgZWxzZSAnaW5mbycKCmRlZmluZSAiMi1ZZWFyIENLRCBSaXNrIFBlcmNlbnQiOgogICIyLVllYXIgQ0tEIFJpc2siIHJpc2sKICAgIHJldHVybiBSb3VuZChyaXNrICogMTAwLCAyKQoKZGVmaW5lICI1LVllYXIgQ0tEIFJpc2sgUGVyY2VudCI6CiAgIjUtWWVhciBDS0QgUmlzayIgcmlzawogICAgcmV0dXJuIFJvdW5kKHJpc2sgKiAxMDAsIDIpCgpkZWZpbmUgIjItWWVhciBDS0QgUmlzayI6CiAgIkxhc3QgZUdGUiBRdWFudGl0eSIgZWdmcgogICAgcmV0dXJuIGNhbGN1bGF0ZUNrZFJpc2soMC45NzUwLCAwLCBBZ2VJblllYXJzKCksIGVnZnIsIFVBQ1J0b01ldHJpYygiTGFzdCBVQUNSIFF1YW50aXR5IikpCgpkZWZpbmUgIjUtWWVhciBDS0QgUmlzayI6CiAgIkxhc3QgZUdGUiBRdWFudGl0eSIgZWdmcgogICAgcmV0dXJuIGNhbGN1bGF0ZUNrZFJpc2soMC45MjQwLCAwLCBBZ2VJblllYXJzKCksIGVnZnIsIFVBQ1J0b01ldHJpYygiTGFzdCBVQUNSIFF1YW50aXR5IikpCgovLyBUaGUgY2tkRmFjdG9yIGlzIGEgdmFyaWFibGUgZGV0ZXJtaW5lZCBieSAoTm9uLSkgTm9ydGggQW1lcmljYW4gbG9jYXRpb24gYW5kIHdoZXRoZXIgY2FsY3VsYXRpb24gaXMgMiBvciA1IHllYXIgcHJlZGljdGlvbgpkZWZpbmUgZnVuY3Rpb24gY2FsY3VsYXRlQ2tkUmlzayhja2RGYWN0b3IgRGVjaW1hbCwgc2V4IEludGVnZXIsIGFnZSBJbnRlZ2VyLCBlZ2ZyIFN5c3RlbS5RdWFudGl0eSwgYWNyIFN5c3RlbS5RdWFudGl0eSk6CiAgMS4wIC0gUG93ZXIoY2tkRmFjdG9yLCBFeHAoLTAuMjIwMSAqIChhZ2UgLyAxMCAtIDcuMDM2KSArIDAuMjQ2NyAqIChzZXggLSAwLjU2NDIpIC0gMC41NTY3ICogKGVnZnIudmFsdWUgLyA1IC0gNy4yMjIpICsgMC40NTEwICogKExuKGFjci52YWx1ZSkgLSA1LjEzNykpKQoKZGVmaW5lICIyLVllYXIgUmlzayBMZXZlbCI6CiAgIjItWWVhciBDS0QgUmlzayBQZXJjZW50IiByaXNrUGVyY2VudAogIAlyZXR1cm4gY2FzZQogICAgICB3aGVuIHJpc2tQZXJjZW50IDwgNQogICAgCQl0aGVuICdMb3cnCiAgICAJd2hlbiByaXNrUGVyY2VudCA8IDE1CiAgICAJCXRoZW4gJ0ludGVybWVkaWF0ZScKICAgIAl3aGVuIHJpc2tQZXJjZW50ID4gMTUKICAgIAkJdGhlbiAnSGlnaCcKICAgICAgZWxzZSBudWxsCiAgCWVuZAoKZGVmaW5lICI1LVllYXIgUmlzayBMZXZlbCI6CiAgIjUtWWVhciBDS0QgUmlzayBQZXJjZW50IiByaXNrUGVyY2VudAogIAlyZXR1cm4gY2FzZQogICAgICB3aGVuIHJpc2tQZXJjZW50IDwgNQogICAgCQl0aGVuICdMb3cnCiAgICAJd2hlbiByaXNrUGVyY2VudCA8IDE1CiAgICAJCXRoZW4gJ0ludGVybWVkaWF0ZScKICAgIAl3aGVuIHJpc2tQZXJjZW50ID4gMTUKICAgIAkJdGhlbiAnSGlnaCcKICAgICAgZWxzZSBudWxsCiAgCWVuZAoKLy8gQ29udmVyc2lvbiBmdW5jdGlvbnMKCmRlZmluZSBmdW5jdGlvbiBQZXJpb2RUb0ludGVydmFsKHZhbHVlIEZISVIuUGVyaW9kKToKCUludGVydmFsW3ZhbHVlLiJzdGFydCIudmFsdWUsIHZhbHVlLiJlbmQiLnZhbHVlXQoKZGVmaW5lIGZ1bmN0aW9uIENvZGluZ1RvQ29kZShjb2RpbmcgRkhJUi5Db2RpbmcpOgoJU3lzdGVtLkNvZGUgewoJCWNvZGU6IGNvZGluZy5jb2RlLnZhbHVlLAoJCXN5c3RlbTogY29kaW5nLnN5c3RlbS52YWx1ZSwKCQl2ZXJzaW9uOiBjb2RpbmcudmVyc2lvbi52YWx1ZSwKCQlkaXNwbGF5OiBjb2RpbmcuZGlzcGxheS52YWx1ZQoJfQoKZGVmaW5lIGZ1bmN0aW9uIFRvQ29uY2VwdChjb25jZXB0IEZISVIuQ29kZWFibGVDb25jZXB0KToKICAgIFN5c3RlbS5Db25jZXB0IHsKICAgICAgICBjb2RlczogY29uY2VwdC5jb2RpbmcgQyByZXR1cm4gQ29kaW5nVG9Db2RlKEMpLAogICAgICAgIGRpc3BsYXk6IGNvbmNlcHQudGV4dC52YWx1ZQogICAgfQoKZGVmaW5lIGZ1bmN0aW9uIFRvUXVhbnRpdHkocXVhbnRpdHkgRkhJUi5RdWFudGl0eSk6CiAgICBTeXN0ZW0uUXVhbnRpdHkgewogICAgICAgIHZhbHVlOiBxdWFudGl0eS52YWx1ZS52YWx1ZSwKICAgICAgICB1bml0OiBxdWFudGl0eS51bml0LnZhbHVlCiAgICB9CgpkZWZpbmUgZnVuY3Rpb24gVUFDUnRvTWV0cmljKHF0eSBTeXN0ZW0uUXVhbnRpdHkpOgoJY2FzZSB3aGVuIHF0eS51bml0ID0gJ21nL21tb2wgY3JlYXRpbmluZScgdGhlbgoJCVN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOiBxdHkudmFsdWUgKiA4Ljg0LCB1bml0OiAnbWcvZycgfQoJd2hlbiBxdHkudW5pdCA9ICdtZy9nJyB0aGVuCiAgICBxdHkKCWVsc2UKICAgIC8vIHVua25vd24gdW5pdHMsIGlnbm9yZSB0aGlzIHF1YW50aXR5IGluIGNhbGN1bGF0aW9uCgkJbnVsbAoJZW5kCgpkZWZpbmUgZnVuY3Rpb24gVG9NZXRyaWMocXR5IFN5c3RlbS5RdWFudGl0eSk6CgljYXNlIHdoZW4gcXR5LnVuaXQgPSAnbGInIHRoZW4KCQlTeXN0ZW0uUXVhbnRpdHkgeyB2YWx1ZTogcXR5LnZhbHVlICogMC40NTQsIHVuaXQ6ICdrZycgfQoJd2hlbiBxdHkudW5pdCA9ICdpbicgdGhlbgoJCVN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOiBxdHkudmFsdWUgKiAwLjAyNTQsIHVuaXQ6ICdtJyB9CgllbHNlCgkJcXR5CgllbmQK"/>
+  </content>
+  <content>
+    <contentType value="application/elm+xml"/>
+  </content>
+</Library>

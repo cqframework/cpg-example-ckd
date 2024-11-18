@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="cc-cpg-activity-referral-nephrology"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition cc-cpg-activity-referral-nephrology</b></p><a name="cc-cpg-activity-referral-nephrology"> </a><a name="hccc-cpg-activity-referral-nephrology"> </a><a name="cc-cpg-activity-referral-nephrology-en-US"> </a><p><b>CQF Knowledge capability</b>: shareable</p><p><b>CQF Knowledge capability</b>: computable</p><p><b>CQF Knowledge capability</b>: publishable</p><p><b>CQF knowledge representation level</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-cc-cpg-activity-referral-nephrology.html">ActivityDefinition Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]</a></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ReferralNephrology</p><p><b>title</b>: Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-11-18 18:15:24+0000</p><p><b>publisher</b>: HL7 International - Clinical Decision Support WG</p><p><b>contact</b>: HL7 International - Clinical Decision Support WG: <a href="http://www.hl7.org/Special/committees/dss/index.cfm">http://www.hl7.org/Special/committees/dss/index.cfm</a></p><p><b>description</b>: </p><div><p>Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]</p>
+</div><p><b>jurisdiction</b>: <span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">World</span></p><blockquote><p><b>relatedArtifact</b></p><p><b>type</b>: Justification</p><p><b>display</b>: Refer to nephrologist for co-management of treatment plan in cases of:
+
+
+	Unclear etiology of kidney disease
+
+
+
+	Rapid progression of disease (GFR decline greater than 5 mL/minute/1.73 m&amp;sup2;/year)
+
+
+
+	Acute kidney injury or abrupt sustained fall in GFR
+
+
+
+	GFR less than 30 mL/minute/1.73 m&amp;sup2; (GFR categories G4-G5) to prepare for renal replacement therapy
+
+
+
+	Consistent finding of significant albuminuria (albumin/creatinine ratio of 300 mg/g or more)
+
+
+
+	Hypertension resistant to treatment with 4 or more antihypertensive agents
+
+
+
+	Difficulty in decreasing the level of albuminuria despite institution of ACE inhibitor or angiotensin II receptor blocker therapy
+
+
+
+	Persistent electrolyte abnormalities, including hyperkalemia or high serum phosphate
+
+
+
+	Recurrent or extensive nephrolithiasis
+
+
+
+	Hereditary kidney disease
+
+
+&amp;nbsp;
+
+Nephrologist involvement is recommended when the cause of chronic kidney disease is not clear
+
+
+	Renal biopsy may be performed to determine the cause as well as to predict disease progression and response to therapy</p><p><b>citation</b>: </p><div><p>Chronic Kidney Disease Clinical Overview. ClinicalKey. Source</p>
+</div><p><b>url</b>: <a href="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325">http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325</a></p><h3>Documents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td><a href="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325">http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325</a></td></tr></table></blockquote><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 306286007}">Referral to nephrologist</span></p><p><b>timing</b>: Events: ?? </p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Practitioner</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology"/>
+  <version value="1.0.0"/>
+  <name value="ReferralNephrology"/>
+  <title value="Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-11-18T18:15:24+00:00"/>
+  <publisher value="HL7 International - Clinical Decision Support WG"/>
+  <contact>
+    <name value="HL7 International - Clinical Decision Support WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="justification"/>
+    <display value="Refer to nephrologist for co-management of treatment plan in cases of:&#xA;&#xA;&#xA;&#x9;Unclear etiology of kidney disease&#xA;&#xA;&#xA;&#xA;&#x9;Rapid progression of disease (GFR decline greater than 5 mL/minute/1.73 m&amp;sup2;/year)&#xA;&#xA;&#xA;&#xA;&#x9;Acute kidney injury or abrupt sustained fall in GFR&#xA;&#xA;&#xA;&#xA;&#x9;GFR less than 30 mL/minute/1.73 m&amp;sup2; (GFR categories G4-G5) to prepare for renal replacement therapy&#xA;&#xA;&#xA;&#xA;&#x9;Consistent finding of significant albuminuria (albumin/creatinine ratio of 300 mg/g or more)&#xA;&#xA;&#xA;&#xA;&#x9;Hypertension resistant to treatment with 4 or more antihypertensive agents&#xA;&#xA;&#xA;&#xA;&#x9;Difficulty in decreasing the level of albuminuria despite institution of ACE inhibitor or angiotensin II receptor blocker therapy&#xA;&#xA;&#xA;&#xA;&#x9;Persistent electrolyte abnormalities, including hyperkalemia or high serum phosphate&#xA;&#xA;&#xA;&#xA;&#x9;Recurrent or extensive nephrolithiasis&#xA;&#xA;&#xA;&#xA;&#x9;Hereditary kidney disease&#xA;&#xA;&#xA;&amp;nbsp;&#xA;&#xA;Nephrologist involvement is recommended when the cause of chronic kidney disease is not clear&#xA;&#xA;&#xA;&#x9;Renal biopsy may be performed to determine the cause as well as to predict disease progression and response to therapy"/>
+    <citation value="Chronic Kidney Disease Clinical Overview. ClinicalKey. Source"/>
+    <url value="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325"/>
+    <document>
+      <url value="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325"/>
+    </document>
+  </relatedArtifact>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="306286007"/>
+      <display value="Referral to nephrologist (procedure)"/>
+    </coding>
+    <text value="Referral to nephrologist"/>
+  </code>
+  <timingTiming>
+    <event>
+      <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
+        <valueExpression>
+          <language value="text/cql"/>
+          <expression value="Now()"/>
+        </valueExpression>
+      </extension>
+    </event>
+  </timingTiming>
+  <participant>
+    <type value="practitioner"/>
+  </participant>
+</ActivityDefinition>

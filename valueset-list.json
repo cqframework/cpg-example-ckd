@@ -1,0 +1,49 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ChronicRenalDiseaseFinding",
+      "title" : "Chronic Renal Disease Finding ValueSet",
+      "description" : "Chronic renal disease finding",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CreatinineLabResults",
+      "title" : "Creatinine Lab Results",
+      "description" : "Creatinine Lab Results ValueSet",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DiabetesFindingCodes",
+      "title" : "Diabetes Finding Codes ValueSet",
+      "description" : "Diabetes Finding Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EGFRLabResults",
+      "title" : "eGFR Lab Results ValueSet",
+      "description" : "eGFR Lab Results",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UacrLabResults",
+      "title" : "UACR Lab Results ValueSet",
+      "description" : "UACR Lab Results",
+      "systems" : ["http://loinc.org"]
+    }
+  ]
+}

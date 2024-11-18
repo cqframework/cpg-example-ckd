@@ -1,0 +1,47 @@
+{
+  "package": "hl7.fhir.uv.cpg.ckd",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/cqf-expression": [
+      "ActivityDefinition.timingTiming.event"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
+      "ActivityDefinition",
+      "Library",
+      "PlanDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel": [
+      "ActivityDefinition",
+      "Library",
+      "PlanDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation": [
+      "PlanDefinition.action"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation": [
+      "PlanDefinition.action"
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Chronic Renal Disease Finding ValueSet - Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.15"}
+    h3,h4,h5,h6{--heading-prefix:"2.15"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Chronic Renal Disease Finding ValueSet</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://fhir.org/fhir/uv/cpg/ckd/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-ckd-valueset-ckd.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ckd-valueset-ckd.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ckd-valueset-ckd.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Chronic Renal Disease Finding ValueSet
+(Experimental)
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd<button data-clipboard-text="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button data-clipboard-text="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd|1.0.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-11-18
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ChronicRenalDiseaseFinding</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Chronic renal disease finding</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+  <!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div><p class="res-header-id"><b>Generated Narrative: ValueSet ckd-valueset-ckd</b></p><a name="ckd-valueset-ckd"> </a><a name="hcckd-valueset-ckd"> </a><a name="ckd-valueset-ckd-und"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/709044004">709044004</a></td><td style="color: #cccccc">Chronic kidney disease</td></tr></table></li>
+<li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 709044004 (Chronic kidney disease)</li></ul></div>
+
+  <p>&nbsp;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p><p>This value set expansion contains 112 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-709044004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/709044004">709044004</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-16726004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/16726004">16726004</a></td><td>http://snomed.info/sct</td><td>Renal osteodystrophy</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-46177005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/46177005">46177005</a></td><td>http://snomed.info/sct</td><td>End stage kidney disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-49708008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/49708008">49708008</a></td><td>http://snomed.info/sct</td><td>Anemia of chronic renal failure</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-57557005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/57557005">57557005</a></td><td>http://snomed.info/sct</td><td>Chronic milk alkali syndrome</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90688005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90688005">90688005</a></td><td>http://snomed.info/sct</td><td>Chronic renal failure syndrome</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-236433006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/236433006">236433006</a></td><td>http://snomed.info/sct</td><td>Acute-on-chronic renal failure</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-236434000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/236434000">236434000</a></td><td>http://snomed.info/sct</td><td>End stage renal failure untreated by renal replacement therapy</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-236435004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/236435004">236435004</a></td><td>http://snomed.info/sct</td><td>End stage renal failure on dialysis</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-236436003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/236436003">236436003</a></td><td>http://snomed.info/sct</td><td>End stage renal failure with renal transplant</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-236552002"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/236552002">236552002</a></td><td>http://snomed.info/sct</td><td>Adynamic bone disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-425369003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/425369003">425369003</a></td><td>http://snomed.info/sct</td><td>Chronic progressive renal failure (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-431855005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/431855005">431855005</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-431856006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/431856006">431856006</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-431857002"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/431857002">431857002</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-433144002"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/433144002">433144002</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-433146000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/433146000">433146000</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-700378005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/700378005">700378005</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3A</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-700379002"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/700379002">700379002</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3B</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-704667004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/704667004">704667004</a></td><td>http://snomed.info/sct</td><td>Hypertension concurrent and due to end stage renal disease on dialysis (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-707324008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/707324008">707324008</a></td><td>http://snomed.info/sct</td><td>Anemia in end stage renal disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-708975004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/708975004">708975004</a></td><td>http://snomed.info/sct</td><td>Mixed renal osteodystrophy (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-712487000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/712487000">712487000</a></td><td>http://snomed.info/sct</td><td>End stage renal disease due to benign hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-713313000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/713313000">713313000</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease mineral and bone disorder</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-714152005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/714152005">714152005</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease 5d</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-714153000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/714153000">714153000</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 with transplant (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-722098007"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/722098007">722098007</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease following donor nephrectomy (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-722149000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/722149000">722149000</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to and following excision of neoplasm of kidney (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-722150000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/722150000">722150000</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to systemic infection (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-722467000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/722467000">722467000</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to traumatic loss of kidney (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-723190009"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/723190009">723190009</a></td><td>http://snomed.info/sct</td><td>Chronic renal insufficiency (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-776416004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/776416004">776416004</a></td><td>http://snomed.info/sct</td><td>Hyperuricemia, pulmonary hypertension, renal failure, alkalosis syndrome</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-897310009"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/897310009">897310009</a></td><td>http://snomed.info/sct</td><td>Renal osteodystrophy with high bone turnover</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-897311008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/897311008">897311008</a></td><td>http://snomed.info/sct</td><td>Renal osteodystrophy with normal bone turnover (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-897312001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/897312001">897312001</a></td><td>http://snomed.info/sct</td><td>Renal osteodystrophy with low bone turnover (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1208934006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1208934006">1208934006</a></td><td>http://snomed.info/sct</td><td>Sagliker syndrome (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1217070004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1217070004">1217070004</a></td><td>http://snomed.info/sct</td><td>Renal osteodystrophy due to hyperparathyroidism (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1295482007"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1295482007">1295482007</a></td><td>http://snomed.info/sct</td><td>Osteoporosis due to chronic kidney disease (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332436006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332436006">1332436006</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3B due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332441003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332441003">1332441003</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3A due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332442005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332442005">1332442005</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3 due to type I diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332464001"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332464001">1332464001</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 2 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332465000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332465000">1332465000</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3B due to type II diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332466004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332466004">1332466004</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3A due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332467008"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332467008">1332467008</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 5 due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332468003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332468003">1332468003</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 4 due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332469006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332469006">1332469006</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3B due to type II diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332470007"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332470007">1332470007</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3A due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332471006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332471006">1332471006</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3B due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1332472004"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1332472004">1332472004</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3A due to type I diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-711000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/711000119100">711000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-721000119107"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/721000119107">721000119107</a></td><td>http://snomed.info/sct</td><td>Diabetic stage 4 chronic renal impairment due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-731000119105"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/731000119105">731000119105</a></td><td>http://snomed.info/sct</td><td>Diabetic stage 3 chronic renal impairment due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-741000119101"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/741000119101">741000119101</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-751000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/751000119104">751000119104</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-771000119108"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/771000119108">771000119108</a></td><td>http://snomed.info/sct</td><td>Chronic renal impairment due to type II diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1801000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1801000119106">1801000119106</a></td><td>http://snomed.info/sct</td><td>Anemia, pre-ESRD erythropoietin protocol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-8501000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/8501000119104">8501000119104</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart and chronic kidney disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-71421000119105"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/71421000119105">71421000119105</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-71701000119105"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/71701000119105">71701000119105</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90721000119101"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90721000119101">90721000119101</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90731000119103"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90731000119103">90731000119103</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90741000119107"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90741000119107">90741000119107</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90751000119109"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90751000119109">90751000119109</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90761000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90761000119106">90761000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90771000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90771000119100">90771000119100</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90791000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/90791000119104">90791000119104</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96441000119101"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96441000119101">96441000119101</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to type 1 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96701000119107"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96701000119107">96701000119107</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease on dialysis</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96711000119105"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96711000119105">96711000119105</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 5</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96721000119103"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96721000119103">96721000119103</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 4</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96731000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96731000119100">96731000119100</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 3</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96741000119109"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96741000119109">96741000119109</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 2</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-96751000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/96751000119106">96751000119106</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 1</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-104931000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/104931000119100">104931000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-111411000119103"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/111411000119103">111411000119103</a></td><td>http://snomed.info/sct</td><td>End stage renal disease due to hypertension (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-117681000119102"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/117681000119102">117681000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-118781000119108"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/118781000119108">118781000119108</a></td><td>http://snomed.info/sct</td><td>Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-127991000119101"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/127991000119101">127991000119101</a></td><td>http://snomed.info/sct</td><td>Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-128001000119105"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/128001000119105">128001000119105</a></td><td>http://snomed.info/sct</td><td>Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-129151000119102"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/129151000119102">129151000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-129161000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/129161000119100">129161000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-129171000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/129171000119106">129171000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-129181000119109"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/129181000119109">129181000119109</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-140101000119109"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/140101000119109">140101000119109</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 5 due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-140111000119107"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/140111000119107">140111000119107</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-140121000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/140121000119100">140121000119100</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3 due to type 2 diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-140131000119102"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/140131000119102">140131000119102</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-153851000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/153851000119106">153851000119106</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 5</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-153891000119101"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/153891000119101">153891000119101</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to hypertension (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-284961000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/284961000119106">284961000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to benign hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-284971000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/284971000119100">284971000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to benign hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-284981000119102"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/284981000119102">284981000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to benign hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-284991000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/284991000119104">284991000119104</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to benign hypertension (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285001000119105"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285001000119105">285001000119105</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to benign hypertension</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285011000119108"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285011000119108">285011000119108</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to benign hypertension (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285831000119108"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285831000119108">285831000119108</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285841000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285841000119104">285841000119104</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive end stage renal disease</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285851000119102"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285851000119102">285851000119102</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 1</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285861000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285861000119100">285861000119100</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 2</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285871000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285871000119106">285871000119106</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 3</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-285881000119109"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/285881000119109">285881000119109</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 4</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-286371000119107"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/286371000119107">286371000119107</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive end stage renal disease on dialysis</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-368421000119108"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/368421000119108">368421000119108</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to drug induced diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-368431000119106"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/368431000119106">368431000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to drug induced diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-368441000119102"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/368441000119102">368441000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to drug induced diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-368451000119100"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/368451000119100">368451000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to drug induced diabetes mellitus (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-368461000119103"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/368461000119103">368461000119103</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to drug induced diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-368471000119109"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/368471000119109">368471000119109</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to drug induced diabetes mellitus</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-691421000119108"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/691421000119108">691421000119108</a></td><td>http://snomed.info/sct</td><td>Anaemia co-occurrent and due to chronic kidney disease stage 3</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-10757401000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/10757401000119104">10757401000119104</a></td><td>http://snomed.info/sct</td><td>Pre-existing hypertensive heart and chronic kidney disease in mother complicating childbirth (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-10757481000119107"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/10757481000119107">10757481000119107</a></td><td>http://snomed.info/sct</td><td>Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package hl7.fhir.uv.cpg.ckd#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 18:15+0000">2024-11-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l1754">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://fhir.org/fhir/uv/cpg/ckd/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Chronic Kidney Disease (CKD) risk screening logic - XML Representation - Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.14"}
+    h3,h4,h5,h6{--heading-prefix:"2.14"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Chronic Kidney Disease (CKD) risk screening logic</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://fhir.org/fhir/uv/cpg/ckd/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Library-CKDRiskLogic.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-CKDRiskLogic.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-CKDRiskLogic.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Chronic Kidney Disease (CKD) risk screening logic - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-11-18
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Library-CKDRiskLogic.xml" no-download="true">Raw xml</a> | <a download="null" href="Library-CKDRiskLogic.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/library.html#Library">Library</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CKDRiskLogic"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Library CKDRiskLogic&lt;/b&gt;&lt;/p&gt;&lt;a name="CKDRiskLogic"&gt; &lt;/a&gt;&lt;a name="hcCKDRiskLogic"&gt; &lt;/a&gt;&lt;a name="CKDRiskLogic-en-US"&gt; &lt;/a&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;&lt;code&gt;text/cql&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class="language-sql"&gt;library CKDRiskLogic version '1.0'
+
+using FHIR version '4.0.0'
+
+include FHIRHelpers version '4.0.0' called FHIRHelpers
+
+codesystem &amp;quot;SNOMEDCT&amp;quot;: 'http://snomed.info/sct'
+codesystem &amp;quot;LOINC&amp;quot;: 'http://loinc.org'
+codesystem &amp;quot;RxNorm&amp;quot;: 'http://www.nlm.nih.gov/research/umls/rxnorm'
+
+valueset &amp;quot;Chronic Kidney Disease&amp;quot;: 'ckd-valueset-ckd'
+valueset &amp;quot;Diabetes mellitus&amp;quot;: 'ckd-valueset-diabetes'
+
+valueset &amp;quot;eGFR Labs&amp;quot;: 'ckd-valueset-egfr'
+valueset &amp;quot;UACR Labs&amp;quot;: 'ckd-valueset-uacr'
+valueset &amp;quot;Creatinine Labs&amp;quot;: 'ckd-valueset-creatinine'
+
+code &amp;quot;Blood pressure systolic and diastolic&amp;quot;: '55284-4' from &amp;quot;LOINC&amp;quot;
+
+context Patient
+
+// Conditions
+//
+define &amp;quot;Has CKD or Diabetes&amp;quot;:
+  &amp;quot;Has CKD&amp;quot; or &amp;quot;Has Diabetes&amp;quot;
+
+define &amp;quot;Has CKD&amp;quot;:
+  exists( &amp;quot;Chronic Kidney Disease Dx&amp;quot; )
+
+define &amp;quot;No CKD Dx&amp;quot;:
+  not exists( &amp;quot;Chronic Kidney Disease Dx&amp;quot; )
+
+define &amp;quot;Has Diabetes&amp;quot;:
+  exists( &amp;quot;Diabetes Dx&amp;quot; )
+
+define &amp;quot;CKD or Diabetes Dx&amp;quot;:
+  &amp;quot;Chronic Kidney Disease Dx&amp;quot; union &amp;quot;Diabetes Dx&amp;quot;
+
+define &amp;quot;Chronic Kidney Disease Dx&amp;quot;:
+  [Condition: code in &amp;quot;Chronic Kidney Disease&amp;quot;] condition
+    where condition.clinicalStatus.value in { 'active', 'recurrence' }
+
+define &amp;quot;Diabetes Dx&amp;quot;:
+  [Condition: code in &amp;quot;Diabetes mellitus&amp;quot;] condition
+    where condition.clinicalStatus.value in { 'active', 'recurrence' }
+
+// Laboratory observations
+//
+define &amp;quot;Has eGFR or UACR Lab&amp;quot;:
+  &amp;quot;Last eGFR Lab Result&amp;quot; is not null
+	or &amp;quot;Last UACR Lab Result&amp;quot; is not null
+
+define &amp;quot;Last eGFR Lab Result&amp;quot;:
+  Last( [Observation: code in &amp;quot;eGFR Labs&amp;quot;] )
+
+define &amp;quot;Last eGFR Quantity&amp;quot;:
+  &amp;quot;Last eGFR Lab Result&amp;quot; Result
+    return ToQuantity(Result.value as Quantity)
+
+define &amp;quot;Has Abnormal eGFR&amp;quot;:
+  &amp;quot;Last eGFR Quantity&amp;quot;.value &amp;lt; 60
+
+define &amp;quot;Last UACR Lab Result&amp;quot;:
+  Last( [Observation: code in &amp;quot;UACR Labs&amp;quot;] )
+
+define &amp;quot;Last UACR Quantity&amp;quot;:
+  &amp;quot;Last UACR Lab Result&amp;quot; Result
+    return ToQuantity(Result.value as Quantity)
+
+define &amp;quot;Has Abnormal UACR&amp;quot;:
+  &amp;quot;Last UACR Quantity&amp;quot; uacr
+    return UACRtoMetric(uacr).value &amp;gt; 30
+
+define &amp;quot;Last Creatinine Lab Result&amp;quot;:
+  Last( [Observation: code in &amp;quot;Creatinine Labs&amp;quot;] )
+
+define &amp;quot;Last Creatinine Quantity&amp;quot;:
+  &amp;quot;Last Creatinine Lab Result&amp;quot; Result
+    return ToQuantity(Result.value as Quantity)
+
+define &amp;quot;Needs eGFR Lab&amp;quot;:
+	&amp;quot;eGFR Lab is Overdue&amp;quot;
+		or (&amp;quot;eGFR Lab Frequency&amp;quot; is not null and &amp;quot;Last eGFR Lab Result&amp;quot; is null)
+
+define &amp;quot;eGFR Lab Frequency&amp;quot;:
+	case
+		when &amp;quot;CKD Stage&amp;quot; &amp;gt;= 4
+			then 3 months
+		when &amp;quot;CKD Stage&amp;quot; &amp;gt;= 3
+			then 6 months
+		when &amp;quot;Has CKD or Diabetes&amp;quot;
+			then 12 months
+		else null
+	end
+
+define &amp;quot;eGFR Lab is Overdue&amp;quot;:
+  &amp;quot;Last eGFR Lab Result&amp;quot; Result
+    return
+      case
+        when Result.effective is null
+          then true
+        when Result.effective is dateTime
+          then (Result.effective.value + &amp;quot;eGFR Lab Frequency&amp;quot;) &amp;lt; Today()
+        when Result.effective is Period
+          then (end of PeriodToInterval(Result.effective) + &amp;quot;eGFR Lab Frequency&amp;quot;) &amp;lt; Today()
+        else false
+      end
+
+define NeedsGFRSummary: 'Order Renal Lab Panel'
+
+define NeedsGFRDetail:
+	case
+		when &amp;quot;CKD Stage&amp;quot; &amp;gt;= 1
+			then 'eGFR lab recommended every ' + ToString(&amp;quot;eGFR Lab Frequency&amp;quot;) + ' for Stage ' + ToString(&amp;quot;CKD Stage&amp;quot;) + ' CKD.'
+		when &amp;quot;Has CKD or Diabetes&amp;quot;
+			then 'eGFR lab recommended every ' + ToString(&amp;quot;eGFR Lab Frequency&amp;quot;) + ' for CKD or Diabetes.'
+		else null
+	end
+
+define NeedsGFRSeverity: 'info'
+
+define &amp;quot;CKD Stage&amp;quot;:
+  &amp;quot;Last eGFR Quantity&amp;quot; egfr
+  	return case
+      when egfr.value &amp;lt; 15
+    		then 5
+    	when egfr.value &amp;lt; 30
+    		then 4
+    	when egfr.value &amp;lt; 60
+    		then 3
+    	when egfr.value &amp;lt; 90
+    		then 2
+    	when egfr.value &amp;gt;= 90
+        // TODO this does not parse
+        //case  when UACRtoMetric(&amp;quot;Get UACR Quantity&amp;quot;).value &amp;gt; 20
+  		  //  then 1
+        //else 0
+        //end
+        then 0
+      else 0
+  	end
+
+// Referrals
+//
+define &amp;quot;Recommend Nephrology Referral&amp;quot;:
+	&amp;quot;5-Year Risk Level&amp;quot; = 'High'
+
+define NephrologyReferralDetail: 'Referral to a nephrologist is recommended when 5-year risk is High'
+
+define NephrologyReferralSeverity: 'info'
+
+//
+// Tangri CKD risk model
+//
+// 4 variable
+// 1 – 0.9750 ^ exp (-0.2201 × (age/10 – 7.036) + 0.2467 × (male – 0.5642) – 0.5567 × (eGFR/5 – 7.222) + 0.4510 × (logACR – 5.137))
+// 5 year factor =  0.9240
+//
+// 8 variable
+// 1 – 0.9780 ^ exp (-0.1992 × (age/10 – 7.036) + 0.1602 × (male – 0.5642) – 0.4919 × (eGFR/5 – 7.222) + 0.3364 × (logACR – 5.137)
+//		– 0.3441 × (albumin – 3.997) + 0.2604 × (phosphorous – 3.916) – 0.07354 × (bicarbonate – 25.57) – 0.2228 × (calcium – 9.355))
+// 5 year factor = 0.9301
+
+define &amp;quot;2-YearRiskDetail&amp;quot;:
+	'2-year kidney failure risk of ' + ToString(&amp;quot;2-Year CKD Risk Percent&amp;quot;) + '% is considered to be ' + &amp;quot;2-Year Risk Level&amp;quot; + ' risk.'
+
+define &amp;quot;5-YearRiskDetail&amp;quot;:
+	'5-year kidney failure risk of ' + ToString(&amp;quot;5-Year CKD Risk Percent&amp;quot;) + '% is considered to be ' + &amp;quot;5-Year Risk Level&amp;quot; + ' risk.'
+
+define &amp;quot;2-YearRiskSeverity&amp;quot;: if &amp;quot;2-Year Risk Level&amp;quot; = 'High' then 'warning' else 'info'
+
+define &amp;quot;5-YearRiskSeverity&amp;quot;: if &amp;quot;5-Year Risk Level&amp;quot; = 'High' then 'warning' else 'info'
+
+define &amp;quot;2-Year CKD Risk Percent&amp;quot;:
+  &amp;quot;2-Year CKD Risk&amp;quot; risk
+    return Round(risk * 100, 2)
+
+define &amp;quot;5-Year CKD Risk Percent&amp;quot;:
+  &amp;quot;5-Year CKD Risk&amp;quot; risk
+    return Round(risk * 100, 2)
+
+define &amp;quot;2-Year CKD Risk&amp;quot;:
+  &amp;quot;Last eGFR Quantity&amp;quot; egfr
+    return calculateCkdRisk(0.9750, 0, AgeInYears(), egfr, UACRtoMetric(&amp;quot;Last UACR Quantity&amp;quot;))
+
+define &amp;quot;5-Year CKD Risk&amp;quot;:
+  &amp;quot;Last eGFR Quantity&amp;quot; egfr
+    return calculateCkdRisk(0.9240, 0, AgeInYears(), egfr, UACRtoMetric(&amp;quot;Last UACR Quantity&amp;quot;))
+
+// The ckdFactor is a variable determined by (Non-) North American location and whether calculation is 2 or 5 year prediction
+define function calculateCkdRisk(ckdFactor Decimal, sex Integer, age Integer, egfr System.Quantity, acr System.Quantity):
+  1.0 - Power(ckdFactor, Exp(-0.2201 * (age / 10 - 7.036) + 0.2467 * (sex - 0.5642) - 0.5567 * (egfr.value / 5 - 7.222) + 0.4510 * (Ln(acr.value) - 5.137)))
+
+define &amp;quot;2-Year Risk Level&amp;quot;:
+  &amp;quot;2-Year CKD Risk Percent&amp;quot; riskPercent
+  	return case
+      when riskPercent &amp;lt; 5
+    		then 'Low'
+    	when riskPercent &amp;lt; 15
+    		then 'Intermediate'
+    	when riskPercent &amp;gt; 15
+    		then 'High'
+      else null
+  	end
+
+define &amp;quot;5-Year Risk Level&amp;quot;:
+  &amp;quot;5-Year CKD Risk Percent&amp;quot; riskPercent
+  	return case
+      when riskPercent &amp;lt; 5
+    		then 'Low'
+    	when riskPercent &amp;lt; 15
+    		then 'Intermediate'
+    	when riskPercent &amp;gt; 15
+    		then 'High'
+      else null
+  	end
+
+// Conversion functions
+
+define function PeriodToInterval(value FHIR.Period):
+	Interval[value.&amp;quot;start&amp;quot;.value, value.&amp;quot;end&amp;quot;.value]
+
+define function CodingToCode(coding FHIR.Coding):
+	System.Code {
+		code: coding.code.value,
+		system: coding.system.value,
+		version: coding.version.value,
+		display: coding.display.value
+	}
+
+define function ToConcept(concept FHIR.CodeableConcept):
+    System.Concept {
+        codes: concept.coding C return CodingToCode(C),
+        display: concept.text.value
+    }
+
+define function ToQuantity(quantity FHIR.Quantity):
+    System.Quantity {
+        value: quantity.value.value,
+        unit: quantity.unit.value
+    }
+
+define function UACRtoMetric(qty System.Quantity):
+	case when qty.unit = 'mg/mmol creatinine' then
+		System.Quantity { value: qty.value * 8.84, unit: 'mg/g' }
+	when qty.unit = 'mg/g' then
+    qty
+	else
+    // unknown units, ignore this quantity in calculation
+		null
+	end
+
+define function ToMetric(qty System.Quantity):
+	case when qty.unit = 'lb' then
+		System.Quantity { value: qty.value * 0.454, unit: 'kg' }
+	when qty.unit = 'in' then
+		System.Quantity { value: qty.value * 0.0254, unit: 'm' }
+	else
+		qty
+	end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="shareable"/&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="computable"/&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="publishable"/&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="structured"/&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1.0.0"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CKDRiskLogic"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Chronic Kidney Disease (CKD) risk screening logic"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/library-type"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="logic-library"/&gt;
+    &lt;/coding&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2024-11-18T18:15:24+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 International - Clinical Decision Support WG"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 International - Clinical Decision Support WG"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="url"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="http://www.hl7.org/Special/committees/dss/index.cfm"/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="Chronic Kidney Disease (CKD) risk screening logic"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://unstats.un.org/unsd/methods/m49/m49.htm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="001"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="World"/&gt;
+    &lt;/coding&gt;
+  &lt;/jurisdiction&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="text/cql"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>="bGlicmFyeSBDS0RSaXNrTG9naWMgdmVyc2lvbiAnMS4wJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMCcKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjAnIGNhbGxlZCBGSElSSGVscGVycwoKY29kZXN5c3RlbSAiU05PTUVEQ1QiOiAnaHR0cDovL3Nub21lZC5pbmZvL3NjdCcKY29kZXN5c3RlbSAiTE9JTkMiOiAnaHR0cDovL2xvaW5jLm9yZycKY29kZXN5c3RlbSAiUnhOb3JtIjogJ2h0dHA6Ly93d3cubmxtLm5paC5nb3YvcmVzZWFyY2gvdW1scy9yeG5vcm0nCgp2YWx1ZXNldCAiQ2hyb25pYyBLaWRuZXkgRGlzZWFzZSI6ICdja2QtdmFsdWVzZXQtY2tkJwp2YWx1ZXNldCAiRGlhYmV0ZXMgbWVsbGl0dXMiOiAnY2tkLXZhbHVlc2V0LWRpYWJldGVzJwoKdmFsdWVzZXQgImVHRlIgTGFicyI6ICdja2QtdmFsdWVzZXQtZWdmcicKdmFsdWVzZXQgIlVBQ1IgTGFicyI6ICdja2QtdmFsdWVzZXQtdWFjcicKdmFsdWVzZXQgIkNyZWF0aW5pbmUgTGFicyI6ICdja2QtdmFsdWVzZXQtY3JlYXRpbmluZScKCmNvZGUgIkJsb29kIHByZXNzdXJlIHN5c3RvbGljIGFuZCBkaWFzdG9saWMiOiAnNTUyODQtNCcgZnJvbSAiTE9JTkMiCgpjb250ZXh0IFBhdGllbnQKCi8vIENvbmRpdGlvbnMKLy8KZGVmaW5lICJIYXMgQ0tEIG9yIERpYWJldGVzIjoKICAiSGFzIENLRCIgb3IgIkhhcyBEaWFiZXRlcyIKCmRlZmluZSAiSGFzIENLRCI6CiAgZXhpc3RzKCAiQ2hyb25pYyBLaWRuZXkgRGlzZWFzZSBEeCIgKQoKZGVmaW5lICJObyBDS0QgRHgiOgogIG5vdCBleGlzdHMoICJDaHJvbmljIEtpZG5leSBEaXNlYXNlIER4IiApCgpkZWZpbmUgIkhhcyBEaWFiZXRlcyI6CiAgZXhpc3RzKCAiRGlhYmV0ZXMgRHgiICkKCmRlZmluZSAiQ0tEIG9yIERpYWJldGVzIER4IjoKICAiQ2hyb25pYyBLaWRuZXkgRGlzZWFzZSBEeCIgdW5pb24gIkRpYWJldGVzIER4IgoKZGVmaW5lICJDaHJvbmljIEtpZG5leSBEaXNlYXNlIER4IjoKICBbQ29uZGl0aW9uOiBjb2RlIGluICJDaHJvbmljIEtpZG5leSBEaXNlYXNlIl0gY29uZGl0aW9uCiAgICB3aGVyZSBjb25kaXRpb24uY2xpbmljYWxTdGF0dXMudmFsdWUgaW4geyAnYWN0aXZlJywgJ3JlY3VycmVuY2UnIH0KCmRlZmluZSAiRGlhYmV0ZXMgRHgiOgogIFtDb25kaXRpb246IGNvZGUgaW4gIkRpYWJldGVzIG1lbGxpdHVzIl0gY29uZGl0aW9uCiAgICB3aGVyZSBjb25kaXRpb24uY2xpbmljYWxTdGF0dXMudmFsdWUgaW4geyAnYWN0aXZlJywgJ3JlY3VycmVuY2UnIH0KCi8vIExhYm9yYXRvcnkgb2JzZXJ2YXRpb25zCi8vCmRlZmluZSAiSGFzIGVHRlIgb3IgVUFDUiBMYWIiOgogICJMYXN0IGVHRlIgTGFiIFJlc3VsdCIgaXMgbm90IG51bGwKCW9yICJMYXN0IFVBQ1IgTGFiIFJlc3VsdCIgaXMgbm90IG51bGwKCmRlZmluZSAiTGFzdCBlR0ZSIExhYiBSZXN1bHQiOgogIExhc3QoIFtPYnNlcnZhdGlvbjogY29kZSBpbiAiZUdGUiBMYWJzIl0gKQoKZGVmaW5lICJMYXN0IGVHRlIgUXVhbnRpdHkiOgogICJMYXN0IGVHRlIgTGFiIFJlc3VsdCIgUmVzdWx0CiAgICByZXR1cm4gVG9RdWFudGl0eShSZXN1bHQudmFsdWUgYXMgUXVhbnRpdHkpCgpkZWZpbmUgIkhhcyBBYm5vcm1hbCBlR0ZSIjoKICAiTGFzdCBlR0ZSIFF1YW50aXR5Ii52YWx1ZSA8IDYwCgpkZWZpbmUgIkxhc3QgVUFDUiBMYWIgUmVzdWx0IjoKICBMYXN0KCBbT2JzZXJ2YXRpb246IGNvZGUgaW4gIlVBQ1IgTGFicyJdICkKCmRlZmluZSAiTGFzdCBVQUNSIFF1YW50aXR5IjoKICAiTGFzdCBVQUNSIExhYiBSZXN1bHQiIFJlc3VsdAogICAgcmV0dXJuIFRvUXVhbnRpdHkoUmVzdWx0LnZhbHVlIGFzIFF1YW50aXR5KQoKZGVmaW5lICJIYXMgQWJub3JtYWwgVUFDUiI6CiAgIkxhc3QgVUFDUiBRdWFudGl0eSIgdWFjcgogICAgcmV0dXJuIFVBQ1J0b01ldHJpYyh1YWNyKS52YWx1ZSA+IDMwCgpkZWZpbmUgIkxhc3QgQ3JlYXRpbmluZSBMYWIgUmVzdWx0IjoKICBMYXN0KCBbT2JzZXJ2YXRpb246IGNvZGUgaW4gIkNyZWF0aW5pbmUgTGFicyJdICkKCmRlZmluZSAiTGFzdCBDcmVhdGluaW5lIFF1YW50aXR5IjoKICAiTGFzdCBDcmVhdGluaW5lIExhYiBSZXN1bHQiIFJlc3VsdAogICAgcmV0dXJuIFRvUXVhbnRpdHkoUmVzdWx0LnZhbHVlIGFzIFF1YW50aXR5KQoKZGVmaW5lICJOZWVkcyBlR0ZSIExhYiI6CgkiZUdGUiBMYWIgaXMgT3ZlcmR1ZSIKCQlvciAoImVHRlIgTGFiIEZyZXF1ZW5jeSIgaXMgbm90IG51bGwgYW5kICJMYXN0IGVHRlIgTGFiIFJlc3VsdCIgaXMgbnVsbCkKCmRlZmluZSAiZUdGUiBMYWIgRnJlcXVlbmN5IjoKCWNhc2UKCQl3aGVuICJDS0QgU3RhZ2UiID49IDQKCQkJdGhlbiAzIG1vbnRocwoJCXdoZW4gIkNLRCBTdGFnZSIgPj0gMwoJCQl0aGVuIDYgbW9udGhzCgkJd2hlbiAiSGFzIENLRCBvciBEaWFiZXRlcyIKCQkJdGhlbiAxMiBtb250aHMKCQllbHNlIG51bGwKCWVuZAoKZGVmaW5lICJlR0ZSIExhYiBpcyBPdmVyZHVlIjoKICAiTGFzdCBlR0ZSIExhYiBSZXN1bHQiIFJlc3VsdAogICAgcmV0dXJuCiAgICAgIGNhc2UKICAgICAgICB3aGVuIFJlc3VsdC5lZmZlY3RpdmUgaXMgbnVsbAogICAgICAgICAgdGhlbiB0cnVlCiAgICAgICAgd2hlbiBSZXN1bHQuZWZmZWN0aXZlIGlzIGRhdGVUaW1lCiAgICAgICAgICB0aGVuIChSZXN1bHQuZWZmZWN0aXZlLnZhbHVlICsgImVHRlIgTGFiIEZyZXF1ZW5jeSIpIDwgVG9kYXkoKQogICAgICAgIHdoZW4gUmVzdWx0LmVmZmVjdGl2ZSBpcyBQZXJpb2QKICAgICAgICAgIHRoZW4gKGVuZCBvZiBQZXJpb2RUb0ludGVydmFsKFJlc3VsdC5lZmZlY3RpdmUpICsgImVHRlIgTGFiIEZyZXF1ZW5jeSIpIDwgVG9kYXkoKQogICAgICAgIGVsc2UgZmFsc2UKICAgICAgZW5kCgpkZWZpbmUgTmVlZHNHRlJTdW1tYXJ5OiAnT3JkZXIgUmVuYWwgTGFiIFBhbmVsJwoKZGVmaW5lIE5lZWRzR0ZSRGV0YWlsOgoJY2FzZQoJCXdoZW4gIkNLRCBTdGFnZSIgPj0gMQoJCQl0aGVuICdlR0ZSIGxhYiByZWNvbW1lbmRlZCBldmVyeSAnICsgVG9TdHJpbmcoImVHRlIgTGFiIEZyZXF1ZW5jeSIpICsgJyBmb3IgU3RhZ2UgJyArIFRvU3RyaW5nKCJDS0QgU3RhZ2UiKSArICcgQ0tELicKCQl3aGVuICJIYXMgQ0tEIG9yIERpYWJldGVzIgoJCQl0aGVuICdlR0ZSIGxhYiByZWNvbW1lbmRlZCBldmVyeSAnICsgVG9TdHJpbmcoImVHRlIgTGFiIEZyZXF1ZW5jeSIpICsgJyBmb3IgQ0tEIG9yIERpYWJldGVzLicKCQllbHNlIG51bGwKCWVuZAoKZGVmaW5lIE5lZWRzR0ZSU2V2ZXJpdHk6ICdpbmZvJwoKZGVmaW5lICJDS0QgU3RhZ2UiOgogICJMYXN0IGVHRlIgUXVhbnRpdHkiIGVnZnIKICAJcmV0dXJuIGNhc2UKICAgICAgd2hlbiBlZ2ZyLnZhbHVlIDwgMTUKICAgIAkJdGhlbiA1CiAgICAJd2hlbiBlZ2ZyLnZhbHVlIDwgMzAKICAgIAkJdGhlbiA0CiAgICAJd2hlbiBlZ2ZyLnZhbHVlIDwgNjAKICAgIAkJdGhlbiAzCiAgICAJd2hlbiBlZ2ZyLnZhbHVlIDwgOTAKICAgIAkJdGhlbiAyCiAgICAJd2hlbiBlZ2ZyLnZhbHVlID49IDkwCiAgICAgICAgLy8gVE9ETyB0aGlzIGRvZXMgbm90IHBhcnNlCiAgICAgICAgLy9jYXNlICB3aGVuIFVBQ1J0b01ldHJpYygiR2V0IFVBQ1IgUXVhbnRpdHkiKS52YWx1ZSA+IDIwCiAgCQkgIC8vICB0aGVuIDEKICAgICAgICAvL2Vsc2UgMAogICAgICAgIC8vZW5kCiAgICAgICAgdGhlbiAwCiAgICAgIGVsc2UgMAogIAllbmQKCi8vIFJlZmVycmFscwovLwpkZWZpbmUgIlJlY29tbWVuZCBOZXBocm9sb2d5IFJlZmVycmFsIjoKCSI1LVllYXIgUmlzayBMZXZlbCIgPSAnSGlnaCcKCmRlZmluZSBOZXBocm9sb2d5UmVmZXJyYWxEZXRhaWw6ICdSZWZlcnJhbCB0byBhIG5lcGhyb2xvZ2lzdCBpcyByZWNvbW1lbmRlZCB3aGVuIDUteWVhciByaXNrIGlzIEhpZ2gnCgpkZWZpbmUgTmVwaHJvbG9neVJlZmVycmFsU2V2ZXJpdHk6ICdpbmZvJwoKLy8KLy8gVGFuZ3JpIENLRCByaXNrIG1vZGVsCi8vCi8vIDQgdmFyaWFibGUKLy8gMSDigJMgMC45NzUwIF4gZXhwICgtMC4yMjAxIMOXIChhZ2UvMTAg4oCTIDcuMDM2KSArIDAuMjQ2NyDDlyAobWFsZSDigJMgMC41NjQyKSDigJMgMC41NTY3IMOXIChlR0ZSLzUg4oCTIDcuMjIyKSArIDAuNDUxMCDDlyAobG9nQUNSIOKAkyA1LjEzNykpCi8vIDUgeWVhciBmYWN0b3IgPSAgMC45MjQwCi8vCi8vIDggdmFyaWFibGUKLy8gMSDigJMgMC45NzgwIF4gZXhwICgtMC4xOTkyIMOXIChhZ2UvMTAg4oCTIDcuMDM2KSArIDAuMTYwMiDDlyAobWFsZSDigJMgMC41NjQyKSDigJMgMC40OTE5IMOXIChlR0ZSLzUg4oCTIDcuMjIyKSArIDAuMzM2NCDDlyAobG9nQUNSIOKAkyA1LjEzNykKLy8JCeKAkyAwLjM0NDEgw5cgKGFsYnVtaW4g4oCTIDMuOTk3KSArIDAuMjYwNCDDlyAocGhvc3Bob3JvdXMg4oCTIDMuOTE2KSDigJMgMC4wNzM1NCDDlyAoYmljYXJib25hdGUg4oCTIDI1LjU3KSDigJMgMC4yMjI4IMOXIChjYWxjaXVtIOKAkyA5LjM1NSkpCi8vIDUgeWVhciBmYWN0b3IgPSAwLjkzMDEKCmRlZmluZSAiMi1ZZWFyUmlza0RldGFpbCI6CgknMi15ZWFyIGtpZG5leSBmYWlsdXJlIHJpc2sgb2YgJyArIFRvU3RyaW5nKCIyLVllYXIgQ0tEIFJpc2sgUGVyY2VudCIpICsgJyUgaXMgY29uc2lkZXJlZCB0byBiZSAnICsgIjItWWVhciBSaXNrIExldmVsIiArICcgcmlzay4nCgpkZWZpbmUgIjUtWWVhclJpc2tEZXRhaWwiOgoJJzUteWVhciBraWRuZXkgZmFpbHVyZSByaXNrIG9mICcgKyBUb1N0cmluZygiNS1ZZWFyIENLRCBSaXNrIFBlcmNlbnQiKSArICclIGlzIGNvbnNpZGVyZWQgdG8gYmUgJyArICI1LVllYXIgUmlzayBMZXZlbCIgKyAnIHJpc2suJwoKZGVmaW5lICIyLVllYXJSaXNrU2V2ZXJpdHkiOiBpZiAiMi1ZZWFyIFJpc2sgTGV2ZWwiID0gJ0hpZ2gnIHRoZW4gJ3dhcm5pbmcnIGVsc2UgJ2luZm8nCgpkZWZpbmUgIjUtWWVhclJpc2tTZXZlcml0eSI6IGlmICI1LVllYXIgUmlzayBMZXZlbCIgPSAnSGlnaCcgdGhlbiAnd2FybmluZycgZWxzZSAnaW5mbycKCmRlZmluZSAiMi1ZZWFyIENLRCBSaXNrIFBlcmNlbnQiOgogICIyLVllYXIgQ0tEIFJpc2siIHJpc2sKICAgIHJldHVybiBSb3VuZChyaXNrICogMTAwLCAyKQoKZGVmaW5lICI1LVllYXIgQ0tEIFJpc2sgUGVyY2VudCI6CiAgIjUtWWVhciBDS0QgUmlzayIgcmlzawogICAgcmV0dXJuIFJvdW5kKHJpc2sgKiAxMDAsIDIpCgpkZWZpbmUgIjItWWVhciBDS0QgUmlzayI6CiAgIkxhc3QgZUdGUiBRdWFudGl0eSIgZWdmcgogICAgcmV0dXJuIGNhbGN1bGF0ZUNrZFJpc2soMC45NzUwLCAwLCBBZ2VJblllYXJzKCksIGVnZnIsIFVBQ1J0b01ldHJpYygiTGFzdCBVQUNSIFF1YW50aXR5IikpCgpkZWZpbmUgIjUtWWVhciBDS0QgUmlzayI6CiAgIkxhc3QgZUdGUiBRdWFudGl0eSIgZWdmcgogICAgcmV0dXJuIGNhbGN1bGF0ZUNrZFJpc2soMC45MjQwLCAwLCBBZ2VJblllYXJzKCksIGVnZnIsIFVBQ1J0b01ldHJpYygiTGFzdCBVQUNSIFF1YW50aXR5IikpCgovLyBUaGUgY2tkRmFjdG9yIGlzIGEgdmFyaWFibGUgZGV0ZXJtaW5lZCBieSAoTm9uLSkgTm9ydGggQW1lcmljYW4gbG9jYXRpb24gYW5kIHdoZXRoZXIgY2FsY3VsYXRpb24gaXMgMiBvciA1IHllYXIgcHJlZGljdGlvbgpkZWZpbmUgZnVuY3Rpb24gY2FsY3VsYXRlQ2tkUmlzayhja2RGYWN0b3IgRGVjaW1hbCwgc2V4IEludGVnZXIsIGFnZSBJbnRlZ2VyLCBlZ2ZyIFN5c3RlbS5RdWFudGl0eSwgYWNyIFN5c3RlbS5RdWFudGl0eSk6CiAgMS4wIC0gUG93ZXIoY2tkRmFjdG9yLCBFeHAoLTAuMjIwMSAqIChhZ2UgLyAxMCAtIDcuMDM2KSArIDAuMjQ2NyAqIChzZXggLSAwLjU2NDIpIC0gMC41NTY3ICogKGVnZnIudmFsdWUgLyA1IC0gNy4yMjIpICsgMC40NTEwICogKExuKGFjci52YWx1ZSkgLSA1LjEzNykpKQoKZGVmaW5lICIyLVllYXIgUmlzayBMZXZlbCI6CiAgIjItWWVhciBDS0QgUmlzayBQZXJjZW50IiByaXNrUGVyY2VudAogIAlyZXR1cm4gY2FzZQogICAgICB3aGVuIHJpc2tQZXJjZW50IDwgNQogICAgCQl0aGVuICdMb3cnCiAgICAJd2hlbiByaXNrUGVyY2VudCA8IDE1CiAgICAJCXRoZW4gJ0ludGVybWVkaWF0ZScKICAgIAl3aGVuIHJpc2tQZXJjZW50ID4gMTUKICAgIAkJdGhlbiAnSGlnaCcKICAgICAgZWxzZSBudWxsCiAgCWVuZAoKZGVmaW5lICI1LVllYXIgUmlzayBMZXZlbCI6CiAgIjUtWWVhciBDS0QgUmlzayBQZXJjZW50IiByaXNrUGVyY2VudAogIAlyZXR1cm4gY2FzZQogICAgICB3aGVuIHJpc2tQZXJjZW50IDwgNQogICAgCQl0aGVuICdMb3cnCiAgICAJd2hlbiByaXNrUGVyY2VudCA8IDE1CiAgICAJCXRoZW4gJ0ludGVybWVkaWF0ZScKICAgIAl3aGVuIHJpc2tQZXJjZW50ID4gMTUKICAgIAkJdGhlbiAnSGlnaCcKICAgICAgZWxzZSBudWxsCiAgCWVuZAoKLy8gQ29udmVyc2lvbiBmdW5jdGlvbnMKCmRlZmluZSBmdW5jdGlvbiBQZXJpb2RUb0ludGVydmFsKHZhbHVlIEZISVIuUGVyaW9kKToKCUludGVydmFsW3ZhbHVlLiJzdGFydCIudmFsdWUsIHZhbHVlLiJlbmQiLnZhbHVlXQoKZGVmaW5lIGZ1bmN0aW9uIENvZGluZ1RvQ29kZShjb2RpbmcgRkhJUi5Db2RpbmcpOgoJU3lzdGVtLkNvZGUgewoJCWNvZGU6IGNvZGluZy5jb2RlLnZhbHVlLAoJCXN5c3RlbTogY29kaW5nLnN5c3RlbS52YWx1ZSwKCQl2ZXJzaW9uOiBjb2RpbmcudmVyc2lvbi52YWx1ZSwKCQlkaXNwbGF5OiBjb2RpbmcuZGlzcGxheS52YWx1ZQoJfQoKZGVmaW5lIGZ1bmN0aW9uIFRvQ29uY2VwdChjb25jZXB0IEZISVIuQ29kZWFibGVDb25jZXB0KToKICAgIFN5c3RlbS5Db25jZXB0IHsKICAgICAgICBjb2RlczogY29uY2VwdC5jb2RpbmcgQyByZXR1cm4gQ29kaW5nVG9Db2RlKEMpLAogICAgICAgIGRpc3BsYXk6IGNvbmNlcHQudGV4dC52YWx1ZQogICAgfQoKZGVmaW5lIGZ1bmN0aW9uIFRvUXVhbnRpdHkocXVhbnRpdHkgRkhJUi5RdWFudGl0eSk6CiAgICBTeXN0ZW0uUXVhbnRpdHkgewogICAgICAgIHZhbHVlOiBxdWFudGl0eS52YWx1ZS52YWx1ZSwKICAgICAgICB1bml0OiBxdWFudGl0eS51bml0LnZhbHVlCiAgICB9CgpkZWZpbmUgZnVuY3Rpb24gVUFDUnRvTWV0cmljKHF0eSBTeXN0ZW0uUXVhbnRpdHkpOgoJY2FzZSB3aGVuIHF0eS51bml0ID0gJ21nL21tb2wgY3JlYXRpbmluZScgdGhlbgoJCVN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOiBxdHkudmFsdWUgKiA4Ljg0LCB1bml0OiAnbWcvZycgfQoJd2hlbiBxdHkudW5pdCA9ICdtZy9nJyB0aGVuCiAgICBxdHkKCWVsc2UKICAgIC8vIHVua25vd24gdW5pdHMsIGlnbm9yZSB0aGlzIHF1YW50aXR5IGluIGNhbGN1bGF0aW9uCgkJbnVsbAoJZW5kCgpkZWZpbmUgZnVuY3Rpb24gVG9NZXRyaWMocXR5IFN5c3RlbS5RdWFudGl0eSk6CgljYXNlIHdoZW4gcXR5LnVuaXQgPSAnbGInIHRoZW4KCQlTeXN0ZW0uUXVhbnRpdHkgeyB2YWx1ZTogcXR5LnZhbHVlICogMC40NTQsIHVuaXQ6ICdrZycgfQoJd2hlbiBxdHkudW5pdCA9ICdpbicgdGhlbgoJCVN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOiBxdHkudmFsdWUgKiAwLjAyNTQsIHVuaXQ6ICdtJyB9CgllbHNlCgkJcXR5CgllbmQK"/&gt;
+  &lt;/content&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="application/elm+xml"/&gt;
+  &lt;/content&gt;
+&lt;/Library&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package hl7.fhir.uv.cpg.ckd#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 18:15+0000">2024-11-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l546">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://fhir.org/fhir/uv/cpg/ckd/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd,1.0.0,active,,ChronicRenalDiseaseFinding,Chronic Renal Disease Finding ValueSet,"Chronic renal disease finding",,"SCT"
+http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine,1.0.0,active,,CreatinineLabResults,Creatinine Lab Results,"Creatinine Lab Results ValueSet",,"LOINC"
+http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes,1.0.0,active,,DiabetesFindingCodes,Diabetes Finding Codes ValueSet,"Diabetes Finding Codes",,"SCT"
+http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr,1.0.0,active,,EGFRLabResults,eGFR Lab Results ValueSet,"eGFR Lab Results",,"LOINC"
+http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr,1.0.0,active,,UacrLabResults,UACR Lab Results ValueSet,"UACR Lab Results",,"LOINC"

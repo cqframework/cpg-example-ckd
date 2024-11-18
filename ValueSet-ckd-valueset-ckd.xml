@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ckd-valueset-ckd"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ckd-valueset-ckd</b></p><a name="ckd-valueset-ckd"> </a><a name="hcckd-valueset-ckd"> </a><a name="ckd-valueset-ckd-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/709044004">709044004</a></td><td style="color: #cccccc">Chronic kidney disease</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 709044004 (Chronic kidney disease)</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd"/>
+  <version value="1.0.0"/>
+  <name value="ChronicRenalDiseaseFinding"/>
+  <title value="Chronic Renal Disease Finding ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-11-18T18:15:24+00:00"/>
+  <publisher value="HL7 International - Clinical Decision Support WG"/>
+  <contact>
+    <name value="HL7 International - Clinical Decision Support WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Chronic renal disease finding"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="709044004"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="709044004"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,142 @@
+[
+  {
+    "id" : "hl7.fhir.uv.cpg.ckd",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd",
+    "version" : "1.0.0",
+    "name" : "CPGChronicKidneyDiseaseExamples"
+  },
+  {
+    "id" : "ckd-valueset-ckd",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd",
+    "version" : "1.0.0",
+    "name" : "ChronicRenalDiseaseFinding"
+  },
+  {
+    "id" : "ckd-valueset-creatinine",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine",
+    "version" : "1.0.0",
+    "name" : "CreatinineLabResults"
+  },
+  {
+    "id" : "ckd-valueset-diabetes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes",
+    "version" : "1.0.0",
+    "name" : "DiabetesFindingCodes"
+  },
+  {
+    "id" : "ckd-valueset-egfr",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr",
+    "version" : "1.0.0",
+    "name" : "EGFRLabResults"
+  },
+  {
+    "id" : "ckd-valueset-uacr",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr",
+    "version" : "1.0.0",
+    "name" : "UacrLabResults"
+  },
+  {
+    "id" : "cc-cpg-activity-edu-hypertension",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension",
+    "version" : "1.0.0",
+    "name" : "EducationHighBloodPressure"
+  },
+  {
+    "id" : "cc-cpg-activity-edu-renal-diet",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet",
+    "version" : "1.0.0",
+    "name" : "EducationRenalDiet"
+  },
+  {
+    "id" : "cc-cpg-activity-lab-creatinine",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine",
+    "version" : "1.0.0",
+    "name" : "LabCreatinineUrineRandom"
+  },
+  {
+    "id" : "cc-cpg-activity-lab-metabolic",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic",
+    "version" : "1.0.0",
+    "name" : "LabComprehensiveMetabolicPanel"
+  },
+  {
+    "id" : "cc-cpg-activity-referral-dietition",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition",
+    "version" : "1.0.0",
+    "name" : "ReferralDietitian"
+  },
+  {
+    "id" : "cc-cpg-activity-referral-nephrology",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology",
+    "version" : "1.0.0",
+    "name" : "ReferralNephrology"
+  },
+  {
+    "id" : "cc-cpg-activity-ultrasound-renal",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal",
+    "version" : "1.0.0",
+    "name" : "UltrasoundRenalHistory"
+  },
+  {
+    "id" : "ckd-risk-referral-nephrology",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology",
+    "version" : "1.0.0",
+    "name" : "ReferralToNephrologist"
+  },
+  {
+    "id" : "ckd-risk-renal-lab-order",
+    "type" : "ActivityDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order",
+    "version" : "1.0.0",
+    "name" : "OrderRenalLabPanel"
+  },
+  {
+    "id" : "CKDRiskLogic",
+    "type" : "Library",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic",
+    "version" : "1.0.0",
+    "name" : "CKDRiskLogic"
+  },
+  {
+    "id" : "cc-cpg-plan-ckd",
+    "type" : "PlanDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd",
+    "version" : "1.0.0",
+    "name" : "ChronicKidneyDiseaseAmbulatory"
+  },
+  {
+    "id" : "ckd-risk-screening",
+    "type" : "PlanDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening",
+    "version" : "1.0.0",
+    "name" : "CKDRiskScreening"
+  },
+  {
+    "id" : "va-ckd-protocol",
+    "type" : "PlanDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol",
+    "version" : "1.0.0",
+    "name" : "VACKDProtocol"
+  },
+  {
+    "id" : "va-ckd-recommendations",
+    "type" : "PlanDefinition",
+    "url" : "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations",
+    "version" : "1.0.0",
+    "name" : "VACKDRecommendations"
+  }
+]

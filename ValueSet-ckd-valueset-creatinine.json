@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ckd-valueset-creatinine",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ckd-valueset-creatinine</b></p><a name=\"ckd-valueset-creatinine\"> </a><a name=\"hcckd-valueset-creatinine\"> </a><a name=\"ckd-valueset-creatinine-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/77140-2/\">77140-2</a></td><td style=\"color: #cccccc\">Creatinine [Moles/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"https://loinc.org/14682-9/\">14682-9</a></td><td style=\"color: #cccccc\">Creatinine [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/2160-0/\">2160-0</a></td><td style=\"color: #cccccc\">Creatinine [Mass/volume] in Serum or Plasma</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine",
+  "version" : "1.0.0",
+  "name" : "CreatinineLabResults",
+  "title" : "Creatinine Lab Results",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-11-18T18:15:24+00:00",
+  "publisher" : "HL7 International - Clinical Decision Support WG",
+  "contact" : [{
+    "name" : "HL7 International - Clinical Decision Support WG",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss/index.cfm"
+    }]
+  }],
+  "description" : "Creatinine Lab Results ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "77140-2"
+      },
+      {
+        "code" : "14682-9"
+      },
+      {
+        "code" : "2160-0"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="cc-cpg-activity-ultrasound-renal"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition cc-cpg-activity-ultrasound-renal</b></p><a name="cc-cpg-activity-ultrasound-renal"> </a><a name="hccc-cpg-activity-ultrasound-renal"> </a><a name="cc-cpg-activity-ultrasound-renal-en-US"> </a><p><b>CQF Knowledge capability</b>: shareable</p><p><b>CQF Knowledge capability</b>: computable</p><p><b>CQF Knowledge capability</b>: publishable</p><p><b>CQF knowledge representation level</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-cc-cpg-activity-ultrasound-renal.html">ActivityDefinition Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]</a></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: UltrasoundRenalHistory</p><p><b>title</b>: Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-11-18 18:15:24+0000</p><p><b>publisher</b>: HL7 International - Clinical Decision Support WG</p><p><b>contact</b>: HL7 International - Clinical Decision Support WG: <a href="http://www.hl7.org/Special/committees/dss/index.cfm">http://www.hl7.org/Special/committees/dss/index.cfm</a></p><p><b>description</b>: </p><div><p>Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]</p>
+</div><p><b>jurisdiction</b>: <span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">World</span></p><blockquote><p><b>relatedArtifact</b></p><p><b>type</b>: Justification</p><p><b>display</b>: Renal ultrasonography
+
+
+	Perform ultrasonography to detect structural abnormalities when routine evaluation and urinalysis are inconclusive or to distinguish between acute and chronic kidney disease
+
+
+
+	Small hyperechoic kidneys, cysts, or lesions are irregularities associated with chronic kidney disease
+
+
+
+	Ultrasonography will also detect presence of stones, cysts, or masses that can affect renal function
+
+
+
+	Diagnosis of chronic kidney disease requires abnormalities persisting beyond 3 months
+
+
+&amp;nbsp;
+
+Differential Diagnosis
+
+
+	Renal artery stenosis
+	
+		Narrowing of the renal arteries resulting in loss of kidney function and blood pressure alteration
+		Both renal artery stenosis and chronic kidney disease present with hypertension and reduced GFR
+		Although also a cause of chronic kidney disease, renal artery stenosis (usually from atherosclerosis) is present before the development of kidney disease
+		Renal bruit is indicative of renal artery stenosis
+		Duplex ultrasonography can identify blockage in the renal artery and high velocity flow rate, indicative of renal artery stenosis
+	
+	
+
+
+
+	Neoplasm
+	
+		Neoplasm of the kidney is a tumor growth in the renal cells
+		Both diseases present with RBCs in urine
+		Neoplasia can be differentiated by detecting tumor mass on kidney
+		Contrast-enhanced CT scanning or ultrasonography can identify renal neoplasias, which can then be further evaluated with MRI</p><p><b>citation</b>: </p><div><p>Chronic Kidney Disease Clinical Overview. ClinicalKey. Source</p>
+</div><p><b>url</b>: <a href="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75D50232E05352E3610A5325">http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75D50232E05352E3610A5325</a></p><h3>Documents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td><a href="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75D50232E05352E3610A5325">http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75D50232E05352E3610A5325</a></td></tr></table></blockquote><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 13301000087109}">Ultrasound of bilateral kidneys</span></p><p><b>timing</b>: Events: ?? </p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Practitioner</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal"/>
+  <version value="1.0.0"/>
+  <name value="UltrasoundRenalHistory"/>
+  <title value="Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-11-18T18:15:24+00:00"/>
+  <publisher value="HL7 International - Clinical Decision Support WG"/>
+  <contact>
+    <name value="HL7 International - Clinical Decision Support WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="justification"/>
+    <display value="Renal ultrasonography&#xA;&#xA;&#xA;&#x9;Perform ultrasonography to detect structural abnormalities when routine evaluation and urinalysis are inconclusive or to distinguish between acute and chronic kidney disease&#xA;&#xA;&#xA;&#xA;&#x9;Small hyperechoic kidneys, cysts, or lesions are irregularities associated with chronic kidney disease&#xA;&#xA;&#xA;&#xA;&#x9;Ultrasonography will also detect presence of stones, cysts, or masses that can affect renal function&#xA;&#xA;&#xA;&#xA;&#x9;Diagnosis of chronic kidney disease requires abnormalities persisting beyond 3 months&#xA;&#xA;&#xA;&amp;nbsp;&#xA;&#xA;Differential Diagnosis&#xA;&#xA;&#xA;&#x9;Renal artery stenosis&#xA;&#x9;&#xA;&#x9;&#x9;Narrowing of the renal arteries resulting in loss of kidney function and blood pressure alteration&#xA;&#x9;&#x9;Both renal artery stenosis and chronic kidney disease present with hypertension and reduced GFR&#xA;&#x9;&#x9;Although also a cause of chronic kidney disease, renal artery stenosis (usually from atherosclerosis) is present before the development of kidney disease&#xA;&#x9;&#x9;Renal bruit is indicative of renal artery stenosis&#xA;&#x9;&#x9;Duplex ultrasonography can identify blockage in the renal artery and high velocity flow rate, indicative of renal artery stenosis&#xA;&#x9;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#x9;Neoplasm&#xA;&#x9;&#xA;&#x9;&#x9;Neoplasm of the kidney is a tumor growth in the renal cells&#xA;&#x9;&#x9;Both diseases present with RBCs in urine&#xA;&#x9;&#x9;Neoplasia can be differentiated by detecting tumor mass on kidney&#xA;&#x9;&#x9;Contrast-enhanced CT scanning or ultrasonography can identify renal neoplasias, which can then be further evaluated with MRI"/>
+    <citation value="Chronic Kidney Disease Clinical Overview. ClinicalKey. Source"/>
+    <url value="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75D50232E05352E3610A5325"/>
+    <document>
+      <url value="http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75D50232E05352E3610A5325"/>
+    </document>
+  </relatedArtifact>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="13301000087109"/>
+      <display value="Ultrasonography of bilateral kidneys (procedure)"/>
+    </coding>
+    <text value="Ultrasound of bilateral kidneys"/>
+  </code>
+  <timingTiming>
+    <event>
+      <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expression">
+        <valueExpression>
+          <language value="text/cql"/>
+          <expression value="Now()"/>
+        </valueExpression>
+      </extension>
+    </event>
+  </timingTiming>
+  <participant>
+    <type value="practitioner"/>
+  </participant>
+</ActivityDefinition>

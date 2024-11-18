@@ -1,0 +1,3693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="e9f45393-1af4-45b0-9bd7-e546ace519a6"/>
+  <meta>
+    <lastUpdated value="2024-11-18T18:15:24.070+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
+            <p>This value set expansion contains 112 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-709044004"> </a>  
+                  <a href="http://snomed.info/id/709044004">709044004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-16726004"> </a>  
+                  <a href="http://snomed.info/id/16726004">16726004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Renal osteodystrophy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-46177005"> </a>  
+                  <a href="http://snomed.info/id/46177005">46177005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage kidney disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-49708008"> </a>  
+                  <a href="http://snomed.info/id/49708008">49708008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anemia of chronic renal failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-57557005"> </a>  
+                  <a href="http://snomed.info/id/57557005">57557005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic milk alkali syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90688005"> </a>  
+                  <a href="http://snomed.info/id/90688005">90688005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic renal failure syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-236433006"> </a>  
+                  <a href="http://snomed.info/id/236433006">236433006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Acute-on-chronic renal failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-236434000"> </a>  
+                  <a href="http://snomed.info/id/236434000">236434000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal failure untreated by renal replacement therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-236435004"> </a>  
+                  <a href="http://snomed.info/id/236435004">236435004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal failure on dialysis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-236436003"> </a>  
+                  <a href="http://snomed.info/id/236436003">236436003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal failure with renal transplant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-236552002"> </a>  
+                  <a href="http://snomed.info/id/236552002">236552002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Adynamic bone disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-425369003"> </a>  
+                  <a href="http://snomed.info/id/425369003">425369003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic progressive renal failure (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-431855005"> </a>  
+                  <a href="http://snomed.info/id/431855005">431855005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 1 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-431856006"> </a>  
+                  <a href="http://snomed.info/id/431856006">431856006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 2 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-431857002"> </a>  
+                  <a href="http://snomed.info/id/431857002">431857002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 4 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-433144002"> </a>  
+                  <a href="http://snomed.info/id/433144002">433144002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-433146000"> </a>  
+                  <a href="http://snomed.info/id/433146000">433146000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-700378005"> </a>  
+                  <a href="http://snomed.info/id/700378005">700378005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3A</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-700379002"> </a>  
+                  <a href="http://snomed.info/id/700379002">700379002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3B</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-704667004"> </a>  
+                  <a href="http://snomed.info/id/704667004">704667004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension concurrent and due to end stage renal disease on dialysis (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-707324008"> </a>  
+                  <a href="http://snomed.info/id/707324008">707324008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anemia in end stage renal disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-708975004"> </a>  
+                  <a href="http://snomed.info/id/708975004">708975004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mixed renal osteodystrophy (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-712487000"> </a>  
+                  <a href="http://snomed.info/id/712487000">712487000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal disease due to benign hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-713313000"> </a>  
+                  <a href="http://snomed.info/id/713313000">713313000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease mineral and bone disorder</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-714152005"> </a>  
+                  <a href="http://snomed.info/id/714152005">714152005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease 5d</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-714153000"> </a>  
+                  <a href="http://snomed.info/id/714153000">714153000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 with transplant (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-722098007"> </a>  
+                  <a href="http://snomed.info/id/722098007">722098007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease following donor nephrectomy (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-722149000"> </a>  
+                  <a href="http://snomed.info/id/722149000">722149000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease due to and following excision of neoplasm of kidney (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-722150000"> </a>  
+                  <a href="http://snomed.info/id/722150000">722150000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease due to systemic infection (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-722467000"> </a>  
+                  <a href="http://snomed.info/id/722467000">722467000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease due to traumatic loss of kidney (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-723190009"> </a>  
+                  <a href="http://snomed.info/id/723190009">723190009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic renal insufficiency (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-776416004"> </a>  
+                  <a href="http://snomed.info/id/776416004">776416004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hyperuricemia, pulmonary hypertension, renal failure, alkalosis syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-897310009"> </a>  
+                  <a href="http://snomed.info/id/897310009">897310009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Renal osteodystrophy with high bone turnover</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-897311008"> </a>  
+                  <a href="http://snomed.info/id/897311008">897311008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Renal osteodystrophy with normal bone turnover (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-897312001"> </a>  
+                  <a href="http://snomed.info/id/897312001">897312001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Renal osteodystrophy with low bone turnover (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1208934006"> </a>  
+                  <a href="http://snomed.info/id/1208934006">1208934006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sagliker syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1217070004"> </a>  
+                  <a href="http://snomed.info/id/1217070004">1217070004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Renal osteodystrophy due to hyperparathyroidism (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1295482007"> </a>  
+                  <a href="http://snomed.info/id/1295482007">1295482007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Osteoporosis due to chronic kidney disease (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332436006"> </a>  
+                  <a href="http://snomed.info/id/1332436006">1332436006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 3B due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332441003"> </a>  
+                  <a href="http://snomed.info/id/1332441003">1332441003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 3A due to type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332442005"> </a>  
+                  <a href="http://snomed.info/id/1332442005">1332442005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 3 due to type I diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332464001"> </a>  
+                  <a href="http://snomed.info/id/1332464001">1332464001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 2 due to type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332465000"> </a>  
+                  <a href="http://snomed.info/id/1332465000">1332465000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 3B due to type II diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332466004"> </a>  
+                  <a href="http://snomed.info/id/1332466004">1332466004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 3A due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332467008"> </a>  
+                  <a href="http://snomed.info/id/1332467008">1332467008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 5 due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332468003"> </a>  
+                  <a href="http://snomed.info/id/1332468003">1332468003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 4 due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332469006"> </a>  
+                  <a href="http://snomed.info/id/1332469006">1332469006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3B due to type II diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332470007"> </a>  
+                  <a href="http://snomed.info/id/1332470007">1332470007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3A due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332471006"> </a>  
+                  <a href="http://snomed.info/id/1332471006">1332471006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3B due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1332472004"> </a>  
+                  <a href="http://snomed.info/id/1332472004">1332472004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3A due to type I diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-711000119100"> </a>  
+                  <a href="http://snomed.info/id/711000119100">711000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-721000119107"> </a>  
+                  <a href="http://snomed.info/id/721000119107">721000119107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetic stage 4 chronic renal impairment due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-731000119105"> </a>  
+                  <a href="http://snomed.info/id/731000119105">731000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetic stage 3 chronic renal impairment due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-741000119101"> </a>  
+                  <a href="http://snomed.info/id/741000119101">741000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-751000119104"> </a>  
+                  <a href="http://snomed.info/id/751000119104">751000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 1 due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-771000119108"> </a>  
+                  <a href="http://snomed.info/id/771000119108">771000119108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic renal impairment due to type II diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1801000119106"> </a>  
+                  <a href="http://snomed.info/id/1801000119106">1801000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anemia, pre-ESRD erythropoietin protocol</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-8501000119104"> </a>  
+                  <a href="http://snomed.info/id/8501000119104">8501000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart and chronic kidney disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-71421000119105"> </a>  
+                  <a href="http://snomed.info/id/71421000119105">71421000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-71701000119105"> </a>  
+                  <a href="http://snomed.info/id/71701000119105">71701000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90721000119101"> </a>  
+                  <a href="http://snomed.info/id/90721000119101">90721000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 1 due to type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90731000119103"> </a>  
+                  <a href="http://snomed.info/id/90731000119103">90731000119103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 2 due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90741000119107"> </a>  
+                  <a href="http://snomed.info/id/90741000119107">90741000119107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3 due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90751000119109"> </a>  
+                  <a href="http://snomed.info/id/90751000119109">90751000119109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 4 due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90761000119106"> </a>  
+                  <a href="http://snomed.info/id/90761000119106">90761000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 due to type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90771000119100"> </a>  
+                  <a href="http://snomed.info/id/90771000119100">90771000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90791000119104"> </a>  
+                  <a href="http://snomed.info/id/90791000119104">90791000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96441000119101"> </a>  
+                  <a href="http://snomed.info/id/96441000119101">96441000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease due to type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96701000119107"> </a>  
+                  <a href="http://snomed.info/id/96701000119107">96701000119107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart AND chronic kidney disease on dialysis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96711000119105"> </a>  
+                  <a href="http://snomed.info/id/96711000119105">96711000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart AND chronic kidney disease stage 5</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96721000119103"> </a>  
+                  <a href="http://snomed.info/id/96721000119103">96721000119103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart AND chronic kidney disease stage 4</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96731000119100"> </a>  
+                  <a href="http://snomed.info/id/96731000119100">96731000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart AND chronic kidney disease stage 3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96741000119109"> </a>  
+                  <a href="http://snomed.info/id/96741000119109">96741000119109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart AND chronic kidney disease stage 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-96751000119106"> </a>  
+                  <a href="http://snomed.info/id/96751000119106">96751000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertensive heart AND chronic kidney disease stage 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-104931000119100"> </a>  
+                  <a href="http://snomed.info/id/104931000119100">104931000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease due to hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-111411000119103"> </a>  
+                  <a href="http://snomed.info/id/111411000119103">111411000119103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal disease due to hypertension (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-117681000119102"> </a>  
+                  <a href="http://snomed.info/id/117681000119102">117681000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 1 due to hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-118781000119108"> </a>  
+                  <a href="http://snomed.info/id/118781000119108">118781000119108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-127991000119101"> </a>  
+                  <a href="http://snomed.info/id/127991000119101">127991000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-128001000119105"> </a>  
+                  <a href="http://snomed.info/id/128001000119105">128001000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-129151000119102"> </a>  
+                  <a href="http://snomed.info/id/129151000119102">129151000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 4 due to hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-129161000119100"> </a>  
+                  <a href="http://snomed.info/id/129161000119100">129161000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 due to hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-129171000119106"> </a>  
+                  <a href="http://snomed.info/id/129171000119106">129171000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3 due to hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-129181000119109"> </a>  
+                  <a href="http://snomed.info/id/129181000119109">129181000119109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 2 due to hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-140101000119109"> </a>  
+                  <a href="http://snomed.info/id/140101000119109">140101000119109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 5 due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-140111000119107"> </a>  
+                  <a href="http://snomed.info/id/140111000119107">140111000119107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-140121000119100"> </a>  
+                  <a href="http://snomed.info/id/140121000119100">140121000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 3 due to type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-140131000119102"> </a>  
+                  <a href="http://snomed.info/id/140131000119102">140131000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-153851000119106"> </a>  
+                  <a href="http://snomed.info/id/153851000119106">153851000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive chronic kidney disease stage 5</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-153891000119101"> </a>  
+                  <a href="http://snomed.info/id/153891000119101">153891000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal disease on dialysis due to hypertension (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-284961000119106"> </a>  
+                  <a href="http://snomed.info/id/284961000119106">284961000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease due to benign hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-284971000119100"> </a>  
+                  <a href="http://snomed.info/id/284971000119100">284971000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 1 due to benign hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-284981000119102"> </a>  
+                  <a href="http://snomed.info/id/284981000119102">284981000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 2 due to benign hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-284991000119104"> </a>  
+                  <a href="http://snomed.info/id/284991000119104">284991000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3 due to benign hypertension (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285001000119105"> </a>  
+                  <a href="http://snomed.info/id/285001000119105">285001000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 4 due to benign hypertension</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285011000119108"> </a>  
+                  <a href="http://snomed.info/id/285011000119108">285011000119108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 due to benign hypertension (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285831000119108"> </a>  
+                  <a href="http://snomed.info/id/285831000119108">285831000119108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive chronic kidney disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285841000119104"> </a>  
+                  <a href="http://snomed.info/id/285841000119104">285841000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive end stage renal disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285851000119102"> </a>  
+                  <a href="http://snomed.info/id/285851000119102">285851000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive chronic kidney disease stage 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285861000119100"> </a>  
+                  <a href="http://snomed.info/id/285861000119100">285861000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive chronic kidney disease stage 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285871000119106"> </a>  
+                  <a href="http://snomed.info/id/285871000119106">285871000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive chronic kidney disease stage 3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-285881000119109"> </a>  
+                  <a href="http://snomed.info/id/285881000119109">285881000119109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive chronic kidney disease stage 4</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-286371000119107"> </a>  
+                  <a href="http://snomed.info/id/286371000119107">286371000119107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant hypertensive end stage renal disease on dialysis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-368421000119108"> </a>  
+                  <a href="http://snomed.info/id/368421000119108">368421000119108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 1 due to drug induced diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-368431000119106"> </a>  
+                  <a href="http://snomed.info/id/368431000119106">368431000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 2 due to drug induced diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-368441000119102"> </a>  
+                  <a href="http://snomed.info/id/368441000119102">368441000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 3 due to drug induced diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-368451000119100"> </a>  
+                  <a href="http://snomed.info/id/368451000119100">368451000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 4 due to drug induced diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-368461000119103"> </a>  
+                  <a href="http://snomed.info/id/368461000119103">368461000119103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic kidney disease stage 5 due to drug induced diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-368471000119109"> </a>  
+                  <a href="http://snomed.info/id/368471000119109">368471000119109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>End stage renal disease on dialysis due to drug induced diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-691421000119108"> </a>  
+                  <a href="http://snomed.info/id/691421000119108">691421000119108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anaemia co-occurrent and due to chronic kidney disease stage 3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-10757401000119104"> </a>  
+                  <a href="http://snomed.info/id/10757401000119104">10757401000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing hypertensive heart and chronic kidney disease in mother complicating childbirth (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-10757481000119107"> </a>  
+                  <a href="http://snomed.info/id/10757481000119107">10757481000119107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd"/>
+        <version value="1.0.0"/>
+        <name value="ChronicRenalDiseaseFinding"/>
+        <title value="Chronic Renal Disease Finding ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-11-18T18:15:24+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:4f5f0400-f91d-46c1-9e93-542b82b91874"/>
+          <timestamp value="2024-11-18T18:15:36+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="709044004"/>
+            <display value="Chronic kidney disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="16726004"/>
+            <display value="Renal osteodystrophy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46177005"/>
+            <display value="End stage kidney disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49708008"/>
+            <display value="Anemia of chronic renal failure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57557005"/>
+            <display value="Chronic milk alkali syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90688005"/>
+            <display value="Chronic renal failure syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236433006"/>
+            <display value="Acute-on-chronic renal failure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236434000"/>
+            <display value="End stage renal failure untreated by renal replacement therapy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236435004"/>
+            <display value="End stage renal failure on dialysis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236436003"/>
+            <display value="End stage renal failure with renal transplant"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236552002"/>
+            <display value="Adynamic bone disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="425369003"/>
+            <display value="Chronic progressive renal failure (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="431855005"/>
+            <display value="Chronic kidney disease stage 1 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="431856006"/>
+            <display value="Chronic kidney disease stage 2 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="431857002"/>
+            <display value="Chronic kidney disease stage 4 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="433144002"/>
+            <display value="Chronic kidney disease stage 3 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="433146000"/>
+            <display value="Chronic kidney disease stage 5 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="700378005"/>
+            <display value="Chronic kidney disease stage 3A"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="700379002"/>
+            <display value="Chronic kidney disease stage 3B"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="704667004"/>
+            <display value="Hypertension concurrent and due to end stage renal disease on dialysis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="707324008"/>
+            <display value="Anemia in end stage renal disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="708975004"/>
+            <display value="Mixed renal osteodystrophy (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="712487000"/>
+            <display value="End stage renal disease due to benign hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="713313000"/>
+            <display value="Chronic kidney disease mineral and bone disorder"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="714152005"/>
+            <display value="Chronic kidney disease 5d"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="714153000"/>
+            <display value="Chronic kidney disease stage 5 with transplant (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722098007"/>
+            <display value="Chronic kidney disease following donor nephrectomy (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722149000"/>
+            <display value="Chronic kidney disease due to and following excision of neoplasm of kidney (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722150000"/>
+            <display value="Chronic kidney disease due to systemic infection (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722467000"/>
+            <display value="Chronic kidney disease due to traumatic loss of kidney (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="723190009"/>
+            <display value="Chronic renal insufficiency (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="776416004"/>
+            <display value="Hyperuricemia, pulmonary hypertension, renal failure, alkalosis syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="897310009"/>
+            <display value="Renal osteodystrophy with high bone turnover"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="897311008"/>
+            <display value="Renal osteodystrophy with normal bone turnover (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="897312001"/>
+            <display value="Renal osteodystrophy with low bone turnover (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1208934006"/>
+            <display value="Sagliker syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1217070004"/>
+            <display value="Renal osteodystrophy due to hyperparathyroidism (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1295482007"/>
+            <display value="Osteoporosis due to chronic kidney disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332436006"/>
+            <display value="Hypertension in chronic kidney disease stage 3B due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332441003"/>
+            <display value="Hypertension in chronic kidney disease stage 3A due to type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332442005"/>
+            <display value="Hypertension in chronic kidney disease stage 3 due to type I diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332464001"/>
+            <display value="Hypertension in chronic kidney disease stage 2 due to type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332465000"/>
+            <display value="Hypertension in chronic kidney disease stage 3B due to type II diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332466004"/>
+            <display value="Hypertension in chronic kidney disease stage 3A due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332467008"/>
+            <display value="Hypertension in chronic kidney disease stage 5 due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332468003"/>
+            <display value="Hypertension in chronic kidney disease stage 4 due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332469006"/>
+            <display value="Chronic kidney disease stage 3B due to type II diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332470007"/>
+            <display value="Chronic kidney disease stage 3A due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332471006"/>
+            <display value="Chronic kidney disease stage 3B due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1332472004"/>
+            <display value="Chronic kidney disease stage 3A due to type I diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="711000119100"/>
+            <display value="Chronic kidney disease stage 5 due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721000119107"/>
+            <display value="Diabetic stage 4 chronic renal impairment due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="731000119105"/>
+            <display value="Diabetic stage 3 chronic renal impairment due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="741000119101"/>
+            <display value="Chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="751000119104"/>
+            <display value="Chronic kidney disease stage 1 due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="771000119108"/>
+            <display value="Chronic renal impairment due to type II diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1801000119106"/>
+            <display value="Anemia, pre-ESRD erythropoietin protocol"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8501000119104"/>
+            <display value="Hypertensive heart and chronic kidney disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71421000119105"/>
+            <display value="Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71701000119105"/>
+            <display value="Hypertension in chronic kidney disease due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90721000119101"/>
+            <display value="Chronic kidney disease stage 1 due to type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90731000119103"/>
+            <display value="Chronic kidney disease stage 2 due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90741000119107"/>
+            <display value="Chronic kidney disease stage 3 due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90751000119109"/>
+            <display value="Chronic kidney disease stage 4 due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90761000119106"/>
+            <display value="Chronic kidney disease stage 5 due to type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90771000119100"/>
+            <display value="End stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90791000119104"/>
+            <display value="End stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96441000119101"/>
+            <display value="Chronic kidney disease due to type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96701000119107"/>
+            <display value="Hypertensive heart AND chronic kidney disease on dialysis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96711000119105"/>
+            <display value="Hypertensive heart AND chronic kidney disease stage 5"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96721000119103"/>
+            <display value="Hypertensive heart AND chronic kidney disease stage 4"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96731000119100"/>
+            <display value="Hypertensive heart AND chronic kidney disease stage 3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96741000119109"/>
+            <display value="Hypertensive heart AND chronic kidney disease stage 2"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="96751000119106"/>
+            <display value="Hypertensive heart AND chronic kidney disease stage 1"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="104931000119100"/>
+            <display value="Chronic kidney disease due to hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="111411000119103"/>
+            <display value="End stage renal disease due to hypertension (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="117681000119102"/>
+            <display value="Chronic kidney disease stage 1 due to hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="118781000119108"/>
+            <display value="Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="127991000119101"/>
+            <display value="Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128001000119105"/>
+            <display value="Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="129151000119102"/>
+            <display value="Chronic kidney disease stage 4 due to hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="129161000119100"/>
+            <display value="Chronic kidney disease stage 5 due to hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="129171000119106"/>
+            <display value="Chronic kidney disease stage 3 due to hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="129181000119109"/>
+            <display value="Chronic kidney disease stage 2 due to hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="140101000119109"/>
+            <display value="Hypertension in chronic kidney disease stage 5 due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="140111000119107"/>
+            <display value="Hypertension in chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="140121000119100"/>
+            <display value="Hypertension in chronic kidney disease stage 3 due to type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="140131000119102"/>
+            <display value="Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="153851000119106"/>
+            <display value="Malignant hypertensive chronic kidney disease stage 5"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="153891000119101"/>
+            <display value="End stage renal disease on dialysis due to hypertension (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="284961000119106"/>
+            <display value="Chronic kidney disease due to benign hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="284971000119100"/>
+            <display value="Chronic kidney disease stage 1 due to benign hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="284981000119102"/>
+            <display value="Chronic kidney disease stage 2 due to benign hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="284991000119104"/>
+            <display value="Chronic kidney disease stage 3 due to benign hypertension (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285001000119105"/>
+            <display value="Chronic kidney disease stage 4 due to benign hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285011000119108"/>
+            <display value="Chronic kidney disease stage 5 due to benign hypertension (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285831000119108"/>
+            <display value="Malignant hypertensive chronic kidney disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285841000119104"/>
+            <display value="Malignant hypertensive end stage renal disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285851000119102"/>
+            <display value="Malignant hypertensive chronic kidney disease stage 1"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285861000119100"/>
+            <display value="Malignant hypertensive chronic kidney disease stage 2"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285871000119106"/>
+            <display value="Malignant hypertensive chronic kidney disease stage 3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="285881000119109"/>
+            <display value="Malignant hypertensive chronic kidney disease stage 4"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="286371000119107"/>
+            <display value="Malignant hypertensive end stage renal disease on dialysis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368421000119108"/>
+            <display value="Chronic kidney disease stage 1 due to drug induced diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368431000119106"/>
+            <display value="Chronic kidney disease stage 2 due to drug induced diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368441000119102"/>
+            <display value="Chronic kidney disease stage 3 due to drug induced diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368451000119100"/>
+            <display value="Chronic kidney disease stage 4 due to drug induced diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368461000119103"/>
+            <display value="Chronic kidney disease stage 5 due to drug induced diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="368471000119109"/>
+            <display value="End stage renal disease on dialysis due to drug induced diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="691421000119108"/>
+            <display value="Anaemia co-occurrent and due to chronic kidney disease stage 3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10757401000119104"/>
+            <display value="Pre-existing hypertensive heart and chronic kidney disease in mother complicating childbirth (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10757481000119107"/>
+            <display value="Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-77140-2"> </a>  
+                  <a href="https://loinc.org/77140-2/">77140-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Creatinine [Moles/volume] in Serum, Plasma or Blood</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-14682-9"> </a>  
+                  <a href="https://loinc.org/14682-9/">14682-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Creatinine [Moles/volume] in Serum or Plasma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-2160-0"> </a>  
+                  <a href="https://loinc.org/2160-0/">2160-0</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Creatinine [Mass/volume] in Serum or Plasma</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine"/>
+        <version value="1.0.0"/>
+        <name value="CreatinineLabResults"/>
+        <title value="Creatinine Lab Results"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-11-18T18:15:24+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7e967d29-dafc-461b-a5d7-d93929bfc28c"/>
+          <timestamp value="2024-11-18T18:15:37+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="77140-2"/>
+            <display value="Creatinine [Moles/volume] in Serum, Plasma or Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14682-9"/>
+            <display value="Creatinine [Moles/volume] in Serum or Plasma"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2160-0"/>
+            <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
+            <p>This value set expansion contains 130 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-73211009"> </a>  
+                  <a href="http://snomed.info/id/73211009">73211009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-2751001"> </a>  
+                  <a href="http://snomed.info/id/2751001">2751001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fibrocalculous pancreatic diabetes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-4783006"> </a>  
+                  <a href="http://snomed.info/id/4783006">4783006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maternal diabetes mellitus with hypoglycemia affecting fetus OR newborn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-5368009"> </a>  
+                  <a href="http://snomed.info/id/5368009">5368009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Drug-induced diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-5969009"> </a>  
+                  <a href="http://snomed.info/id/5969009">5969009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus associated with genetic syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-8801005"> </a>  
+                  <a href="http://snomed.info/id/8801005">8801005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Secondary diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-11530004"> </a>  
+                  <a href="http://snomed.info/id/11530004">11530004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Brittle diabetes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-11687002"> </a>  
+                  <a href="http://snomed.info/id/11687002">11687002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gestational diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-23045005"> </a>  
+                  <a href="http://snomed.info/id/23045005">23045005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insulin dependent diabetes mellitus type IA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-24203005"> </a>  
+                  <a href="http://snomed.info/id/24203005">24203005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Extreme insulin resistance with acanthosis nigricans, hirsutism AND abnormal insulin receptors</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-28032008"> </a>  
+                  <a href="http://snomed.info/id/28032008">28032008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insulin dependent diabetes mellitus type IB</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-33559001"> </a>  
+                  <a href="http://snomed.info/id/33559001">33559001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pineal hyperplasia AND diabetes mellitus syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-42954008"> </a>  
+                  <a href="http://snomed.info/id/42954008">42954008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus associated with receptor abnormality</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-44054006"> </a>  
+                  <a href="http://snomed.info/id/44054006">44054006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus type II</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-46635009"> </a>  
+                  <a href="http://snomed.info/id/46635009">46635009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus type I</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-46894009"> </a>  
+                  <a href="http://snomed.info/id/46894009">46894009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gestational diabetes mellitus class A2 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-49817004"> </a>  
+                  <a href="http://snomed.info/id/49817004">49817004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Neonatal diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51002006"> </a>  
+                  <a href="http://snomed.info/id/51002006">51002006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus associated with pancreatic disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-57886004"> </a>  
+                  <a href="http://snomed.info/id/57886004">57886004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Protein-deficient diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-59079001"> </a>  
+                  <a href="http://snomed.info/id/59079001">59079001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus associated with hormonal etiology</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-70694009"> </a>  
+                  <a href="http://snomed.info/id/70694009">70694009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Marquardt-Loriaux syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-75022004"> </a>  
+                  <a href="http://snomed.info/id/75022004">75022004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gestational diabetes mellitus class A1 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-75524006"> </a>  
+                  <a href="http://snomed.info/id/75524006">75524006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malnutrition related diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-75682002"> </a>  
+                  <a href="http://snomed.info/id/75682002">75682002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus caused by insulin receptor antibodies (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-76751001"> </a>  
+                  <a href="http://snomed.info/id/76751001">76751001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus in mother complicating pregnancy, childbirth AND/OR puerperium</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-81531005"> </a>  
+                  <a href="http://snomed.info/id/81531005">81531005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus type 2 in obese</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-91352004"> </a>  
+                  <a href="http://snomed.info/id/91352004">91352004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insulinopathy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-111307005"> </a>  
+                  <a href="http://snomed.info/id/111307005">111307005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Leprechaunism syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-111552007"> </a>  
+                  <a href="http://snomed.info/id/111552007">111552007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus without complication</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-123763000"> </a>  
+                  <a href="http://snomed.info/id/123763000">123763000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Houssay's syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-127012008"> </a>  
+                  <a href="http://snomed.info/id/127012008">127012008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lipoatrophic diabetes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190368000"> </a>  
+                  <a href="http://snomed.info/id/190368000">190368000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type I diabetes mellitus with ulcer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190372001"> </a>  
+                  <a href="http://snomed.info/id/190372001">190372001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type I diabetes mellitus maturity onset</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190389009"> </a>  
+                  <a href="http://snomed.info/id/190389009">190389009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type 2 diabetes mellitus with ulcer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190407009"> </a>  
+                  <a href="http://snomed.info/id/190407009">190407009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malnutrition-related diabetes mellitus with renal complications</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190410002"> </a>  
+                  <a href="http://snomed.info/id/190410002">190410002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malnutrition-related diabetes mellitus with peripheral circulatory complications</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190412005"> </a>  
+                  <a href="http://snomed.info/id/190412005">190412005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malnutrition-related diabetes mellitus without complications</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-190447002"> </a>  
+                  <a href="http://snomed.info/id/190447002">190447002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Steroid-induced diabetes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-199223000"> </a>  
+                  <a href="http://snomed.info/id/199223000">199223000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus during pregnancy, childbirth and the puerperium</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-199229001"> </a>  
+                  <a href="http://snomed.info/id/199229001">199229001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-199230006"> </a>  
+                  <a href="http://snomed.info/id/199230006">199230006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-199231005"> </a>  
+                  <a href="http://snomed.info/id/199231005">199231005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing malnutrition-related diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237599002"> </a>  
+                  <a href="http://snomed.info/id/237599002">237599002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insulin treated Type II diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237600004"> </a>  
+                  <a href="http://snomed.info/id/237600004">237600004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malnutrition-related diabetes mellitus - fibrocalculous</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237601000"> </a>  
+                  <a href="http://snomed.info/id/237601000">237601000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Secondary endocrine diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237603002"> </a>  
+                  <a href="http://snomed.info/id/237603002">237603002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Transitory neonatal diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237604008"> </a>  
+                  <a href="http://snomed.info/id/237604008">237604008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus autosomal dominant type II</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237611007"> </a>  
+                  <a href="http://snomed.info/id/237611007">237611007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Muscular atrophy, ataxia, retinitis pigmentosa, and diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237612000"> </a>  
+                  <a href="http://snomed.info/id/237612000">237612000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Photomyoclonus, diabetes mellitus, deafness, nephropathy and cerebral dysfunction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237617006"> </a>  
+                  <a href="http://snomed.info/id/237617006">237617006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Megaloblastic anemia, thiamine-responsive, with diabetes mellitus and sensorineural deafness</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237619009"> </a>  
+                  <a href="http://snomed.info/id/237619009">237619009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ballinger-Wallace syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237627000"> </a>  
+                  <a href="http://snomed.info/id/237627000">237627000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy and type 2 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237651005"> </a>  
+                  <a href="http://snomed.info/id/237651005">237651005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insulin resistance - type A</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-237652003"> </a>  
+                  <a href="http://snomed.info/id/237652003">237652003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insulin resistance - type B</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-276560009"> </a>  
+                  <a href="http://snomed.info/id/276560009">276560009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus in neonate small for gestational age</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-290002008"> </a>  
+                  <a href="http://snomed.info/id/290002008">290002008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Unstable type I diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-313436004"> </a>  
+                  <a href="http://snomed.info/id/313436004">313436004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type 2 diabetes mellitus without complication</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-359642000"> </a>  
+                  <a href="http://snomed.info/id/359642000">359642000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus type 2 in nonobese</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-405749004"> </a>  
+                  <a href="http://snomed.info/id/405749004">405749004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Newly diagnosed diabetes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-408540003"> </a>  
+                  <a href="http://snomed.info/id/408540003">408540003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus induced by non-steroid drugs</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-426705001"> </a>  
+                  <a href="http://snomed.info/id/426705001">426705001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus associated with cystic fibrosis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-426875007"> </a>  
+                  <a href="http://snomed.info/id/426875007">426875007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Latent autoimmune diabetes mellitus in adult (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-427089005"> </a>  
+                  <a href="http://snomed.info/id/427089005">427089005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus due to cystic fibrosis (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-443694000"> </a>  
+                  <a href="http://snomed.info/id/443694000">443694000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type II diabetes mellitus uncontrolled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-444073006"> </a>  
+                  <a href="http://snomed.info/id/444073006">444073006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type I diabetes mellitus uncontrolled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-444074000"> </a>  
+                  <a href="http://snomed.info/id/444074000">444074000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type I diabetes mellitus well controlled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-444110003"> </a>  
+                  <a href="http://snomed.info/id/444110003">444110003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type II diabetes mellitus well controlled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-445260006"> </a>  
+                  <a href="http://snomed.info/id/445260006">445260006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Posttransplant diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-445353002"> </a>  
+                  <a href="http://snomed.info/id/445353002">445353002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Brittle type II diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-472699005"> </a>  
+                  <a href="http://snomed.info/id/472699005">472699005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gestational diabetes mellitus uncontrolled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609561005"> </a>  
+                  <a href="http://snomed.info/id/609561005">609561005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609562003"> </a>  
+                  <a href="http://snomed.info/id/609562003">609562003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity onset diabetes of the young, type 1 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609563008"> </a>  
+                  <a href="http://snomed.info/id/609563008">609563008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing diabetes mellitus in pregnancy (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609564002"> </a>  
+                  <a href="http://snomed.info/id/609564002">609564002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing type 1 diabetes mellitus in pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609565001"> </a>  
+                  <a href="http://snomed.info/id/609565001">609565001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Permanent neonatal diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609566000"> </a>  
+                  <a href="http://snomed.info/id/609566000">609566000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy and type 1 diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609567009"> </a>  
+                  <a href="http://snomed.info/id/609567009">609567009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing type 2 diabetes mellitus in pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609568004"> </a>  
+                  <a href="http://snomed.info/id/609568004">609568004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus due to genetic defect in beta cell function</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609569007"> </a>  
+                  <a href="http://snomed.info/id/609569007">609569007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus due to genetic defect in insulin action</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609570008"> </a>  
+                  <a href="http://snomed.info/id/609570008">609570008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 3 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609571007"> </a>  
+                  <a href="http://snomed.info/id/609571007">609571007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 4</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609572000"> </a>  
+                  <a href="http://snomed.info/id/609572000">609572000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 5 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609573005"> </a>  
+                  <a href="http://snomed.info/id/609573005">609573005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 6 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609574004"> </a>  
+                  <a href="http://snomed.info/id/609574004">609574004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 7</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609575003"> </a>  
+                  <a href="http://snomed.info/id/609575003">609575003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes-pancreatic exocrine dysfunction syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609576002"> </a>  
+                  <a href="http://snomed.info/id/609576002">609576002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 9</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609577006"> </a>  
+                  <a href="http://snomed.info/id/609577006">609577006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 10 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609578001"> </a>  
+                  <a href="http://snomed.info/id/609578001">609578001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maturity-onset diabetes of the young, type 11</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609579009"> </a>  
+                  <a href="http://snomed.info/id/609579009">609579009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus, transient neonatal 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609580007"> </a>  
+                  <a href="http://snomed.info/id/609580007">609580007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus, transient neonatal 2 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-609581006"> </a>  
+                  <a href="http://snomed.info/id/609581006">609581006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus, transient neonatal 3 (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-703136005"> </a>  
+                  <a href="http://snomed.info/id/703136005">703136005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus in remission (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-703137001"> </a>  
+                  <a href="http://snomed.info/id/703137001">703137001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type I diabetes mellitus in remission (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-703138006"> </a>  
+                  <a href="http://snomed.info/id/703138006">703138006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type II diabetes mellitus in remission (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-709147009"> </a>  
+                  <a href="http://snomed.info/id/709147009">709147009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gingivitis co-occurrent with diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-716362006"> </a>  
+                  <a href="http://snomed.info/id/716362006">716362006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gingival disease co-occurrent with diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-720519003"> </a>  
+                  <a href="http://snomed.info/id/720519003">720519003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Atherosclerosis, deafness, diabetes, epilepsy, nephropathy syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-721088003"> </a>  
+                  <a href="http://snomed.info/id/721088003">721088003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Developmental delay, epilepsy, neonatal diabetes syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-722206009"> </a>  
+                  <a href="http://snomed.info/id/722206009">722206009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pancreatic hypoplasia, diabetes mellitus, congenital heart disease syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-722454003"> </a>  
+                  <a href="http://snomed.info/id/722454003">722454003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intellectual disability, craniofacial dysmorphism, hypogonadism, diabetes mellitus syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-724067006"> </a>  
+                  <a href="http://snomed.info/id/724067006">724067006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Permanent neonatal diabetes mellitus with cerebellar agenesis syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-733072002"> </a>  
+                  <a href="http://snomed.info/id/733072002">733072002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Stimmler syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-734022008"> </a>  
+                  <a href="http://snomed.info/id/734022008">734022008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Wolfram-like syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-737212004"> </a>  
+                  <a href="http://snomed.info/id/737212004">737212004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus caused by chemical (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-782755007"> </a>  
+                  <a href="http://snomed.info/id/782755007">782755007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Primary microcephaly, mild intellectual disability, young-onset diabetes syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-782825008"> </a>  
+                  <a href="http://snomed.info/id/782825008">782825008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Primary microcephaly, epilepsy, permanent neonatal diabetes syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-783722008"> </a>  
+                  <a href="http://snomed.info/id/783722008">783722008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Myopathy and diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-816067005"> </a>  
+                  <a href="http://snomed.info/id/816067005">816067005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes, hypogonadism, deafness, intellectual disability syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-870528001"> </a>  
+                  <a href="http://snomed.info/id/870528001">870528001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Newly diagnosed diabetes mellitus type 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-890171006"> </a>  
+                  <a href="http://snomed.info/id/890171006">890171006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ketosis-prone diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1142044000"> </a>  
+                  <a href="http://snomed.info/id/1142044000">1142044000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing malnutrition-related diabetes mellitus in pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1197592001"> </a>  
+                  <a href="http://snomed.info/id/1197592001">1197592001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intrauterine growth restriction, short stature, early adult-onset diabetes syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1217044000"> </a>  
+                  <a href="http://snomed.info/id/1217044000">1217044000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ketosis-resistant diabetes mellitus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1217068008"> </a>  
+                  <a href="http://snomed.info/id/1217068008">1217068008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fulminant type 1 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1255271005"> </a>  
+                  <a href="http://snomed.info/id/1255271005">1255271005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Juvenile-onset diabetes mellitus, central and peripheral neurodegeneration syndrome (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1285518004"> </a>  
+                  <a href="http://snomed.info/id/1285518004">1285518004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Wolfram syndrome type I</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1285519007"> </a>  
+                  <a href="http://snomed.info/id/1285519007">1285519007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Wolfram syndrome type 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1290118005"> </a>  
+                  <a href="http://snomed.info/id/1290118005">1290118005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Presymptomatic T1DM (type 1 diabetes mellitus)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1303868000"> </a>  
+                  <a href="http://snomed.info/id/1303868000">1303868000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intermediate DEND syndrome</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-201000119106"> </a>  
+                  <a href="http://snomed.info/id/201000119106">201000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder due to well controlled type 2 diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1481000119100"> </a>  
+                  <a href="http://snomed.info/id/1481000119100">1481000119100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus type 2 without retinopathy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-31321000119102"> </a>  
+                  <a href="http://snomed.info/id/31321000119102">31321000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus type 1 without retinopathy (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-40791000119105"> </a>  
+                  <a href="http://snomed.info/id/40791000119105">40791000119105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Postpartum gestational diabetes mellitus (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-40801000119106"> </a>  
+                  <a href="http://snomed.info/id/40801000119106">40801000119106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gestational diabetes mellitus complicating pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-105401000119101"> </a>  
+                  <a href="http://snomed.info/id/105401000119101">105401000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus due to pancreatic injury (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-106281000119103"> </a>  
+                  <a href="http://snomed.info/id/106281000119103">106281000119103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pre-existing diabetes mellitus in mother complicating childbirth (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-164971000119101"> </a>  
+                  <a href="http://snomed.info/id/164971000119101">164971000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Type 2 diabetes mellitus controlled by diet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-10753491000119101"> </a>  
+                  <a href="http://snomed.info/id/10753491000119101">10753491000119101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gestational diabetes mellitus in childbirth (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-10754881000119104"> </a>  
+                  <a href="http://snomed.info/id/10754881000119104">10754881000119104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetes mellitus in mother complicating childbirth (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-530558861000132104"> </a>  
+                  <a href="http://snomed.info/id/530558861000132104">530558861000132104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Atypical diabetes mellitus (disorder)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes"/>
+        <version value="1.0.0"/>
+        <name value="DiabetesFindingCodes"/>
+        <title value="Diabetes Finding Codes ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-11-18T18:15:24+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:271637fe-6c75-4913-a7b8-0fa67954f58f"/>
+          <timestamp value="2024-11-18T18:15:37+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="73211009"/>
+            <display value="Diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2751001"/>
+            <display value="Fibrocalculous pancreatic diabetes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4783006"/>
+            <display value="Maternal diabetes mellitus with hypoglycemia affecting fetus OR newborn"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="5368009"/>
+            <display value="Drug-induced diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="5969009"/>
+            <display value="Diabetes mellitus associated with genetic syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8801005"/>
+            <display value="Secondary diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11530004"/>
+            <display value="Brittle diabetes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11687002"/>
+            <display value="Gestational diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23045005"/>
+            <display value="Insulin dependent diabetes mellitus type IA"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24203005"/>
+            <display value="Extreme insulin resistance with acanthosis nigricans, hirsutism AND abnormal insulin receptors"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28032008"/>
+            <display value="Insulin dependent diabetes mellitus type IB"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="33559001"/>
+            <display value="Pineal hyperplasia AND diabetes mellitus syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42954008"/>
+            <display value="Diabetes mellitus associated with receptor abnormality"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="44054006"/>
+            <display value="Diabetes mellitus type II"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46635009"/>
+            <display value="Diabetes mellitus type I"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46894009"/>
+            <display value="Gestational diabetes mellitus class A2 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49817004"/>
+            <display value="Neonatal diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51002006"/>
+            <display value="Diabetes mellitus associated with pancreatic disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57886004"/>
+            <display value="Protein-deficient diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59079001"/>
+            <display value="Diabetes mellitus associated with hormonal etiology"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70694009"/>
+            <display value="Marquardt-Loriaux syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75022004"/>
+            <display value="Gestational diabetes mellitus class A1 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75524006"/>
+            <display value="Malnutrition related diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75682002"/>
+            <display value="Diabetes mellitus caused by insulin receptor antibodies (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76751001"/>
+            <display value="Diabetes mellitus in mother complicating pregnancy, childbirth AND/OR puerperium"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="81531005"/>
+            <display value="Diabetes mellitus type 2 in obese"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91352004"/>
+            <display value="Insulinopathy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="111307005"/>
+            <display value="Leprechaunism syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="111552007"/>
+            <display value="Diabetes mellitus without complication"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="123763000"/>
+            <display value="Houssay's syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="127012008"/>
+            <display value="Lipoatrophic diabetes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190368000"/>
+            <display value="Type I diabetes mellitus with ulcer"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190372001"/>
+            <display value="Type I diabetes mellitus maturity onset"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190389009"/>
+            <display value="Type 2 diabetes mellitus with ulcer"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190407009"/>
+            <display value="Malnutrition-related diabetes mellitus with renal complications"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190410002"/>
+            <display value="Malnutrition-related diabetes mellitus with peripheral circulatory complications"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190412005"/>
+            <display value="Malnutrition-related diabetes mellitus without complications"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="190447002"/>
+            <display value="Steroid-induced diabetes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="199223000"/>
+            <display value="Diabetes mellitus during pregnancy, childbirth and the puerperium"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="199229001"/>
+            <display value="Pre-existing type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="199230006"/>
+            <display value="Pre-existing type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="199231005"/>
+            <display value="Pre-existing malnutrition-related diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237599002"/>
+            <display value="Insulin treated Type II diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237600004"/>
+            <display value="Malnutrition-related diabetes mellitus - fibrocalculous"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237601000"/>
+            <display value="Secondary endocrine diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237603002"/>
+            <display value="Transitory neonatal diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237604008"/>
+            <display value="Diabetes mellitus autosomal dominant type II"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237611007"/>
+            <display value="Muscular atrophy, ataxia, retinitis pigmentosa, and diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237612000"/>
+            <display value="Photomyoclonus, diabetes mellitus, deafness, nephropathy and cerebral dysfunction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237617006"/>
+            <display value="Megaloblastic anemia, thiamine-responsive, with diabetes mellitus and sensorineural deafness"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237619009"/>
+            <display value="Ballinger-Wallace syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237627000"/>
+            <display value="Pregnancy and type 2 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237651005"/>
+            <display value="Insulin resistance - type A"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237652003"/>
+            <display value="Insulin resistance - type B"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276560009"/>
+            <display value="Diabetes mellitus in neonate small for gestational age"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="290002008"/>
+            <display value="Unstable type I diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="313436004"/>
+            <display value="Type 2 diabetes mellitus without complication"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="359642000"/>
+            <display value="Diabetes mellitus type 2 in nonobese"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="405749004"/>
+            <display value="Newly diagnosed diabetes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="408540003"/>
+            <display value="Diabetes mellitus induced by non-steroid drugs"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="426705001"/>
+            <display value="Diabetes mellitus associated with cystic fibrosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="426875007"/>
+            <display value="Latent autoimmune diabetes mellitus in adult (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="427089005"/>
+            <display value="Diabetes mellitus due to cystic fibrosis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443694000"/>
+            <display value="Type II diabetes mellitus uncontrolled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444073006"/>
+            <display value="Type I diabetes mellitus uncontrolled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444074000"/>
+            <display value="Type I diabetes mellitus well controlled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444110003"/>
+            <display value="Type II diabetes mellitus well controlled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445260006"/>
+            <display value="Posttransplant diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445353002"/>
+            <display value="Brittle type II diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="472699005"/>
+            <display value="Gestational diabetes mellitus uncontrolled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609561005"/>
+            <display value="Maturity-onset diabetes of the young (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609562003"/>
+            <display value="Maturity onset diabetes of the young, type 1 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609563008"/>
+            <display value="Pre-existing diabetes mellitus in pregnancy (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609564002"/>
+            <display value="Pre-existing type 1 diabetes mellitus in pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609565001"/>
+            <display value="Permanent neonatal diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609566000"/>
+            <display value="Pregnancy and type 1 diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609567009"/>
+            <display value="Pre-existing type 2 diabetes mellitus in pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609568004"/>
+            <display value="Diabetes mellitus due to genetic defect in beta cell function"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609569007"/>
+            <display value="Diabetes mellitus due to genetic defect in insulin action"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609570008"/>
+            <display value="Maturity-onset diabetes of the young, type 3 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609571007"/>
+            <display value="Maturity-onset diabetes of the young, type 4"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609572000"/>
+            <display value="Maturity-onset diabetes of the young, type 5 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609573005"/>
+            <display value="Maturity-onset diabetes of the young, type 6 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609574004"/>
+            <display value="Maturity-onset diabetes of the young, type 7"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609575003"/>
+            <display value="Diabetes-pancreatic exocrine dysfunction syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609576002"/>
+            <display value="Maturity-onset diabetes of the young, type 9"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609577006"/>
+            <display value="Maturity-onset diabetes of the young, type 10 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609578001"/>
+            <display value="Maturity-onset diabetes of the young, type 11"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609579009"/>
+            <display value="Diabetes mellitus, transient neonatal 1"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609580007"/>
+            <display value="Diabetes mellitus, transient neonatal 2 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="609581006"/>
+            <display value="Diabetes mellitus, transient neonatal 3 (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="703136005"/>
+            <display value="Diabetes mellitus in remission (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="703137001"/>
+            <display value="Type I diabetes mellitus in remission (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="703138006"/>
+            <display value="Type II diabetes mellitus in remission (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="709147009"/>
+            <display value="Gingivitis co-occurrent with diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="716362006"/>
+            <display value="Gingival disease co-occurrent with diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="720519003"/>
+            <display value="Atherosclerosis, deafness, diabetes, epilepsy, nephropathy syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721088003"/>
+            <display value="Developmental delay, epilepsy, neonatal diabetes syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722206009"/>
+            <display value="Pancreatic hypoplasia, diabetes mellitus, congenital heart disease syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722454003"/>
+            <display value="Intellectual disability, craniofacial dysmorphism, hypogonadism, diabetes mellitus syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="724067006"/>
+            <display value="Permanent neonatal diabetes mellitus with cerebellar agenesis syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="733072002"/>
+            <display value="Stimmler syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="734022008"/>
+            <display value="Wolfram-like syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737212004"/>
+            <display value="Diabetes mellitus caused by chemical (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782755007"/>
+            <display value="Primary microcephaly, mild intellectual disability, young-onset diabetes syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782825008"/>
+            <display value="Primary microcephaly, epilepsy, permanent neonatal diabetes syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="783722008"/>
+            <display value="Myopathy and diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="816067005"/>
+            <display value="Diabetes, hypogonadism, deafness, intellectual disability syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870528001"/>
+            <display value="Newly diagnosed diabetes mellitus type 1"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="890171006"/>
+            <display value="Ketosis-prone diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1142044000"/>
+            <display value="Pre-existing malnutrition-related diabetes mellitus in pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1197592001"/>
+            <display value="Intrauterine growth restriction, short stature, early adult-onset diabetes syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1217044000"/>
+            <display value="Ketosis-resistant diabetes mellitus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1217068008"/>
+            <display value="Fulminant type 1 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255271005"/>
+            <display value="Juvenile-onset diabetes mellitus, central and peripheral neurodegeneration syndrome (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1285518004"/>
+            <display value="Wolfram syndrome type I"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1285519007"/>
+            <display value="Wolfram syndrome type 2"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1290118005"/>
+            <display value="Presymptomatic T1DM (type 1 diabetes mellitus)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1303868000"/>
+            <display value="Intermediate DEND syndrome"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="201000119106"/>
+            <display value="Disorder due to well controlled type 2 diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1481000119100"/>
+            <display value="Diabetes mellitus type 2 without retinopathy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="31321000119102"/>
+            <display value="Diabetes mellitus type 1 without retinopathy (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="40791000119105"/>
+            <display value="Postpartum gestational diabetes mellitus (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="40801000119106"/>
+            <display value="Gestational diabetes mellitus complicating pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="105401000119101"/>
+            <display value="Diabetes mellitus due to pancreatic injury (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106281000119103"/>
+            <display value="Pre-existing diabetes mellitus in mother complicating childbirth (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="164971000119101"/>
+            <display value="Type 2 diabetes mellitus controlled by diet"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10753491000119101"/>
+            <display value="Gestational diabetes mellitus in childbirth (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10754881000119104"/>
+            <display value="Diabetes mellitus in mother complicating childbirth (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="530558861000132104"/>
+            <display value="Atypical diabetes mellitus (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-76633-7"> </a>  
+                  <a href="https://loinc.org/76633-7/">76633-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD) in Blood</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-33914-3"> </a>  
+                  <a href="https://loinc.org/33914-3/">33914-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-77147-7"> </a>  
+                  <a href="https://loinc.org/77147-7/">77147-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-69405-9"> </a>  
+                  <a href="https://loinc.org/69405-9/">69405-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr"/>
+        <version value="1.0.0"/>
+        <name value="EGFRLabResults"/>
+        <title value="eGFR Lab Results ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-11-18T18:15:24+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:00ab3181-3524-49c7-ab85-a7e6b6d957c4"/>
+          <timestamp value="2024-11-18T18:15:38+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="76633-7"/>
+            <display value="Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD) in Blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="33914-3"/>
+            <display value="Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="77147-7"/>
+            <display value="Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="69405-9"/>
+            <display value="Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-44292-1"> </a>  
+                  <a href="https://loinc.org/44292-1/">44292-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-13705-9"> </a>  
+                  <a href="https://loinc.org/13705-9/">13705-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Albumin/Creatinine [Mass Ratio] in 24 hour Urine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-14958-3"> </a>  
+                  <a href="https://loinc.org/14958-3/">14958-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-9318-7"> </a>  
+                  <a href="https://loinc.org/9318-7/">9318-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Albumin/Creatinine [Mass Ratio] in Urine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-30001-2"> </a>  
+                  <a href="https://loinc.org/30001-2/">30001-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Microalbumin/Creatinine [Ratio] in Urine by Test strip</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr"/>
+        <version value="1.0.0"/>
+        <name value="UacrLabResults"/>
+        <title value="UACR Lab Results ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-11-18T18:15:24+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8a4c1e86-1e13-47b7-9e44-6bb8909bd3a2"/>
+          <timestamp value="2024-11-18T18:15:38+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="44292-1"/>
+            <display value="Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="13705-9"/>
+            <display value="Albumin/Creatinine [Mass Ratio] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14958-3"/>
+            <display value="Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9318-7"/>
+            <display value="Albumin/Creatinine [Mass Ratio] in Urine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="30001-2"/>
+            <display value="Microalbumin/Creatinine [Ratio] in Urine by Test strip"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
