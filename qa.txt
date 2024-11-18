@@ -1,25 +1,25 @@
 CPGChronicKidneyDiseaseExamples : Validation Results
 =========================================
 
-err = 46, warn = 5, info = 31
+err = 4, warn = 5, info = 31
 IG Publisher Version: 1.7.2
-Generated Mon Nov 18 18:15:46 UTC 2024. FHIR version 4.0.1 for hl7.fhir.uv.cpg.ckd#1.0.0 (canonical = http://fhir.org/fhir/uv/cpg/ckd)
+Generated Mon Nov 18 18:20:30 UTC 2024. FHIR version 4.0.1 for cqframework.cpg-example-ckd#1.0.0 (canonical = http://cqframework.org/cpg-example-ckd)
  Build Errors : 118 / 4 / 0
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-hypertension : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-renal-diet : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-creatinine : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-metabolic : 3 / 1 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-dietition : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-nephrology : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-ultrasound-renal : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-referral-nephrology : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-renal-lab-order : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.ckd : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Library-CKDRiskLogic : 6 / 0 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-cc-cpg-plan-ckd : 3 / 0 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-ckd-risk-screening : 3 / 0 / 6
- /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-protocol : 3 / 0 / 6
- /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-recommendations : 3 / 0 / 6
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-hypertension : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-renal-diet : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-creatinine : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-metabolic : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-dietition : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-nephrology : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-ultrasound-renal : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-referral-nephrology : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-renal-lab-order : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-ckd : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-CKDRiskLogic : 3 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-cc-cpg-plan-ckd : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-ckd-risk-screening : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-protocol : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-recommendations : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-ckd-valueset-ckd : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ValueSet-ckd-valueset-creatinine : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ValueSet-ckd-valueset-diabetes : 0 / 0 / 2
@@ -28,214 +28,172 @@ Generated Mon Nov 18 18:15:46 UTC 2024. FHIR version 4.0.1 for hl7.fhir.uv.cpg.c
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[30].value: Supressed messages file has errors with no reason (INFORMATION: Library/CKDRiskLogic: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot)
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.html#/html/body/div/div/div/p/span/a at Line 277, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.json.html#/html/body/div/div/div/p/span/a at Line 307, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.ttl.html#/html/body/div/div/div/p/span/a at Line 298, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.xml.html#/html/body/div/div/div/p/span/a at Line 339, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html#/html/body/div/div/div/p/span/a at Line 273, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.json.html#/html/body/div/div/div/p/span/a at Line 307, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.ttl.html#/html/body/div/div/div/p/span/a at Line 298, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.xml.html#/html/body/div/div/div/p/span/a at Line 329, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.html#/html/body/div/div/div/p/span/a at Line 257, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.json.html#/html/body/div/div/div/p/span/a at Line 315, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.xml.html#/html/body/div/div/div/p/span/a at Line 298, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.html#/html/body/div/div/div/p/span/a at Line 257, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.json.html#/html/body/div/div/div/p/span/a at Line 321, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.ttl.html#/html/body/div/div/div/p/span/a at Line 306, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.xml.html#/html/body/div/div/div/p/span/a at Line 304, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.html#/html/body/div/div/div/p/span/a at Line 257, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.json.html#/html/body/div/div/div/p/span/a at Line 316, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.ttl.html#/html/body/div/div/div/p/span/a at Line 303, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.xml.html#/html/body/div/div/div/p/span/a at Line 301, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.html#/html/body/div/div/div/p/span/a at Line 305, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.json.html#/html/body/div/div/div/p/span/a at Line 327, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.ttl.html#/html/body/div/div/div/p/span/a at Line 311, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.xml.html#/html/body/div/div/div/p/span/a at Line 409, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html#/html/body/div/div/div/p/span/a at Line 298, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.json.html#/html/body/div/div/div/p/span/a at Line 327, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.ttl.html#/html/body/div/div/div/p/span/a at Line 311, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.xml.html#/html/body/div/div/div/p/span/a at Line 395, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.html#/html/body/div/div/div/p/span/a at Line 257, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.json.html#/html/body/div/div/div/p/span/a at Line 312, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.xml.html#/html/body/div/div/div/p/span/a at Line 296, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.html#/html/body/div/div/div/p/span/a at Line 257, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.json.html#/html/body/div/div/div/p/span/a at Line 312, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.xml.html#/html/body/div/div/div/p/span/a at Line 295, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-CKDRiskLogic-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-CKDRiskLogic.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-CKDRiskLogic.html#/html/body/div/div/div/p/span/a at Line 516, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-CKDRiskLogic.json.html#/html/body/div/div/div/p/span/a at Line 297, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-CKDRiskLogic.ttl.html#/html/body/div/div/div/p/span/a at Line 286, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-CKDRiskLogic.xml.html#/html/body/div/div/div/p/span/a at Line 544, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.html#/html/body/div/div/div/p/span/a at Line 672, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.json.html#/html/body/div/div/div/p/span/a at Line 596, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.ttl.html#/html/body/div/div/div/p/span/a at Line 505, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.xml.html#/html/body/div/div/div/p/span/a at Line 1361, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.html#/html/body/div/div/div/p/span/a at Line 262, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.json.html#/html/body/div/div/div/p/span/a at Line 518, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.ttl.html#/html/body/div/div/div/p/span/a at Line 420, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.xml.html#/html/body/div/div/div/p/span/a at Line 470, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.html#/html/body/div/div/div/p/span/a at Line 268, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.json.html#/html/body/div/div/div/p/span/a at Line 456, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.ttl.html#/html/body/div/div/div/p/span/a at Line 378, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.xml.html#/html/body/div/div/div/p/span/a at Line 405, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.html#/html/body/div/div/div/p/span/a at Line 268, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.json.html#/html/body/div/div/div/p/span/a at Line 384, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.ttl.html#/html/body/div/div/div/p/span/a at Line 345, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.xml.html#/html/body/div/div/div/p/span/a at Line 354, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.html#/html/body/div/div/div/p/span/a at Line 304, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.json.html#/html/body/div/div/div/p/span/a at Line 303, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.ttl.html#/html/body/div/div/div/p/span/a at Line 287, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.xml.html#/html/body/div/div/div/p/span/a at Line 288, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.html#/html/body/div/div/div/p/span/a at Line 303, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.json.html#/html/body/div/div/div/p/span/a at Line 299, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.ttl.html#/html/body/div/div/div/p/span/a at Line 284, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.xml.html#/html/body/div/div/div/p/span/a at Line 287, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.html#/html/body/div/div/div/p/span/a at Line 304, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.json.html#/html/body/div/div/div/p/span/a at Line 303, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.ttl.html#/html/body/div/div/div/p/span/a at Line 287, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.xml.html#/html/body/div/div/div/p/span/a at Line 289, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.html#/html/body/div/div/div/p/span/a at Line 303, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.json.html#/html/body/div/div/div/p/span/a at Line 302, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.ttl.html#/html/body/div/div/div/p/span/a at Line 285, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.xml.html#/html/body/div/div/div/p/span/a at Line 289, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.html#/html/body/div/div/div/p/span/a at Line 303, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.json.html#/html/body/div/div/div/p/span/a at Line 305, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.ttl.html#/html/body/div/div/div/p/span/a at Line 286, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.xml.html#/html/body/div/div/div/p/span/a at Line 292, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 382, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 380, column 121: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 156, column 121: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.html#/html/body/div/div/div/p/span/a at Line 277, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.json.html#/html/body/div/div/div/p/span/a at Line 307, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.ttl.html#/html/body/div/div/div/p/span/a at Line 298, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-hypertension.xml.html#/html/body/div/div/div/p/span/a at Line 339, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html#/html/body/div/div/div/p/span/a at Line 273, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.json.html#/html/body/div/div/div/p/span/a at Line 307, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.ttl.html#/html/body/div/div/div/p/span/a at Line 298, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-edu-renal-diet.xml.html#/html/body/div/div/div/p/span/a at Line 329, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.html#/html/body/div/div/div/p/span/a at Line 257, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.json.html#/html/body/div/div/div/p/span/a at Line 315, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-creatinine.xml.html#/html/body/div/div/div/p/span/a at Line 298, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.html#/html/body/div/div/div/p/span/a at Line 257, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.json.html#/html/body/div/div/div/p/span/a at Line 321, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.ttl.html#/html/body/div/div/div/p/span/a at Line 306, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-lab-metabolic.xml.html#/html/body/div/div/div/p/span/a at Line 304, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.html#/html/body/div/div/div/p/span/a at Line 257, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.json.html#/html/body/div/div/div/p/span/a at Line 316, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.ttl.html#/html/body/div/div/div/p/span/a at Line 303, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-dietition.xml.html#/html/body/div/div/div/p/span/a at Line 301, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.html#/html/body/div/div/div/p/span/a at Line 305, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.json.html#/html/body/div/div/div/p/span/a at Line 327, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.ttl.html#/html/body/div/div/div/p/span/a at Line 311, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-referral-nephrology.xml.html#/html/body/div/div/div/p/span/a at Line 409, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html#/html/body/div/div/div/p/span/a at Line 298, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.json.html#/html/body/div/div/div/p/span/a at Line 327, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.ttl.html#/html/body/div/div/div/p/span/a at Line 311, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-cc-cpg-activity-ultrasound-renal.xml.html#/html/body/div/div/div/p/span/a at Line 395, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.html#/html/body/div/div/div/p/span/a at Line 257, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.json.html#/html/body/div/div/div/p/span/a at Line 312, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-referral-nephrology.xml.html#/html/body/div/div/div/p/span/a at Line 297, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.html#/html/body/div/div/div/p/span/a at Line 257, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.json.html#/html/body/div/div/div/p/span/a at Line 312, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-ckd-risk-renal-lab-order.xml.html#/html/body/div/div/div/p/span/a at Line 296, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-CKDRiskLogic-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-CKDRiskLogic.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-CKDRiskLogic.html#/html/body/div/div/div/p/span/a at Line 516, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-CKDRiskLogic.json.html#/html/body/div/div/div/p/span/a at Line 297, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-CKDRiskLogic.ttl.html#/html/body/div/div/div/p/span/a at Line 286, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-CKDRiskLogic.xml.html#/html/body/div/div/div/p/span/a at Line 544, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.html#/html/body/div/div/div/p/span/a at Line 672, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.json.html#/html/body/div/div/div/p/span/a at Line 596, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.ttl.html#/html/body/div/div/div/p/span/a at Line 505, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-cc-cpg-plan-ckd.xml.html#/html/body/div/div/div/p/span/a at Line 1363, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.html#/html/body/div/div/div/p/span/a at Line 262, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.json.html#/html/body/div/div/div/p/span/a at Line 518, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.ttl.html#/html/body/div/div/div/p/span/a at Line 420, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-ckd-risk-screening.xml.html#/html/body/div/div/div/p/span/a at Line 471, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.html#/html/body/div/div/div/p/span/a at Line 268, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.json.html#/html/body/div/div/div/p/span/a at Line 456, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.ttl.html#/html/body/div/div/div/p/span/a at Line 378, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-protocol.xml.html#/html/body/div/div/div/p/span/a at Line 406, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.html#/html/body/div/div/div/p/span/a at Line 268, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.json.html#/html/body/div/div/div/p/span/a at Line 384, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.ttl.html#/html/body/div/div/div/p/span/a at Line 345, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-va-ckd-recommendations.xml.html#/html/body/div/div/div/p/span/a at Line 355, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.html#/html/body/div/div/div/p/span/a at Line 304, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.json.html#/html/body/div/div/div/p/span/a at Line 303, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.ttl.html#/html/body/div/div/div/p/span/a at Line 287, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-ckd.xml.html#/html/body/div/div/div/p/span/a at Line 289, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.html#/html/body/div/div/div/p/span/a at Line 303, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.json.html#/html/body/div/div/div/p/span/a at Line 299, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.ttl.html#/html/body/div/div/div/p/span/a at Line 284, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-creatinine.xml.html#/html/body/div/div/div/p/span/a at Line 287, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.html#/html/body/div/div/div/p/span/a at Line 304, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.json.html#/html/body/div/div/div/p/span/a at Line 303, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.ttl.html#/html/body/div/div/div/p/span/a at Line 287, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-diabetes.xml.html#/html/body/div/div/div/p/span/a at Line 289, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.html#/html/body/div/div/div/p/span/a at Line 303, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.json.html#/html/body/div/div/div/p/span/a at Line 302, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.ttl.html#/html/body/div/div/div/p/span/a at Line 285, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-egfr.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.html#/html/body/div/div/div/p/span/a at Line 303, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.json.html#/html/body/div/div/div/p/span/a at Line 305, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.ttl.html#/html/body/div/div/div/p/span/a at Line 286, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ckd-valueset-uacr.xml.html#/html/body/div/div/div/p/span/a at Line 293, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 382, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 380, column 128: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 156, column 128: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-hypertension.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-hypertension.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension)
 INFORMATION: ActivityDefinition/cc-cpg-activity-edu-hypertension: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/cc-cpg-activity-edu-hypertension: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-hypertension: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-renal-diet.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-renal-diet.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet)
 INFORMATION: ActivityDefinition/cc-cpg-activity-edu-renal-diet: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/cc-cpg-activity-edu-renal-diet: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-edu-renal-diet: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-creatinine.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-creatinine.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine)
 INFORMATION: ActivityDefinition/cc-cpg-activity-lab-creatinine: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/cc-cpg-activity-lab-creatinine: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-creatinine: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-metabolic.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-metabolic.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic)
 INFORMATION: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
 WARNING: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition.code.coding[0].system: A definition for CodeSystem 'http://www.nlm.nih.gov/research/umls/xxxx' could not be found, so the code cannot be validated
-ERROR: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-lab-metabolic: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-dietition.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-dietition.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition)
 INFORMATION: ActivityDefinition/cc-cpg-activity-referral-dietition: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/cc-cpg-activity-referral-dietition: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-dietition: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-nephrology.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-nephrology.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology)
 INFORMATION: ActivityDefinition/cc-cpg-activity-referral-nephrology: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/cc-cpg-activity-referral-nephrology: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-referral-nephrology: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology
 == fsh-generated/resources/ActivityDefinition-cc-cpg-activity-ultrasound-renal.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-ultrasound-renal.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal)
 INFORMATION: ActivityDefinition/cc-cpg-activity-ultrasound-renal: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/cc-cpg-activity-ultrasound-renal: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-cc-cpg-activity-ultrasound-renal: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal
 == fsh-generated/resources/ActivityDefinition-ckd-risk-referral-nephrology.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-referral-nephrology.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology)
 INFORMATION: ActivityDefinition/ckd-risk-referral-nephrology: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/ckd-risk-referral-nephrology: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-referral-nephrology: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology
 == fsh-generated/resources/ActivityDefinition-ckd-risk-renal-lab-order.json ==
-ERROR: ActivityDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order'): Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-renal-lab-order.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order)
 INFORMATION: ActivityDefinition/ckd-risk-renal-lab-order: ActivityDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: ActivityDefinition/ckd-risk-renal-lab-order: ActivityDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/ActivityDefinition-ckd-risk-renal-lab-order: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order vs http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order
-== fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.ckd.json ==
+== fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-ckd.json ==
 == fsh-generated/resources/Library-CKDRiskLogic.json ==
-ERROR: Library.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic'): Conformance resource /github/workspace/fsh-generated/resources/Library-CKDRiskLogic.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic)
 ERROR: CKDRiskLogic: Member value not found for type FHIR.CodeableConcept.
 ERROR: CKDRiskLogic: Member value not found for type FHIR.CodeableConcept.
 ERROR: CKDRiskLogic.cql: CQL Processing failed with (2) errors.
 INFORMATION: Library/CKDRiskLogic: Library.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: Library/CKDRiskLogic: Library: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/Library-CKDRiskLogic: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic vs http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic
 == fsh-generated/resources/PlanDefinition-cc-cpg-plan-ckd.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-cc-cpg-plan-ckd.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd)
 INFORMATION: PlanDefinition/cc-cpg-plan-ckd: PlanDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: PlanDefinition/cc-cpg-plan-ckd: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-cc-cpg-plan-ckd: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd vs http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd
 == fsh-generated/resources/PlanDefinition-ckd-risk-screening.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-ckd-risk-screening.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening)
 INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition.extension[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition.extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/ckd-risk-screening: PlanDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: PlanDefinition/ckd-risk-screening: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-ckd-risk-screening: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening vs http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening
 == fsh-generated/resources/PlanDefinition-va-ckd-protocol.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-protocol.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol)
 INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition.extension[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition.extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: PlanDefinition/va-ckd-protocol: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-protocol: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol vs http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol
 == fsh-generated/resources/PlanDefinition-va-ckd-recommendations.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-recommendations.json - the canonical URL (http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations) does not match the URL (http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations)
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition.extension[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition.extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-ERROR: PlanDefinition/va-ckd-recommendations: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-va-ckd-recommendations: URL Mismatch http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations vs http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations
 == fsh-generated/resources/ValueSet-ckd-valueset-ckd.json ==
 INFORMATION: ValueSet/ckd-valueset-ckd: ValueSet.extension[3].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
 == fsh-generated/resources/ValueSet-ckd-valueset-creatinine.json ==

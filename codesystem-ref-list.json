@@ -24,8 +24,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-ckd-valueset-ckd.html" : "Chronic Renal Disease Finding ValueSet",
-      "ValueSet-ckd-valueset-diabetes.html" : "Diabetes Finding Codes ValueSet"
+      "ValueSet-ckd-valueset-diabetes.html" : "Diabetes Finding Codes ValueSet",
+      "ValueSet-ckd-valueset-ckd.html" : "Chronic Renal Disease Finding ValueSet"
     }
   ]
 }

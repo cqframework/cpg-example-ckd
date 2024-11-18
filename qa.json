@@ -1,19 +1,19 @@
 {
-  "url" : "http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd",
+  "url" : "http://cqframework.org/cpg-example-ckd/ImplementationGuide/cqframework.cpg-example-ckd",
   "name" : "CPGChronicKidneyDiseaseExamples",
   "title" : "Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease",
   "description" : "Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project",
   "status" : "active",
-  "package-id" : "hl7.fhir.uv.cpg.ckd",
+  "package-id" : "cqframework.cpg-example-ckd",
   "ig-ver" : "1.0.0",
-  "date" : "Mon, 18 Nov, 2024 18:15:24 +0000",
-  "dateISO8601" : "2024-11-18T18:15:24+00:00",
-  "errs" : 46,
+  "date" : "Mon, 18 Nov, 2024 18:20:09 +0000",
+  "dateISO8601" : "2024-11-18T18:20:09+00:00",
+  "errs" : 4,
   "warnings" : 5,
   "hints" : 31,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1355125064
+  "maxMemory" : 1303867456
 }

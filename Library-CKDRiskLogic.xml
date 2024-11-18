@@ -277,7 +277,7 @@ define function ToMetric(qty System.Quantity):
   <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel">
     <valueCode value="structured"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic"/>
+  <url value="http://cqframework.org/cpg-example-ckd/Library/CKDRiskLogic"/>
   <version value="1.0.0"/>
   <name value="CKDRiskLogic"/>
   <title value="Chronic Kidney Disease (CKD) risk screening logic"/>
@@ -289,7 +289,7 @@ define function ToMetric(qty System.Quantity):
       <code value="logic-library"/>
     </coding>
   </type>
-  <date value="2024-11-18T18:15:24+00:00"/>
+  <date value="2024-11-18T18:20:09+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>

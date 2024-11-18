@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr> a fhir:ValueSet ;
+<http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-egfr> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ckd-valueset-egfr"] ; # 
   fhir:text [
@@ -25,13 +25,13 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "structured" ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-egfr"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EGFRLabResults"] ; # 
   fhir:title [ fhir:v "eGFR Lab Results ValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T18:15:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T18:20:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;

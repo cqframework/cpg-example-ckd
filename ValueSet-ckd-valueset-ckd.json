@@ -21,13 +21,13 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
     "valueCode" : "structured"
   }],
-  "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd",
+  "url" : "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-ckd",
   "version" : "1.0.0",
   "name" : "ChronicRenalDiseaseFinding",
   "title" : "Chronic Renal Disease Finding ValueSet",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-11-18T18:15:24+00:00",
+  "date" : "2024-11-18T18:20:09+00:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",

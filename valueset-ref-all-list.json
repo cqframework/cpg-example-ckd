@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd",
+      "url" : "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-ckd",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "ChronicRenalDiseaseFinding",
@@ -10,7 +10,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine",
+      "url" : "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-creatinine",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "CreatinineLabResults",
@@ -19,7 +19,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes",
+      "url" : "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-diabetes",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "DiabetesFindingCodes",
@@ -28,7 +28,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr",
+      "url" : "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-egfr",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "EGFRLabResults",
@@ -37,7 +37,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr",
+      "url" : "http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-uacr",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "UacrLabResults",

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic> a fhir:Library ;
+<http://cqframework.org/cpg-example-ckd/Library/CKDRiskLogic> a fhir:Library ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "CKDRiskLogic"] ; # 
   fhir:text [
@@ -25,7 +25,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "structured" ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-ckd/Library/CKDRiskLogic"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "CKDRiskLogic"] ; # 
   fhir:title [ fhir:v "Chronic Kidney Disease (CKD) risk screening logic"] ; # 
@@ -37,7 +37,7 @@
        fhir:code [ fhir:v "logic-library" ]
      ] )
   ] ; # 
-  fhir:date [ fhir:v "2024-11-18T18:15:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T18:20:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;

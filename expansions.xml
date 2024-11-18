@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e9f45393-1af4-45b0-9bd7-e546ace519a6"/>
+  <id value="bef5ea2f-97c6-4242-af50-d2c3e09de790"/>
   <meta>
-    <lastUpdated value="2024-11-18T18:15:24.070+00:00"/>
+    <lastUpdated value="2024-11-18T18:20:09.593+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd"/>
+    <fullUrl value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-ckd"/>
     <resource>
       <ValueSet>
         <text>
@@ -929,13 +929,13 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd"/>
+        <url value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-ckd"/>
         <version value="1.0.0"/>
         <name value="ChronicRenalDiseaseFinding"/>
         <title value="Chronic Renal Disease Finding ValueSet"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-18T18:15:24+00:00"/>
+        <date value="2024-11-18T18:20:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -947,8 +947,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4f5f0400-f91d-46c1-9e93-542b82b91874"/>
-          <timestamp value="2024-11-18T18:15:36+00:00"/>
+          <identifier value="urn:uuid:de83814a-cf0a-4a51-8f67-ef9ab5b3507b"/>
+          <timestamp value="2024-11-18T18:20:21+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -1543,7 +1543,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine"/>
+    <fullUrl value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-creatinine"/>
     <resource>
       <ValueSet>
         <text>
@@ -1593,13 +1593,13 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine"/>
+        <url value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-creatinine"/>
         <version value="1.0.0"/>
         <name value="CreatinineLabResults"/>
         <title value="Creatinine Lab Results"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-18T18:15:24+00:00"/>
+        <date value="2024-11-18T18:20:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1608,8 +1608,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7e967d29-dafc-461b-a5d7-d93929bfc28c"/>
-          <timestamp value="2024-11-18T18:15:37+00:00"/>
+          <identifier value="urn:uuid:4ddd4c2e-9457-4e68-85ab-b49165e1bc7f"/>
+          <timestamp value="2024-11-18T18:20:22+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1656,7 +1656,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes"/>
+    <fullUrl value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-diabetes"/>
     <resource>
       <ValueSet>
         <text>
@@ -2722,13 +2722,13 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes"/>
+        <url value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-diabetes"/>
         <version value="1.0.0"/>
         <name value="DiabetesFindingCodes"/>
         <title value="Diabetes Finding Codes ValueSet"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-18T18:15:24+00:00"/>
+        <date value="2024-11-18T18:20:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -2740,8 +2740,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:271637fe-6c75-4913-a7b8-0fa67954f58f"/>
-          <timestamp value="2024-11-18T18:15:37+00:00"/>
+          <identifier value="urn:uuid:541a5bc7-0883-4239-a8fa-42da337c22bd"/>
+          <timestamp value="2024-11-18T18:20:22+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -3426,7 +3426,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr"/>
+    <fullUrl value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-egfr"/>
     <resource>
       <ValueSet>
         <text>
@@ -3484,13 +3484,13 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr"/>
+        <url value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-egfr"/>
         <version value="1.0.0"/>
         <name value="EGFRLabResults"/>
         <title value="eGFR Lab Results ValueSet"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-18T18:15:24+00:00"/>
+        <date value="2024-11-18T18:20:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -3499,8 +3499,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:00ab3181-3524-49c7-ab85-a7e6b6d957c4"/>
-          <timestamp value="2024-11-18T18:15:38+00:00"/>
+          <identifier value="urn:uuid:285a94eb-ba15-4229-b206-ee5db184a7bd"/>
+          <timestamp value="2024-11-18T18:20:23+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3552,7 +3552,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr"/>
+    <fullUrl value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-uacr"/>
     <resource>
       <ValueSet>
         <text>
@@ -3618,13 +3618,13 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr"/>
+        <url value="http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-uacr"/>
         <version value="1.0.0"/>
         <name value="UacrLabResults"/>
         <title value="UACR Lab Results ValueSet"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-18T18:15:24+00:00"/>
+        <date value="2024-11-18T18:20:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -3633,8 +3633,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8a4c1e86-1e13-47b7-9e44-6bb8909bd3a2"/>
-          <timestamp value="2024-11-18T18:15:38+00:00"/>
+          <identifier value="urn:uuid:9af51355-81bf-4a65-bb8f-a6fceb3cb855"/>
+          <timestamp value="2024-11-18T18:20:23+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

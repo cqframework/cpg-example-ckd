@@ -1,17 +1,17 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.uv.cpg.ckd",
+  "id" : "cqframework.cpg-example-ckd",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.ckd</b></p><a name=\"hl7.fhir.uv.cpg.ckd\"> </a><a name=\"hchl7.fhir.uv.cpg.ckd\"> </a><a name=\"hl7.fhir.uv.cpg.ckd-en-US\"> </a><h2>CPGChronicKidneyDiseaseExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd</pre><div><p>Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-ckd</b></p><a name=\"cqframework.cpg-example-ckd\"> </a><a name=\"hccqframework.cpg-example-ckd\"> </a><a name=\"cqframework.cpg-example-ckd-en-US\"> </a><h2>CPGChronicKidneyDiseaseExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-ckd/ImplementationGuide/cqframework.cpg-example-ckd</pre><div><p>Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project</p>\n</div></div>"
   },
-  "url" : "http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd",
+  "url" : "http://cqframework.org/cpg-example-ckd/ImplementationGuide/cqframework.cpg-example-ckd",
   "version" : "1.0.0",
   "name" : "CPGChronicKidneyDiseaseExamples",
   "title" : "Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-11-18T18:15:24+00:00",
+  "date" : "2024-11-18T18:20:09+00:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",
@@ -28,7 +28,7 @@
       "display" : "World"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.cpg.ckd",
+  "packageId" : "cqframework.cpg-example-ckd",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -241,7 +241,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://fhir.org/fhir/uv/cpg/ckd/history.html"
+        "valueString" : "http://cqframework.org/cpg-example-ckd/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -531,7 +531,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://fhir.org/fhir/uv/cpg/ckd/history.html"
+        "valueString" : "http://cqframework.org/cpg-example-ckd/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

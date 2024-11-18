@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd> a fhir:ImplementationGuide ;
+<http://cqframework.org/cpg-example-ckd/ImplementationGuide/cqframework.cpg-example-ckd> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "hl7.fhir.uv.cpg.ckd"] ; # 
+  fhir:id [ fhir:v "cqframework.cpg-example-ckd"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.ckd</b></p><a name=\"hl7.fhir.uv.cpg.ckd\"> </a><a name=\"hchl7.fhir.uv.cpg.ckd\"> </a><a name=\"hl7.fhir.uv.cpg.ckd-en-US\"> </a><h2>CPGChronicKidneyDiseaseExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd</pre><div><p>Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-ckd</b></p><a name=\"cqframework.cpg-example-ckd\"> </a><a name=\"hccqframework.cpg-example-ckd\"> </a><a name=\"cqframework.cpg-example-ckd-en-US\"> </a><h2>CPGChronicKidneyDiseaseExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-ckd/ImplementationGuide/cqframework.cpg-example-ckd</pre><div><p>Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://fhir.org/fhir/uv/cpg/ckd/ImplementationGuide/hl7.fhir.uv.cpg.ckd"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-ckd/ImplementationGuide/cqframework.cpg-example-ckd"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "CPGChronicKidneyDiseaseExamples"] ; # 
   fhir:title [ fhir:v "Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T18:15:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T18:20:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -35,7 +35,7 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "hl7.fhir.uv.cpg.ckd"] ; # 
+  fhir:packageId [ fhir:v "cqframework.cpg-example-ckd"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
@@ -222,7 +222,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://fhir.org/fhir/uv/cpg/ckd/history.html" ]
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-ckd/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -459,7 +459,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://fhir.org/fhir/uv/cpg/ckd/history.html" ]
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-ckd/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -550,7 +550,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/Library/CKDRiskLogic> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/Library/CKDRiskLogic> ;
          fhir:reference [ fhir:v "Library/CKDRiskLogic" ]
        ] ;
        fhir:name [ fhir:v "Chronic Kidney Disease (CKD) risk screening logic" ] ;
@@ -562,7 +562,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/ckd-risk-screening> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/PlanDefinition/ckd-risk-screening> ;
          fhir:reference [ fhir:v "PlanDefinition/ckd-risk-screening" ]
        ] ;
        fhir:name [ fhir:v "Chronic Kidney Disease (CKD) risk screening Plan Definition" ] ;
@@ -574,7 +574,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/cc-cpg-plan-ckd> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/PlanDefinition/cc-cpg-plan-ckd> ;
          fhir:reference [ fhir:v "PlanDefinition/cc-cpg-plan-ckd" ]
        ] ;
        fhir:name [ fhir:v "Chronic Kidney Disease - Ambulatory Plan Definition" ] ;
@@ -586,7 +586,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-ckd> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-ckd> ;
          fhir:reference [ fhir:v "ValueSet/ckd-valueset-ckd" ]
        ] ;
        fhir:name [ fhir:v "Chronic Renal Disease Finding ValueSet" ] ;
@@ -598,7 +598,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-creatinine> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-creatinine> ;
          fhir:reference [ fhir:v "ValueSet/ckd-valueset-creatinine" ]
        ] ;
        fhir:name [ fhir:v "Creatinine Lab Results" ] ;
@@ -610,7 +610,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-diabetes> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-diabetes> ;
          fhir:reference [ fhir:v "ValueSet/ckd-valueset-diabetes" ]
        ] ;
        fhir:name [ fhir:v "Diabetes Finding Codes ValueSet" ] ;
@@ -622,7 +622,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-egfr> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-egfr> ;
          fhir:reference [ fhir:v "ValueSet/ckd-valueset-egfr" ]
        ] ;
        fhir:name [ fhir:v "eGFR Lab Results ValueSet" ] ;
@@ -634,7 +634,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-lab-metabolic" ]
        ] ;
        fhir:name [ fhir:v "Lab: Comprehensive Metabolic Panel, Once" ] ;
@@ -646,7 +646,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-lab-creatinine> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-lab-creatinine" ]
        ] ;
        fhir:name [ fhir:v "Lab: Creatinine, Urine Random, Once" ] ;
@@ -658,7 +658,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-renal-lab-order> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/ckd-risk-renal-lab-order> ;
          fhir:reference [ fhir:v "ActivityDefinition/ckd-risk-renal-lab-order" ]
        ] ;
        fhir:name [ fhir:v "Order Renal Lab Panel Activity Definition" ] ;
@@ -670,7 +670,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-edu-hypertension> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-edu-hypertension" ]
        ] ;
        fhir:name [ fhir:v "Patient education: Managing Your High Blood Pressure (Hypertension)" ] ;
@@ -682,7 +682,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-edu-renal-diet> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-edu-renal-diet" ]
        ] ;
        fhir:name [ fhir:v "Patient education: Renal diet" ] ;
@@ -694,7 +694,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/ckd-risk-referral-nephrology> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/ckd-risk-referral-nephrology> ;
          fhir:reference [ fhir:v "ActivityDefinition/ckd-risk-referral-nephrology" ]
        ] ;
        fhir:name [ fhir:v "Referral to Nephrologist Activity Definition" ] ;
@@ -706,7 +706,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-dietition> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-referral-dietition> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-referral-dietition" ]
        ] ;
        fhir:name [ fhir:v "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]" ] ;
@@ -718,7 +718,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-referral-nephrology> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-referral-nephrology" ]
        ] ;
        fhir:name [ fhir:v "Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]" ] ;
@@ -730,7 +730,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ValueSet/ckd-valueset-uacr> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ValueSet/ckd-valueset-uacr> ;
          fhir:reference [ fhir:v "ValueSet/ckd-valueset-uacr" ]
        ] ;
        fhir:name [ fhir:v "UACR Lab Results ValueSet" ] ;
@@ -742,7 +742,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-ultrasound-renal> ;
          fhir:reference [ fhir:v "ActivityDefinition/cc-cpg-activity-ultrasound-renal" ]
        ] ;
        fhir:name [ fhir:v "Ultrasound, Renal; History: [add diagnosis, symptom(s)]; Question: [add reason for exam]" ] ;
@@ -754,7 +754,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-protocol> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/PlanDefinition/va-ckd-protocol> ;
          fhir:reference [ fhir:v "PlanDefinition/va-ckd-protocol" ]
        ] ;
        fhir:name [ fhir:v "VA CKD Protocol Pathway" ] ;
@@ -766,7 +766,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/uv/cpg/ckd/PlanDefinition/va-ckd-recommendations> ;
+         fhir:link <http://cqframework.org/cpg-example-ckd/PlanDefinition/va-ckd-recommendations> ;
          fhir:reference [ fhir:v "PlanDefinition/va-ckd-recommendations" ]
        ] ;
        fhir:name [ fhir:v "VA CKD Recommendations Plan Definition" ] ;

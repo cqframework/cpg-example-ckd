@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition cc-cpg-activity-lab-metabolic</b></p><a name=\"cc-cpg-activity-lab-metabolic\"> </a><a name=\"hccc-cpg-activity-lab-metabolic\"> </a><a name=\"cc-cpg-activity-lab-metabolic-en-US\"> </a><p><b>CQF Knowledge capability</b>: shareable</p><p><b>CQF Knowledge capability</b>: computable</p><p><b>CQF Knowledge capability</b>: publishable</p><p><b>CQF knowledge representation level</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-cc-cpg-activity-lab-metabolic.html\">ActivityDefinition Lab: Comprehensive Metabolic Panel, Once</a></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: LabComprehensiveMetabolicPanel</p><p><b>title</b>: Lab: Comprehensive Metabolic Panel, Once</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-11-18 18:15:24+0000</p><p><b>publisher</b>: HL7 International - Clinical Decision Support WG</p><p><b>contact</b>: HL7 International - Clinical Decision Support WG: <a href=\"http://www.hl7.org/Special/committees/dss/index.cfm\">http://www.hl7.org/Special/committees/dss/index.cfm</a></p><p><b>description</b>: </p><div><p>Lab: Comprehensive Metabolic Panel, Once</p>\n</div><p><b>jurisdiction</b>: <span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/xxxx C0519825}, {http://loinc.org 24323-8}\">Comprehensive Metabolic Panel</span></p><p><b>timing</b>: Events: ?? </p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Practitioner</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition cc-cpg-activity-lab-metabolic</b></p><a name=\"cc-cpg-activity-lab-metabolic\"> </a><a name=\"hccc-cpg-activity-lab-metabolic\"> </a><a name=\"cc-cpg-activity-lab-metabolic-en-US\"> </a><p><b>CQF Knowledge capability</b>: shareable</p><p><b>CQF Knowledge capability</b>: computable</p><p><b>CQF Knowledge capability</b>: publishable</p><p><b>CQF knowledge representation level</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-cc-cpg-activity-lab-metabolic.html\">ActivityDefinition Lab: Comprehensive Metabolic Panel, Once</a></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: LabComprehensiveMetabolicPanel</p><p><b>title</b>: Lab: Comprehensive Metabolic Panel, Once</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-11-18 18:20:09+0000</p><p><b>publisher</b>: HL7 International - Clinical Decision Support WG</p><p><b>contact</b>: HL7 International - Clinical Decision Support WG: <a href=\"http://www.hl7.org/Special/committees/dss/index.cfm\">http://www.hl7.org/Special/committees/dss/index.cfm</a></p><p><b>description</b>: </p><div><p>Lab: Comprehensive Metabolic Panel, Once</p>\n</div><p><b>jurisdiction</b>: <span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/xxxx C0519825}, {http://loinc.org 24323-8}\">Comprehensive Metabolic Panel</span></p><p><b>timing</b>: Events: ?? </p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Practitioner</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -24,13 +24,13 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
     "valueCode" : "structured"
   }],
-  "url" : "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic",
+  "url" : "http://cqframework.org/cpg-example-ckd/ActivityDefinition/cc-cpg-activity-lab-metabolic",
   "version" : "1.0.0",
   "name" : "LabComprehensiveMetabolicPanel",
   "title" : "Lab: Comprehensive Metabolic Panel, Once",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-11-18T18:15:24+00:00",
+  "date" : "2024-11-18T18:20:09+00:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",
