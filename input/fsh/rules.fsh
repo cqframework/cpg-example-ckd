@@ -11,7 +11,7 @@ RuleSet: ActivityDefinitionMetadata(id)
 * extension[+]
   * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
-* url = "http://hl7.org/fhir/uv/cpg/ckd/ActivityDefinition/{id}"
+* url = "http://cqframework.org/cpg-example-ckd/ActivityDefinition/{id}"
 * experimental = true
 * status = #active
 * version = "1.0.0"
@@ -30,7 +30,7 @@ RuleSet: PlanDefinitionMetadata(id)
 * extension[+]
   * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
-* url = "http://hl7.org/fhir/uv/cpg/ckd/PlanDefinition/{id}"
+* url = "http://cqframework.org/cpg-example-ckd/PlanDefinition/{id}"
 * experimental = true
 * status = #active
 * version = "1.0.0"
@@ -49,7 +49,7 @@ RuleSet: LibraryMetadata(id)
 * extension[+]
   * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
-* url = "http://hl7.org/fhir/uv/cpg/ckd/Library/{id}"
+* url = "http://cqframework.org/cpg-example-ckd/Library/{id}"
 * experimental = true
 * status = #active
 

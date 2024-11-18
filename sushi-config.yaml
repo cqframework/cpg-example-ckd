@@ -3,8 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.uv.cpg.ckd
-canonical: http://fhir.org/fhir/uv/cpg/ckd
+id: cqframework.cpg-example-ckd
+canonical: http://cqframework.org/cpg-example-ckd
 name: CPGChronicKidneyDiseaseExamples
 title: Clinical Practice Guidelines Example Implementation Guide - Chronic Kidney Disease
 description: Examples of CPG computable content based on the NIH Chronic Kidney Disease (CKD) Care Plan project
